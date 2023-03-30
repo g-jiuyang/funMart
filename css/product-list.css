@@ -1,0 +1,180 @@
+/**
+ * Foundation for Sites
+ * Version 6.6.3
+ * https://get.foundation
+ * Licensed under MIT Open Source
+ */
+/* Vendor */
+/* Component */
+.pd-list .pd-card:not(.pd-card--hori-with-price) .pd-card__title {
+  font-size: 0.9375rem;
+}
+
+@media print, screen and (min-width: 40em) {
+  .pd-list .pd-card:not(.pd-card--hori-with-price) .pd-card__title {
+    font-size: 0.9375rem;
+  }
+}
+
+.pd-list .pd-card:not(.pd-card--hori-with-price) .pd-card__price {
+  font-size: 1rem;
+}
+
+@media print, screen and (min-width: 40em) {
+  .pd-list .pd-card:not(.pd-card--hori-with-price) .pd-card__price {
+    font-size: 1.125rem;
+  }
+}
+
+/* Container */
+.pd-list-global .sec-title-box {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.pd-list-null {
+  margin-top: 12vh;
+  margin-bottom: 14vh;
+  text-align: center;
+}
+
+@media print, screen and (min-width: 40em) {
+  .pd-list-null {
+    margin-top: 7.1875rem;
+    margin-bottom: 4.375rem;
+  }
+}
+
+.pd-list-null__img-box {
+  margin: 0 auto;
+  margin-bottom: 1.5rem;
+  width: 5rem;
+}
+
+@media print, screen and (min-width: 40em) {
+  .pd-list-null__img-box {
+    margin-bottom: 2.625rem;
+    width: 7.0625rem;
+  }
+}
+
+.pd-list-null__img {
+  width: 100%;
+  height: auto;
+}
+
+.pd-list-null__desc {
+  font-size: 1rem;
+  color: #333;
+}
+
+@media print, screen and (min-width: 40em) {
+  .pd-list-null__desc {
+    font-size: 1.25rem;
+  }
+}
+
+.seller-info {
+  margin-bottom: 2.5rem;
+}
+
+@media print, screen and (min-width: 40em) and (max-width: 63.99875em) {
+  .seller-info {
+    margin-bottom: 5rem;
+  }
+}
+
+.seller-info__main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.seller-info__img-box {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 5rem;
+          flex: 0 0 5rem;
+  margin-right: 0.75rem;
+  width: 5rem;
+  border-radius: 20px;
+  border: solid 1px #edf0f3;
+}
+
+.seller-info__text-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.seller-info__name {
+  font-weight: 700;
+  margin-bottom: 0.0625rem;
+}
+
+.seller-info__amount {
+  margin-bottom: 0;
+}
+
+.seller-info__banner-box {
+  margin-top: 1.25rem;
+  margin-bottom: 1.125rem;
+  border-radius: 0.75rem;
+}
+
+.seller-info__banner-box::before {
+  content: '';
+  display: block;
+  padding-top: 47.05882%;
+}
+
+@media print, screen and (min-width: 40em) {
+  .seller-info__banner-box {
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+.seller-info__desc {
+  margin-top: 1rem;
+  font-size: 0.9375rem;
+}
+
+@media print, screen and (min-width: 64em) {
+  .seller-info__desc {
+    font-size: 1.125rem;
+  }
+}
+
+@media print, screen and (min-width: 64em) {
+  .pd-list-flagship__l {
+    position: relative;
+    padding-right: 1.25rem;
+  }
+}
+
+@media print, screen and (min-width: 40em) {
+  .pd-list-flagship .seller-info__name {
+    font-size: 1.5rem;
+  }
+}
+
+@media print, screen and (min-width: 64em) {
+  .pd-list-flagship .seller-info.is-fixed {
+    position: fixed;
+    top: 98px;
+  }
+  .pd-list-flagship .seller-info.is-fixed-bottom {
+    position: absolute;
+    top: auto;
+    bottom: 0;
+    left: 0;
+    margin-bottom: 0;
+  }
+}

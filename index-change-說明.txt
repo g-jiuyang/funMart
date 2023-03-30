@@ -1,0 +1,19 @@
+
+index.changed.html 修改說明
+
+1. 增加一個 div  => <div id="indexPage">  綁 vuejs 使用
+
+2.cdn 引用 vusj
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js" defer></script>
+  
+  引用 all.changed.js => 這個是修改後的 all.js (讓 header 樣式正常)
+  原本引用 all.min.js 與 vuejs 綁定後,  header 的樣式會異常
+
+
+3.最下方增加一段 <script> 裡面是綁 vujes 的 js
+
+
+
+all.changed.js 修改說明
+
+1. 改動的部分, 用關鍵字搜尋 => x2 這個變數 (只有修改幾行)  

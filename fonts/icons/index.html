@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+	<meta name="robots" content="noindex, nofollow,noarchive,nosnippet,noimageindex,noodp">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	<link rel="icon" type="image/ico" href="https://begonia-design.com.tw/favicon.ico">
+	<title>Icon Font - glyphs list</title>
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="icons.css">
+	<link rel="stylesheet" href="iconfont-demo.css">
+</head>
+<body>
+<div class="wrapper" id="app">
+
+	<header id="header">
+		<div class="container">
+			<div class="hd-top">
+				<span class="t-title">使用說明文件：</span>
+				<a href="https://docs.google.com/document/d/1o-waHPhJDr3yPD8cfRazkEjcxA7Ho1SVKK8pNGNb9Ig/edit?usp=sharing" target="_blank" class="tooltip" data-title="限海棠設計員工讀取">gulp-iconfont 使用方式</a>
+			</div>
+			<div class="hd-center">
+				<h1 class="title">Icon Font<small class="t-tip"> - glyphs list</small></h1>
+				<div class="hd-gulptip">
+					<ul>
+						<li><span class="t-title">font-family:</span> "icon";</li>
+						<li><span class="t-title">Font class:</span> .be-icon</li>
+					</ul>
+					<p class="t-tip"><small>（於gulpfile.js調整設定）</small></p>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<!-- Main Container -->
+	<main class="container" id="main">
+		<!-- Show Type -->
+		<div class="list-type-wrapper" id="list-type-wrapper">
+			<div data-fixed-panel>
+				<div class="amount">總計 <span class="num" ref="amountNum">(ﾟ∀ﾟ)</span> 個</div>
+				<ul class="list-type">
+					<li v-if="defaultShow">
+						<button class="btn" type="button" @click="defaultSet()">恢復預設</button>
+					</li>
+					<li v-if="svgIconShow === 'html' || svgIconShow === 'pug'">
+						<input type="radio" id="checkbox-hidden" name="checkbox-html" class="radiobox" value="ariaHidden" v-model="ariaHidden">
+						<label for="checkbox-hidden">使用 aria-hidden</label>
+					</li>
+					<li v-if="svgIconShow === 'html' || svgIconShow === 'pug'">
+						<input type="radio" id="checkbox-role" name="checkbox-html" class="radiobox" value="role" v-model="ariaHidden">
+						<label for="checkbox-role">使用 role</label>
+					</li>
+					<li v-if="svgIconShow === 'sass'">
+						<input type="checkbox" id="checkbox-scss" class="checkbox" v-model="showScss">
+						<label for="checkbox-scss">顯示 SCSS</label>
+					</li>
+					<li class="text-tip">|</li>
+					<li v-for="item in selectOptions">
+						<input type="radio" name="showtype" :id="'show-' + item.name" class="radiobox" :value="item.name" v-model="svgIconShow" checked>
+						<label :for="'show-' + item.name">顯示 {{item.text}}</label>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<!-- List -->
+		<ul class="glyphs-list">
+			
+			<li>
+				<i class="be-icon be-icon-3d"></i>
+				<h4>3d</h4>
+				<div class="input-item">
+					<input type="text" :value="svgIconInputVal('3d')">
+					<button class="btn-copy">複製</button>
+				</div>
+				<!-- <div v-if="ariaHidden === 'role'"><label for="text">role</label><input type="text" value="3d"></div> -->
+				<p class="text-code"><span class="t-title">Unicode</span><code class="copy-unicode tooltip" data-title="複製 Unicode">\ea01</code></p>
+			</li>
+			
+			<li>
+				<i class="be-icon be-icon-add"></i>
+				<h4>add</h4>
+				<div class="input-item">
+					<input type="text" :value="svgIconInputVal('add')">
+					<button class="btn-copy">複製</button>
+				</div>
+				<!-- <div v-if="ariaHidden === 'role'"><label for="text">role</label><input type="text" value="add"></div> -->
+				<p class="text-code"><span class="t-title">Unicode</span><code class="copy-unicode tooltip" data-title="複製 Unicode">\ea02</code></p>
+			</li>
+			
+			<li>
+				<i class="be-icon be-icon-arrow-bottom"></i>
+				<h4>arrow-bottom</h4>
+				<div class="input-item">
+					<input type="text" :value="svgIconInputVal('arrow-bottom')">
+					<button class="btn-copy">複製</button>
+				</div>
+				<!-- <div v-if="ariaHidden === 'role'"><label for="text">role</label><input type="text" value="arrow-bottom"></div> -->
+				<p class="text-code"><span class="t-title">Unicode</span><code class="copy-unicode tooltip" data-title="複製 Unicode">\ea03</code></p>
+			</li>
+			
+			<li>
+				<i class="be-icon be-icon-arrow-left"></i>
+				<h4>arrow-left</h4>
+				<div class="input-item">
+					<input type="text" :value="svgIconInputVal('arrow-left')">
+					<button class="btn-copy">複製</button>
+				</div>
+				<!-- <div v-if="ariaHidden === 'role'"><label for="text">role</label><input type="text" value="arrow-left"></div> -->
+				<p class="text-code"><span class="t-title">Unicode</span><code class="copy-unicode tooltip" data-title="複製 Unicode">\ea04</code></p>
+			</li>
+			
+			<li>
+				<i class="be-icon be-icon-arrow-right"></i>
+				<h4>arrow-right</h4>
+				<div class="input-item">
+					<input type="text" :value="svgIconInputVal('arrow-right')">
+					<button class="btn-copy">複製</button>
+				</div>
+				<!-- <div v-if="ariaHidden === 'role'"><label for="text">role</label><input type="text" value="arrow-right"></div> -->
+				<p class="text-code"><span class="t-title">Unicode</span><code class="copy-unicode tooltip" data-title="複製 Unicode">\ea05</code></p>
+			</li>
+			
+			<li>
+				<i class="be-icon be-icon-arrow-top"></i>
+				<h4>arrow-top</h4>
+				<div class="input-item">
+					<input type="text" :value="svgIconInputVal('arrow-top')">
+					<button class="btn-copy">複製</button>
+				</div>
+				<!-- <div v-if="ariaHidden === 'role'"><label for="text">role</label><input type="text" value="arrow-top"></div> -->
+				<p class="text-code"><span class="t-title">Unicode</span><code class="copy-unicode tooltip" data-title="複製 Unicode">\ea06</code></p>
+			</li>
+			
+			<li>
+				<i class="be-icon be-icon-back"></i>
+				<h4>back</h4>
+				<div class="input-item">
+					<input type="text" :value="svgIconInputVal('back')">
+					<button class="btn-copy">複製</button>
+				</div>
+				<!-- <div v-if="ariaHidden === 'role'"><label for="text">role</label><input type="text" value="back"></div> -->
+				<p class="text-code"><span class="t-title">Unicode</span><code class="copy-unicode tooltip" data-title="複製 Unicode">\ea07</code></p>
+			</li>
+			
+			<li>
+				<i class="be-icon be-icon-bag"></i>
+				<h4>bag</h4>
+				<div class="input-item">
+					<input type="text" :value="svgIconInputVal('bag')">
+					<button class="btn-copy">複製</button>
+				</div>
+				<!-- <div v-if="ariaHidden === 'role'"><label for="text">role</label><input type="text" value="bag"></div> -->
+				<p class="text-code"><span class="t-title">Unicode</span><code class="copy-unicode tooltip" data-title="複製 Unicode">\ea08</code></p>
+			</li>
+			
+			<li>
+				<i class="be-icon be-icon-bag2"></i>
+				<h4>bag2</h4>
+				<div class="input-item">
+					<input type="text" :value="svgIconInputVal('bag2')">
+					<button class="btn-copy">複製</button>
+				</div>
+				<!-- <div v-if="ariaHidden === 'role'"><label for="text">role</label><input type="text" value="bag2"></div> -->
+				<p class="text-code"><span class="t-title">Unicode</span><code class="copy-unicode tooltip" data-title="複製 Unicode">\ea09</code></p>
+			</li>
+			
+			<li>
+				<i class="be-icon be-icon-bean"></i>
+				<h4>bean</h4>
+				<div class="input-item">
+					<input type="text" :value="svgIconInputVal('bean')">
+					<button class="btn-copy">複製</button>
+				</div>
+				<!-- <div v-if="ariaHidden === 'role'"><label for="text">role</label><input type="text" value="bean"></div> -->
+				<p class="text-code"><span class="t-title">Unicode</span><code class="copy-unicode tooltip" data-title="複製 Unicode">\ea0a</code></p>
+			</li>
+			
+			<li>
+				<i class="be-icon be-icon-check-circle"></i>
+				<h4>check-circle</h4>
+				<div class="input-item">
+					<input type="text" :value="svgIconInputVal('check-circle')">
+					<button class="btn-copy">複製</button>
+				</div>
+				<!-- <div v-if="ariaHidden === 'role'"><label for="text">role</label><input type="text" value="check-circle"></div> -->
+				<p class="text-code"><span class="t-title">Unicode</span><code class="copy-unicode tooltip" data-title="複製 Unicode">\ea0b</code></p>
+			</li>
+			
+			<li>
+				<i class="be-icon be-icon-close-circle"></i>
+				<h4>close-circle</h4>
+				<div class="input-item">
+					<input type="text" :value="svgIconInputVal('close-circle')">
+					<button class="btn-copy">複製</button>
+				</div>
+				<!-- <div v-if="ariaHidden === 'role'"><label for="text">role</label><input type="text" value="close-circle"></div> -->
+				<p class="text-code"><span class="t-title">Unicode</span><code class="copy-unicode tooltip" data-title="複製 Unicode">\ea0c</code></p>
+			</li>
+			
+			<li>
+				<i class="be-icon be-icon-close"></i>
+				<h4>close</h4>
+				<div class="input-item">
+					<input type="text" :value="svgIconInputVal('close')">
+					<button class="btn-copy">複製</button>
+				</div>
+				<!-- <div v-if="ariaHidden === 'role'"><label for="text">role</label><input type="text" value="close"></div> -->
+				<p class="text-code"><span class="t-title">Unicode</span><code class="copy-unicode tooltip" data-title="複製 Unicode">\ea0d</code></p>
+			</li>
+			
+			<li>
+				<i class="be-icon be-icon-collect-fill"></i>
+				<h4>collect-fill</h4>
+				<div class="input-item">
+					<input type="text" :value="svgIconInputVal('collect-fill')">
+					<button class="btn-copy">複製</button>
+				</div>
+				<!-- <div v-if="ariaHidden === 'role'"><label for="text">role</label><input type="text" value="collect-fill"></div> -->
+				<p class="text-code"><span class="t-title">Unicode</span><code class="copy-unicode tooltip" data-title="複製 Unicode">\ea0e</code></p>
+			</li>
+			
+			<li>
+				<i class="be-icon be-icon-collect-thick"></i>
+				<h4>collect-thick</h4>
+				<div class="input-item">
+					<input type="text" :value="svgIconInputVal('collect-thick')">
+					<button class="btn-copy">複製</button>
+				</div>
+				<!-- <div v-if="ariaHidden === 'role'"><label for="text">role</label><input type="text" value="collect-thick"></div> -->
+				<p class="text-code"><span class="t-title">Unicode</span><code class="copy-unicode tooltip" data-title="複製 Unicode">\ea0f</code></p>
+			</li>
+			
+			<li>
+				<i class="be-icon be-icon-collect"></i>
+				<h4>collect</h4>
+				<div class="input-item">
+					<input type="text" :value="svgIconInputVal('collect')">
+					<button class="btn-copy">複製</button>
+				</div>
+				<!-- <div v-if="ariaHidden === 'role'"><label for="text">role</label><input type="text" value="collect"></div> -->
+				<p class="text-code"><span class="t-title">Unicode</span><code class="copy-unicode tooltip" data-title="複製 Unicode">\ea10</code></p>
+			</li>
+			
+			<li>
+				<i class="be-icon be-icon-credit-card"></i>
+				<h4>credit-card</h4>
+				<div class="input-item">
+					<input type="text" :value="svgIconInputVal('credit-card')">
+					<button class="btn-copy">複製</button>
+				</div>
+				<!-- <div v-if="ariaHidden === 'role'"><label for="text">role</label><input type="text" value="credit-card"></div> -->
+				<p class="text-code"><span class="t-title">Unicode</span><code class="copy-unicode tooltip" data-title="複製 Unicode">\ea11</code></p>
+			</li>
+			
+			<li>
+				<i class="be-icon be-icon-delete"></i>
+				<h4>delete</h4>
+				<div class="input-item">
+					<input type="text" :value="svgIconInputVal('delete')">
+					<button class="btn-copy">複製</button>
+				</div>
+				<!-- <div v-if="ariaHidden === 'role'"><label for="text">role</label><input type="text" value="delete"></div> -->
+				<p class="text-code"><span class="t-title">Unicode</span><code class="copy-unicode tooltip" data-title="複製 Unicode">\ea12</code></p>
+			</li>
+			
+			<li>
+				<i class="be-icon be-icon-dot"></i>
+				<h4>dot</h4>
+				<div class="input-item">
+					<input type="text" :value="svgIconInputVal('dot')">
+					<button class="btn-copy">複製</button>
+				</div>
+				<!-- <div v-if="ariaHidden === 'role'"><label for="text">role</label><input type="text" value="dot"></div> -->
+				<p class="text-code"><span class="t-title">Unicode</span><code class="copy-unicode tooltip" data-title="複製 Unicode">\ea13</code></p>
+			</li>
+			
+			<li>
+				<i class="be-icon be-icon-edit"></i>
+				<h4>edit</h4>
+				<div class="input-item">
+					<input type="text" :value="svgIconInputVal('edit')">
+					<button class="btn-copy">複製</button>
+				</div>
+				<!-- <div v-if="ariaHidden === 'role'"><label for="text">role</label><input type="text" value="edit"></div> -->
+				<p class="text-code"><span class="t-title">Unicode</span><code class="copy-unicode tooltip" data-title="複製 Unicode">\ea14</code></p>
+			</li>
+			
+			<li>
+				<i class="be-icon be-icon-external-link"></i>
+				<h4>external-link</h4>
+				<div class="input-item">
+					<input type="text" :value="svgIconInputVal('external-link')">
+					<button class="btn-copy">複製</button>
+				</div>
+				<!-- <div v-if="ariaHidden === 'role'"><label for="text">role</label><input type="text" value="external-link"></div> -->
+				<p class="text-code"><span class="t-title">Unicode</span><code class="copy-unicode tooltip" data-title="複製 Unicode">\ea15</code></p>
+			</li>
+			
+			<li>
+				<i class="be-icon be-icon-faq"></i>
+				<h4>faq</h4>
+				<div class="input-item">
+					<input type="text" :value="svgIconInputVal('faq')">
+					<button class="btn-copy">複製</button>
+				</div>
+				<!-- <div v-if="ariaHidden === 'role'"><label for="text">role</label><input type="text" value="faq"></div> -->
+				<p class="text-code"><span class="t-title">Unicode</span><code class="copy-unicode tooltip" data-title="複製 Unicode">\ea16</code></p>
+			</li>
+			
+			<li>
+				<i class="be-icon be-icon-filter"></i>
+				<h4>filter</h4>
+				<div class="input-item">
+					<input type="text" :value="svgIconInputVal('filter')">
+					<button class="btn-copy">複製</button>
+				</div>
+				<!-- <div v-if="ariaHidden === 'role'"><label for="text">role</label><input type="text" value="filter"></div> -->
+				<p class="text-code"><span class="t-title">Unicode</span><code class="copy-unicode tooltip" data-title="複製 Unicode">\ea17</code></p>
+			</li>
+			
+			<li>
+				<i class="be-icon be-icon-full-screen"></i>
+				<h4>full-screen</h4>
+				<div class="input-item">
+					<input type="text" :value="svgIconInputVal('full-screen')">
+					<button class="btn-copy">複製</button>
+				</div>
+				<!-- <div v-if="ariaHidden === 'role'"><label for="text">role</label><input type="text" value="full-screen"></div> -->
+				<p class="text-code"><span class="t-title">Unicode</span><code class="copy-unicode tooltip" data-title="複製 Unicode">\ea18</code></p>
+			</li>
+			
+			<li>
+				<i class="be-icon be-icon-home"></i>
+				<h4>home</h4>
+				<div class="input-item">
+					<input type="text" :value="svgIconInputVal('home')">
+					<button class="btn-copy">複製</button>
+				</div>
+				<!-- <div v-if="ariaHidden === 'role'"><label for="text">role</label><input type="text" value="home"></div> -->
+				<p class="text-code"><span class="t-title">Unicode</span><code class="copy-unicode tooltip" data-title="複製 Unicode">\ea19</code></p>
+			</li>
+			
+			<li>
+				<i class="be-icon be-icon-income"></i>
+				<h4>income</h4>
+				<div class="input-item">
+					<input type="text" :value="svgIconInputVal('income')">
+					<button class="btn-copy">複製</button>
+				</div>
+				<!-- <div v-if="ariaHidden === 'role'"><label for="text">role</label><input type="text" value="income"></div> -->
+				<p class="text-code"><span class="t-title">Unicode</span><code class="copy-unicode tooltip" data-title="複製 Unicode">\ea1a</code></p>
+			</li>
+			
+			<li>
+				<i class="be-icon be-icon-info-circle"></i>
+				<h4>info-circle</h4>
+				<div class="input-item">
+					<input type="text" :value="svgIconInputVal('info-circle')">
+					<button class="btn-copy">複製</button>
+				</div>
+				<!-- <div v-if="ariaHidden === 'role'"><label for="text">role</label><input type="text" value="info-circle"></div> -->
+				<p class="text-code"><span class="t-title">Unicode</span><code class="copy-unicode tooltip" data-title="複製 Unicode">\ea1b</code></p>
+			</li>
+			
+			<li>
+				<i class="be-icon be-icon-list-empty"></i>
+				<h4>list-empty</h4>
+				<div class="input-item">
+					<input type="text" :value="svgIconInputVal('list-empty')">
+					<button class="btn-copy">複製</button>
+				</div>
+				<!-- <div v-if="ariaHidden === 'role'"><label for="text">role</label><input type="text" value="list-empty"></div> -->
+				<p class="text-code"><span class="t-title">Unicode</span><code class="copy-unicode tooltip" data-title="複製 Unicode">\ea1c</code></p>
+			</li>
+			
+			<li>
+				<i class="be-icon be-icon-list"></i>
+				<h4>list</h4>
+				<div class="input-item">
+					<input type="text" :value="svgIconInputVal('list')">
+					<button class="btn-copy">複製</button>
+				</div>
+				<!-- <div v-if="ariaHidden === 'role'"><label for="text">role</label><input type="text" value="list"></div> -->
+				<p class="text-code"><span class="t-title">Unicode</span><code class="copy-unicode tooltip" data-title="複製 Unicode">\ea1d</code></p>
+			</li>
+			
+			<li>
+				<i class="be-icon be-icon-logout"></i>
+				<h4>logout</h4>
+				<div class="input-item">
+					<input type="text" :value="svgIconInputVal('logout')">
+					<button class="btn-copy">複製</button>
+				</div>
+				<!-- <div v-if="ariaHidden === 'role'"><label for="text">role</label><input type="text" value="logout"></div> -->
+				<p class="text-code"><span class="t-title">Unicode</span><code class="copy-unicode tooltip" data-title="複製 Unicode">\ea1e</code></p>
+			</li>
+			
+			<li>
+				<i class="be-icon be-icon-member-circle"></i>
+				<h4>member-circle</h4>
+				<div class="input-item">
+					<input type="text" :value="svgIconInputVal('member-circle')">
+					<button class="btn-copy">複製</button>
+				</div>
+				<!-- <div v-if="ariaHidden === 'role'"><label for="text">role</label><input type="text" value="member-circle"></div> -->
+				<p class="text-code"><span class="t-title">Unicode</span><code class="copy-unicode tooltip" data-title="複製 Unicode">\ea1f</code></p>
+			</li>
+			
+			<li>
+				<i class="be-icon be-icon-member"></i>
+				<h4>member</h4>
+				<div class="input-item">
+					<input type="text" :value="svgIconInputVal('member')">
+					<button class="btn-copy">複製</button>
+				</div>
+				<!-- <div v-if="ariaHidden === 'role'"><label for="text">role</label><input type="text" value="member"></div> -->
+				<p class="text-code"><span class="t-title">Unicode</span><code class="copy-unicode tooltip" data-title="複製 Unicode">\ea20</code></p>
+			</li>
+			
+			<li>
+				<i class="be-icon be-icon-mobile"></i>
+				<h4>mobile</h4>
+				<div class="input-item">
+					<input type="text" :value="svgIconInputVal('mobile')">
+					<button class="btn-copy">複製</button>
+				</div>
+				<!-- <div v-if="ariaHidden === 'role'"><label for="text">role</label><input type="text" value="mobile"></div> -->
+				<p class="text-code"><span class="t-title">Unicode</span><code class="copy-unicode tooltip" data-title="複製 Unicode">\ea21</code></p>
+			</li>
+			
+			<li>
+				<i class="be-icon be-icon-obj"></i>
+				<h4>obj</h4>
+				<div class="input-item">
+					<input type="text" :value="svgIconInputVal('obj')">
+					<button class="btn-copy">複製</button>
+				</div>
+				<!-- <div v-if="ariaHidden === 'role'"><label for="text">role</label><input type="text" value="obj"></div> -->
+				<p class="text-code"><span class="t-title">Unicode</span><code class="copy-unicode tooltip" data-title="複製 Unicode">\ea22</code></p>
+			</li>
+			
+			<li>
+				<i class="be-icon be-icon-realname"></i>
+				<h4>realname</h4>
+				<div class="input-item">
+					<input type="text" :value="svgIconInputVal('realname')">
+					<button class="btn-copy">複製</button>
+				</div>
+				<!-- <div v-if="ariaHidden === 'role'"><label for="text">role</label><input type="text" value="realname"></div> -->
+				<p class="text-code"><span class="t-title">Unicode</span><code class="copy-unicode tooltip" data-title="複製 Unicode">\ea23</code></p>
+			</li>
+			
+			<li>
+				<i class="be-icon be-icon-record"></i>
+				<h4>record</h4>
+				<div class="input-item">
+					<input type="text" :value="svgIconInputVal('record')">
+					<button class="btn-copy">複製</button>
+				</div>
+				<!-- <div v-if="ariaHidden === 'role'"><label for="text">role</label><input type="text" value="record"></div> -->
+				<p class="text-code"><span class="t-title">Unicode</span><code class="copy-unicode tooltip" data-title="複製 Unicode">\ea24</code></p>
+			</li>
+			
+			<li>
+				<i class="be-icon be-icon-search"></i>
+				<h4>search</h4>
+				<div class="input-item">
+					<input type="text" :value="svgIconInputVal('search')">
+					<button class="btn-copy">複製</button>
+				</div>
+				<!-- <div v-if="ariaHidden === 'role'"><label for="text">role</label><input type="text" value="search"></div> -->
+				<p class="text-code"><span class="t-title">Unicode</span><code class="copy-unicode tooltip" data-title="複製 Unicode">\ea25</code></p>
+			</li>
+			
+			<li>
+				<i class="be-icon be-icon-seller"></i>
+				<h4>seller</h4>
+				<div class="input-item">
+					<input type="text" :value="svgIconInputVal('seller')">
+					<button class="btn-copy">複製</button>
+				</div>
+				<!-- <div v-if="ariaHidden === 'role'"><label for="text">role</label><input type="text" value="seller"></div> -->
+				<p class="text-code"><span class="t-title">Unicode</span><code class="copy-unicode tooltip" data-title="複製 Unicode">\ea26</code></p>
+			</li>
+			
+			<li>
+				<i class="be-icon be-icon-send"></i>
+				<h4>send</h4>
+				<div class="input-item">
+					<input type="text" :value="svgIconInputVal('send')">
+					<button class="btn-copy">複製</button>
+				</div>
+				<!-- <div v-if="ariaHidden === 'role'"><label for="text">role</label><input type="text" value="send"></div> -->
+				<p class="text-code"><span class="t-title">Unicode</span><code class="copy-unicode tooltip" data-title="複製 Unicode">\ea27</code></p>
+			</li>
+			
+			<li>
+				<i class="be-icon be-icon-share"></i>
+				<h4>share</h4>
+				<div class="input-item">
+					<input type="text" :value="svgIconInputVal('share')">
+					<button class="btn-copy">複製</button>
+				</div>
+				<!-- <div v-if="ariaHidden === 'role'"><label for="text">role</label><input type="text" value="share"></div> -->
+				<p class="text-code"><span class="t-title">Unicode</span><code class="copy-unicode tooltip" data-title="複製 Unicode">\ea28</code></p>
+			</li>
+			
+			<li>
+				<i class="be-icon be-icon-star-fill"></i>
+				<h4>star-fill</h4>
+				<div class="input-item">
+					<input type="text" :value="svgIconInputVal('star-fill')">
+					<button class="btn-copy">複製</button>
+				</div>
+				<!-- <div v-if="ariaHidden === 'role'"><label for="text">role</label><input type="text" value="star-fill"></div> -->
+				<p class="text-code"><span class="t-title">Unicode</span><code class="copy-unicode tooltip" data-title="複製 Unicode">\ea29</code></p>
+			</li>
+			
+			<li>
+				<i class="be-icon be-icon-star"></i>
+				<h4>star</h4>
+				<div class="input-item">
+					<input type="text" :value="svgIconInputVal('star')">
+					<button class="btn-copy">複製</button>
+				</div>
+				<!-- <div v-if="ariaHidden === 'role'"><label for="text">role</label><input type="text" value="star"></div> -->
+				<p class="text-code"><span class="t-title">Unicode</span><code class="copy-unicode tooltip" data-title="複製 Unicode">\ea2a</code></p>
+			</li>
+			
+			<li>
+				<i class="be-icon be-icon-store"></i>
+				<h4>store</h4>
+				<div class="input-item">
+					<input type="text" :value="svgIconInputVal('store')">
+					<button class="btn-copy">複製</button>
+				</div>
+				<!-- <div v-if="ariaHidden === 'role'"><label for="text">role</label><input type="text" value="store"></div> -->
+				<p class="text-code"><span class="t-title">Unicode</span><code class="copy-unicode tooltip" data-title="複製 Unicode">\ea2b</code></p>
+			</li>
+			
+			<li>
+				<i class="be-icon be-icon-bull"></i>
+				<h4>bull</h4>
+				<div class="input-item">
+					<input type="text" :value="svgIconInputVal('bull')">
+					<button class="btn-copy">複製</button>
+				</div>
+				<!-- <div v-if="ariaHidden === 'role'"><label for="text">role</label><input type="text" value="bull"></div> -->
+				<p class="text-code"><span class="t-title">Unicode</span><code class="copy-unicode tooltip" data-title="複製 Unicode">\2022</code></p>
+			</li>
+			
+			<li>
+				<i class="be-icon be-icon-starkey"></i>
+				<h4>starkey</h4>
+				<div class="input-item">
+					<input type="text" :value="svgIconInputVal('starkey')">
+					<button class="btn-copy">複製</button>
+				</div>
+				<!-- <div v-if="ariaHidden === 'role'"><label for="text">role</label><input type="text" value="starkey"></div> -->
+				<p class="text-code"><span class="t-title">Unicode</span><code class="copy-unicode tooltip" data-title="複製 Unicode">\2217</code></p>
+			</li>
+			
+			<li>
+				<i class="be-icon be-icon-wallet"></i>
+				<h4>wallet</h4>
+				<div class="input-item">
+					<input type="text" :value="svgIconInputVal('wallet')">
+					<button class="btn-copy">複製</button>
+				</div>
+				<!-- <div v-if="ariaHidden === 'role'"><label for="text">role</label><input type="text" value="wallet"></div> -->
+				<p class="text-code"><span class="t-title">Unicode</span><code class="copy-unicode tooltip" data-title="複製 Unicode">\ea2c</code></p>
+			</li>
+			
+		</ul>
+		<!-- /.End List -->
+	</main>
+
+	<footer id="footer">
+		© 2022 網頁設計的專家－ <a href="https://begonia-design.com.tw/" target="_blank">海棠網頁設計公司</a> ALL RIGHTS RESERVED
+	</footer>
+
+</div>
+<!-- /.End .wrapper -->
+
+<!-- JS -->
+<script src="clipboard.min.js"></script>
+<script src="vue.min.js"></script>
+<script>
+	(function(window, document){
+		
+		// Create Element.remove() function if not exist
+		if (!('remove' in Element.prototype)) {
+			Element.prototype.remove = function() {
+				if (this.parentNode) {
+					this.parentNode.removeChild(this);
+				}
+			};
+		}
+
+		// Copy to Clipboard
+		var successMsg, clipTimer;
+
+		function addCopySuccess(){
+			if(successMsg == undefined){
+				successMsg = document.createElement('div');
+				successMsg.className = 'copysuctip';
+				successMsg.innerText = '複製成功';
+			}
+			document.body.appendChild(successMsg);
+
+			// Remove
+			clearTimeout(clipTimer);
+			clipTimer = null;
+			clipTimer = setTimeout(function(){
+				successMsg.remove();
+				clipTimer = null;
+			},3000);
+		}
+
+		var clipboard = new ClipboardJS('.btn-copy',{
+			target: function(el) {
+				return el.parentElement.querySelector('input');
+			}
+		});
+		clipboard.on('success', addCopySuccess);
+
+		var clipboard2 = new ClipboardJS('.copy-unicode',{
+			text: function(el) {
+				return el.innerText;
+			}
+		});
+		clipboard2.on('success', addCopySuccess);
+
+
+		// -----------------------------------
+		// Change Type (Vue)
+		var selectOptions = [
+			{
+				name: 'name', // radio value, vue判斷是否顯示該值基準(v-if="svgIconShow === 值")
+				text: 'File Name', // radio 顯示名稱
+
+				// input value值
+				// * tag=要使用的HTML tag
+				// * key=屬性值(一般專案為class、前端框架(Vue)專案可能會是不同值)
+				// * name=檔案名稱
+				// * mainClass為[一般專案]需求的主要class(fontClassName)[要由模板帶入值]
+				code: '[name]'
+			},
+			{
+				name: 'class',
+				text: 'class',
+				code: '[mainClass] [mainClass]-[name]'
+			},
+			{
+				name: 'sass',
+				text: 'SASS Mixin',
+				code: '+font-icon-add([name])'
+			},
+			{
+				name: 'html',
+				text: 'HTML',
+				code: '<[tag] [key]="[mainClass] [mainClass]-[name]"></[tag]>'
+			},
+			{
+				name: 'pug',
+				text: 'Pug',
+				code: '[tag].[mainClass].[mainClass]-[name]()'
+			}
+		];
+
+		// 設定預設值
+		var defaultValue = {
+			svgIconShow: 'pug',
+			ariaHidden: 'ariaHidden',
+			showScss: true,
+		}
+
+		// Vue Start
+		new Vue({
+			el: '#app',
+			data: {
+				selectOptions: selectOptions,
+				svgIconShow: defaultValue.svgIconShow,
+				ariaHidden: defaultValue.ariaHidden,
+				showScss: defaultValue.showScss,
+				// Svg Icon 設定<tag key="icon值">
+				settings: {
+					tag: 'i',
+					key: 'class',
+					mainClass: 'be-icon',
+				},
+				iconLength: '46',
+				// 快取相關↓
+				cacheEnable: true, // 是啟用快取
+				cacheKey: '_BEGONIA_ICON_DEMO_',
+				defaultShow: false // 是否顯示預設
+			},
+			computed: {
+				// 是否使用 Cache(Local Storage)（※只有 localhost 才有）
+				cacheUse: function() {
+					return location.hostname === 'localhost'
+				}
+			},
+			watch: {
+				svgIconShow: function() {
+					this.cacheSet();
+					this.defaultCheck();
+				},
+				ariaHidden: function() {
+					this.cacheSet();
+					this.defaultCheck();
+				},
+				showScss: function() {
+					this.cacheSet();
+					this.defaultCheck();
+				}
+			},
+			mounted: function() {
+				var vm = this;
+				setTimeout(function() {
+					vm.$refs.amountNum.innerHTML = vm.iconLength
+				}, 1000)
+
+				// Cache
+				if (vm.cacheEnable) {
+					vm.cacheLoad();
+					vm.defaultCheck();
+				} else {
+					vm.cacheDel();
+				}
+
+			},
+			methods: {
+				// 輸出 input value 值
+				svgIconInputVal: function(icon) {
+					var vm = this;
+					var result = selectOptions.filter(function(val) { return val.name === vm.svgIconShow })[0];
+					var val = result.code;
+					val = val.replace(/\[name\]/gi, icon);
+					val = val.replace(/\[tag\]/gi, vm.settings.tag);
+					val = val.replace(/\[key\]=/gi, vm.settings.key + '=');
+					val = val.replace(/\[mainClass\]/gi, vm.settings.mainClass);
+
+					if(vm.svgIconShow === 'html' || vm.svgIconShow === 'pug') {
+						var regex = vm.svgIconShow === 'html' ? /></gi : /\(\)/gi;
+						var replaceStart = vm.svgIconShow === 'html' ? ' ' : '(';
+						var replaceEnd = vm.svgIconShow === 'html' ? '><' : ')';
+
+						if (vm.ariaHidden === 'ariaHidden') {
+							// 增加 aria-hidden
+							val = val.replace(regex, `${replaceStart}aria-hidden="true"${replaceEnd}`);
+						} else if (vm.ariaHidden === 'role') {
+							// 增加 role="img" aria-label
+							val = val.replace(regex, `${replaceStart}role="img" aria-label="${icon}"${replaceEnd}`);
+						}
+					}
+
+					if(vm.svgIconShow === 'sass' && vm.showScss) {
+						val = val.replace(/\+/gi, '@include ') + ';';
+					}
+
+					return val;
+				},
+				// 讀取 Cache(Local Storage)
+				cacheLoad: function() {
+					var vm = this;
+					// Get Cache(Local Storage)
+					var val = JSON.parse(localStorage.getItem(vm.cacheKey));
+					if (val !== null) {
+						vm.svgIconShow = val.svgIconShow;
+						vm.ariaHidden = val.ariaHidden;
+						vm.showScss = val.showScss;
+					}
+				},
+				// 設定 Cache(Local Storage)
+				cacheSet: function() {
+					if (this.cacheUse) {
+						var vm = this;
+						var val = {
+							svgIconShow: vm.svgIconShow,
+							ariaHidden: vm.ariaHidden,
+							showScss: vm.showScss,
+						}
+						localStorage.setItem(this.cacheKey, JSON.stringify(val));
+					}
+				},
+				cacheDel: function() {
+					localStorage.removeItem(this.cacheKey)
+				},
+				// 確認預設
+				defaultCheck: function() {
+					this.defaultShow = !(this.svgIconShow === defaultValue.svgIconShow
+						&& this.ariaHidden === defaultValue.ariaHidden
+						&& this.showScss === defaultValue.showScss)
+				},
+				// 恢復預設
+				defaultSet: function() {
+					this.svgIconShow = defaultValue.svgIconShow;
+					this.ariaHidden = defaultValue.ariaHidden;
+					this.showScss = defaultValue.showScss;
+
+					this.defaultShow = false;
+				}
+			}
+		});
+
+		// -----------------------------------
+		// Scroll and fixed navigation
+
+		// Get Body Scroll Top (zh-Hant): http://www.eion.com.tw/Blogger/?Pid=1154
+		function getScrollTop(){
+			var bodyTop = 0;
+			if (typeof window.pageYOffset != "undefined") {
+				bodyTop = window.pageYOffset;
+
+			} else if (typeof document.compatMode != "undefined"
+						&& document.compatMode != "BackCompat") {
+				bodyTop = document.documentElement.scrollTop;
+
+			} else if (typeof document.body != "undefined") {
+				bodyTop = document.body.scrollTop;
+			}
+			return bodyTop
+		};
+
+		var showTypeWrapper = document.querySelector('#list-type-wrapper');
+		var showTypeWrapperOffsetTop = showTypeWrapper.getBoundingClientRect().top + getScrollTop();
+		function scrollNav(){
+			var ws = getScrollTop();
+			if(ws > showTypeWrapperOffsetTop){
+				showTypeWrapper.classList.add('is-fixed');
+			}else{
+				showTypeWrapper.classList.remove('is-fixed');
+			}
+		};
+		window.addEventListener('scroll', scrollNav);
+
+		// -----------------------------------
+		//IE old version tip
+		var userAgent = window.navigator.userAgent;  
+		if (userAgent.indexOf("MSIE 7.0")>0 || userAgent.indexOf("MSIE 8.0")>0 || userAgent.indexOf("MSIE 9.0")>0 || userAgent.indexOf("MSIE 10.0")>0) {
+			var ieTip = document.createElement('div');
+			ieTip.className = "ie-tip";
+
+			var ieTipSpan = document.createElement('span');
+			ieTipSpan.innerHTML = "不支援此版本瀏覽器，請開發者更換支援度較高之瀏覽器。<br><small>（用IE開發是要毀滅世界嗎？ಠ_ಠ）</small>";
+			ieTip.appendChild(ieTipSpan);
+
+			document.body.appendChild(ieTip);
+		}
+
+	})(window, document);
+</script>
+
+</body>
+
+</html>

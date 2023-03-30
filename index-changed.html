@@ -1,0 +1,1163 @@
+<!DOCTYPE html>
+<!-- ↓【APP版本】<html> 增加 class「app」-->
+<html class="no-js" lang="zh-Hant-TW">
+  <head>
+    <!-- [START] 測試站防止被爬蟲搜尋-->
+    <!--
+    上線後刪除此段Meta與註解
+    參考文件：https://developers.google.com/search/reference/robots_meta_tag?hl=zh-tw
+    -->
+    <meta name="robots" content="noindex, nofollow,noarchive,nosnippet,noimageindex,noodp">
+    <!-- [END] 測試站防止被爬蟲搜尋-->
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="theme-color" content="#ffffff">
+    <title>fun市集</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="apple-touch-icon" href="images/touch-icon.png">
+    <!-- [START] SEO Setting-->
+    <!-- OG Image 需換上正確網址連結--><!--
+    <link rel="canonical" href="頁面連結">-->
+    <meta name="description" content="數位商品首選平台，各式官方獨家授權知名IP，履約保證交易好fun心，提供會員認證、保留交易履歷及安全，你喜歡的數位收藏都在這裡！">
+    <meta name="keywords" content="beanfun,beanfun!,零用金,一億,遊戲橘子,遊戲,樂點,gashpoint,有閑,橘子支付,酷瞧,nownews,天堂,直播,天堂m,跑跑卡丁車,艾爾之光,瑪奇,楓之谷,陳瑀希">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="fun市集">
+    <meta property="og:description" content="交友聊天、分享生活點滴，讓您結交更多相同興趣的夥伴，遊戲、支付、群聊、拍賣、新聞，何必到處奔走，beanfun! 一指搞定！"><!--
+    <meta property="og:url" content="頁面連結">-->
+    <meta property="og:image" content="http://gashpoint.begonia-design.com.tw/images/og-img.png">
+    <meta property="og:locale" content="zh_TW">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@TwitterUsername">
+    <meta name="twitter:creator" content="@AuthorTwitterUsername">
+    <meta name="twitter:title" content="fun市集">
+    <meta name="twitter:description" content="交友聊天、分享生活點滴，讓您結交更多相同興趣的夥伴，遊戲、支付、群聊、拍賣、新聞，何必到處奔走，beanfun! 一指搞定！">
+    <meta name="twitter:image" content="http://gashpoint.begonia-design.com.tw/images/og-img.png"><!--
+    -->
+    <!-- [END] SEO Setting-->
+    <!-- [START] preload-->
+    <link rel="preload" as="font" type="font/woff2" crossorigin="" href="fonts/icons/icon.woff2">
+    <!-- [END] preload-->
+    <!-- [START] CSS ==================================================-->
+    <!-- CSS - Common-->
+    <link rel="stylesheet" href="css/style.min.css">
+    <!-- CSS - Page-->
+    <link rel="stylesheet" href="css/index.min.css">
+    <!-- CSS - 【APP版本】--><!--
+    <link rel="stylesheet" href="css/app.min.css">-->
+    <!-- [END] CSS ==================================================-->
+  </head>
+  <body>
+    
+    <div id="indexPage">
+    
+        <!-- [START] Header ==================================================-->
+        <!-- Loader-->
+        <div class="loader" id="loader">
+          <div class="loader__img-box">
+            <div class="loader__svg-wrapper">
+              <svg class="bean" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 46 40" width="46" height="40">
+                <path class="body" d="M30,5.9c3.38-.8,6.69-1.46,10.56.79s8.28,9.45,3,18.21a19.13,19.13,0,0,1-14.93,9,24.58,24.58,0,0,1-3.3.17,4.48,4.48,0,0,0-3.52,1.57,16.65,16.65,0,0,1-3.52,3.62c-1.66,1-1.63-1.31-1.63-1.31a15.65,15.65,0,0,1,.09-2.39c.14-1.21-1.47-2.71-1.47-2.71a22.77,22.77,0,0,0-2.85-1c-.75-.13-9-3.11-11.51-11A18.8,18.8,0,0,1,2,6.64,14.89,14.89,0,0,1,7.52,1.33c3.85-2.12,10.91.48,10.91.48s4.16,2,5.69,2.89A7.4,7.4,0,0,0,30,5.9Z" fill="#26d07c" fill-rule="evenodd"></path>
+                <path class="eye-outer" d="M14,14A4.5,4.5,0,1,1,9.5,9.5,4.49,4.49,0,0,1,14,14m9,2a4.5,4.5,0,1,1-4.5-4.5A4.5,4.5,0,0,1,23,16" fill="#fefefe" fill-rule="evenodd"></path>
+                <path class="shadow" d="M40.59,6.69C37,4.61,33.92,5,30.81,5.72Q42.2,18.18,26.43,34a19.87,19.87,0,0,0,2.18-.15,19.13,19.13,0,0,0,14.93-9C48.86,16.14,44.46,8.93,40.59,6.69Z" fill-rule="evenodd" opacity="0.05" style="isolation: isolate"></path>
+                <path class="eye-r" display="none" d="M12,14.5a2,2,0,1,1-2-2,2,2,0,0,1,2,2" fill="#050101" fill-rule="evenodd"></path>
+                <path class="eye-l" display="none" d="M21,16.5a2,2,0,1,1-2-2,2,2,0,0,1,2,2" fill="#050101" fill-rule="evenodd"></path>
+                <path class="eye-r-sleep" d="M11.73,15.5A2,2,0,0,1,8,14.5" fill="none" stroke="#050101" stroke-linecap="round" stroke-miterlimit="10" fill-rule="evenodd"></path>
+                <path class="eye-l-sleep" d="M20.73,17.5a2,2,0,0,1-3.73-1" fill="none" stroke="#050101" stroke-linecap="round" stroke-miterlimit="10" fill-rule="evenodd"></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <!-- Header-->
+        <header class="hd" id="header">
+          <!-- 【Web版本】[START] Header-->
+          <div class="hd-main">
+            <div class="hd-main__l">
+              <!-- Logo - 只有首頁使用<h1>-->
+              <h1 class="brand-logo"><a class="brand-logo__link" href="/"><img class="brand-logo__img svg" src="images/logo.svg" alt="beanfun!寶物市集" width="160" height="18"></a></h1>
+              <!-- Logo - 其餘使用<div>--><!--
+              <div class="brand-logo"><a class="brand-logo__link" href="/"><img class="brand-logo__img svg" src="images/logo.svg" alt="beanfun!寶物市集" width="160" height="18"></a></div>-->
+            </div>
+            <div class="hd-main__c">
+              <!-- [START] 搜尋介面<form> (Web, App 同一個)
+              - <meta itemprop="url"> 要更換為正式站首頁網址(Domain)
+              - <meta itemprop="target"> content 說明：
+                - 寫入範例：https://www.example.com/search/?q={globalSearch}
+                - 結果網址：https://www.example.com/search/?q=kittens
+                - globalSearch 為搜尋 input 的 name
+              - 更多說明：https://developers.google.com/search/docs/advanced/structured-data/sitelinks-searchbox?hl=zh-tw
+              -->
+              <div class="hd-search js-search-group" id="hd-search" itemscope="" itemtype="https://schema.org/WebSite">
+                <meta itemprop="url" content="http://gashpoint.begonia-design.com.tw/">
+                <div class="hd-search__cont">
+                  <div class="hd-search__top-box">
+                    <div class="hd-search__top-box__l">
+                      <form class="hd-search__input-box" action="search.html" method="post" itemprop="potentialAction" itemscope="" itemtype="https://schema.org/SearchAction">
+                        <meta itemprop="target" content="http://gashpoint.begonia-design.com.tw/search?q={globalSearch}">
+                        <input class="hd-search__input" type="search" name="globalSearch" placeholder="請輸入您想要尋找的寶物名稱" aria-label="請輸入您想要尋找的寶物名稱" itemprop="query-input" autocomplete="off" required="">
+                        <button class="hd-search__btn-reset" type="reset"><i class="be-icon be-icon-close" role="img" aria-label="清除"></i></button>
+                        <button class="hd-search__btn-submit" type="submit" disabled=""><i class="be-icon be-icon-search" role="img" aria-label="搜尋"></i></button>
+                      </form>
+                    </div>
+                    <div class="hd-search__top-box__r">
+                      <button class="hd-search__btn-close" type="button" data-close="">關閉</button>
+                    </div>
+                  </div>
+                  <div class="hd-search__result">
+                    <div class="hd-search__result__block" data-layout="recommend">
+                      <div class="hd-search__result__title">推薦關鍵字</div>
+                      <ul class="hd-search__result__list" id="hd-search-recommend">
+                        <!-- [START] Item-->
+                            <li class="hd-search__result__item"><a class="hd-search__result__link" href="search.html">最新上架</a></li>
+                        <!-- [END] Item-->
+                        <!-- [START] ↓可刪除重複區塊-->
+                            <li class="hd-search__result__item"><a class="hd-search__result__link" href="search.html">道具</a></li>
+                            <li class="hd-search__result__item"><a class="hd-search__result__link" href="search.html">票券</a></li>
+                            <li class="hd-search__result__item"><a class="hd-search__result__link" href="search.html">月光雕刻師</a></li>
+                            <li class="hd-search__result__item"><a class="hd-search__result__link" href="search.html">新楓之谷</a></li>
+                        <!-- [END] ↑可刪除重複區塊-->
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- [END] 搜尋介面<form>-->
+            </div>
+            <div class="hd-main__r">
+              <!-- 搜尋 (Button Only, Mobile Only)-->
+              <div class="hd-main__r__item hd-btn-search js-search-open">
+                <button class="hd-main__r__btn" type="button"><i class="be-icon be-icon-search" aria-hidden="true"></i><span class="text">搜尋</span></button>
+              </div>
+              <!-- APP下載-->
+              <div class="hd-main__r__item hd-download"><a class="hd-main__r__btn" href="https://beanfun.onelink.me/LARd/baf45339"><i class="be-icon be-icon-mobile" aria-hidden="true"></i><span class="text">APP下載</span></a></div>
+              <!-- 購物車-->
+              <div class="hd-main__r__item hd-cart"><a class="hd-main__r__btn" href="cart.html"> <i class="be-icon be-icon-bag" aria-hidden="true"></i><span class="text">購物車</span></a></div>
+                  <!-- 【Web版本】[PC版] 未登入（會員專區）-->
+                  <template v-if="islogin === false">
+                      <div class="hd-main__r__item hd-member" @click="dologin"><a class="hd-main__r__btn" href="javascript:void(0)"><span class="text hd-member__name">登入/註冊</span><i class="be-icon be-icon-member-circle" aria-hidden="true"></i></a></div>
+                  </template>
+                  <!-- 【Web版本】[PC版] 已登入（會員專區）-->
+                  <template v-else>
+                      <div class="hd-main__r__item hd-member"><a class="hd-main__r__btn" href="member.html"><span class="text hd-member__name">{{ memberInfo.NickName }}</span><i class="be-icon be-icon-member-circle" aria-hidden="true"></i></a></div>
+                  </template>            
+              </div>
+          </div>
+          <!-- 【Web版本】[END] Header-->
+          <!-- 【APP版本】[START] Header部分頁面才有：搜尋、分享、書籤
+          -->
+          <div class="hd-app">
+            <div class="hd-app__l"><a class="btn-icon" href="javascript:history.back();" aria-label="返回"><i class="be-icon be-icon-back" aria-hidden="true"></i></a></div>
+            <div class="hd-app__c">
+              <div class="hd-app__title clamp-1">寶物市集</div>
+            </div>
+            <div class="hd-app__r">
+            </div>
+          </div>
+          <!-- 【APP版本】[END] Header-->
+        </header>
+        <!-- [END] Header ==================================================-->
+        <!-- [START] Content ==================================================-->
+        <main class="main-container">
+          <!-- 主視覺-->
+          <div class="index-key-vision">
+            <div class="index-key-vision__bg lazy lazy-css"></div>
+            <div class="index-key-vision__deco"></div>
+            <!-- 形象輪播-->
+            <section class="index-key-circle">
+              <div class="index-key-circle__wrapper grid-container">
+                <div class="index-key-circle__cont">
+                  <div class="index-key-circle__text-box">
+                    <!-- 會根據輪播文字更改-->
+                    <h2 class="h1 index-key-circle__title">呼叫寶藏獵人，盡情尋尋寶寶吧！</h2>
+                    <p class="h4 index-key-circle__desc">你可以在這裡販賣你的商品並買到其他玩家的寶貝！</p>
+                  </div>
+                  <div class="index-key-circle__btn-box">
+                    <!-- 【Web版本】未登入--><a class="btn btn-right-yellow" href="member.html">登入/註冊</a>
+                    <!-- 【Web版本】已登入--><!--<a class="btn btn-right-yellow" href="member.html">買家中心</a>-->
+                    <!-- 【APP版本】--><!--<a class="btn btn-right-yellow" href="member.html">買賣家中心</a>-->
+                  </div>
+                </div>
+                <div class="swiper-box">
+                  <div class="swiper-container" id="index-key-circle-carousel">
+                    <div class="swiper-wrapper">
+                      <!-- 背景圖（圓圈內）：建議大小(3x)：381*381-->
+                      <!-- 前景圖（破圖設計）：建議大小(3x)：570*570，遮罩直徑381的圓形-->
+                      <!-- 裝飾圖（區塊背景）：建議大小(3x)：1125*1125-->
+                      <!-- [START] Item: 開啟Popup-->
+                      <!-- ↓裝飾圖（區塊背景）：data-deco-->
+                      <div class="index-key-circle__item swiper-slide no-selection" data-deco="images/index/banner-bg-img@3x--uc.png" data-title="呼叫寶藏獵人，盡情尋尋寶寶吧！" data-desc="你可以在這裡販賣你的商品並買到其他玩家的寶貝！">
+                        <button class="index-key-circle__link" type="button" data-open="activity-popup"><span class="index-key-circle__circle-wave"></span><span class="index-key-circle__circle-fill-3"></span><span class="index-key-circle__circle-fill-2"></span><span class="index-key-circle__circle-fill-1"></span><span class="index-key-circle__hl-blur"></span><span class="index-key-circle__light-border"></span><span class="index-key-circle__hl-border"></span>
+                          <!-- ↓背景圖（圓圈內）--><span class="index-key-circle__img-box--back swiper-lazy" data-background="images/index/banner-img_01_back@3x.jpg"></span>
+                          <!-- ↓前景圖（破圖設計）：沒有建議不要生成--><span class="index-key-circle__img-box--front object-fit-contain"><img class="index-key-circle__img swiper-lazy" src="images/1x1.gif" data-src="images/index/banner-img_01_front@3x.png" alt=""/></span>
+                          <!-- 圖片描述（螢幕報讀軟體使用）--><span class="show-for-sr">圖片描述</span>
+                        </button>
+                      </div>
+                      <!-- [END] Item: 開啟Popup-->
+                      <!-- [START] Item: Normal-->
+                      <!-- ↓裝飾圖（區塊背景）：data-deco-->
+                      <div class="index-key-circle__item swiper-slide no-selection" data-deco="images/index/banner-bg-img@3x--uc.png" data-title="2呼叫寶藏獵人，盡情尋尋寶寶吧！" data-desc="2你可以在這裡販賣你的商品並買到其他玩家的寶貝！"><a class="index-key-circle__link" href="https://www.beanfun.com/" target="_blank" rel="noopener noreferrer"><span class="index-key-circle__circle-wave"></span><span class="index-key-circle__circle-fill-3"></span><span class="index-key-circle__circle-fill-2"></span><span class="index-key-circle__circle-fill-1"></span><span class="index-key-circle__hl-blur"></span><span class="index-key-circle__light-border"></span><span class="index-key-circle__hl-border"></span>
+                          <!-- ↓背景圖（圓圈內）--><span class="index-key-circle__img-box--back swiper-lazy" data-background="images/index/banner-img_04_back@3x.jpg"></span>
+                          <!-- 圖片描述（螢幕報讀軟體使用）--><span class="show-for-sr">圖片描述</span></a>
+                      </div>
+                      <!-- [END] Item: Normal-->
+                      <!-- [START] ↓可刪除重複區塊-->
+                      <!-- ↓裝飾圖（區塊背景）：data-deco-->
+                      <div class="index-key-circle__item swiper-slide no-selection" data-deco="images/index/banner-bg-img@3x--uc.png" data-title="3呼叫寶藏獵人，盡情尋尋寶寶吧！" data-desc="3你可以在這裡販賣你的商品並買到其他玩家的寶貝！"><a class="index-key-circle__link" href="https://www.beanfun.com/" target="_blank" rel="noopener noreferrer"><span class="index-key-circle__circle-wave"></span><span class="index-key-circle__circle-fill-3"></span><span class="index-key-circle__circle-fill-2"></span><span class="index-key-circle__circle-fill-1"></span><span class="index-key-circle__hl-blur"></span><span class="index-key-circle__light-border"></span><span class="index-key-circle__hl-border"></span>
+                          <!-- ↓背景圖（圓圈內）--><span class="index-key-circle__img-box--back swiper-lazy" data-background="images/index/banner-img_05_back@3x.jpg"></span>
+                          <!-- ↓前景圖（破圖設計）：沒有建議不要生成--><span class="index-key-circle__img-box--front object-fit-contain"><img class="index-key-circle__img swiper-lazy" src="images/1x1.gif" data-src="images/index/banner-img_05_front@3x.png" alt=""/></span>
+                          <!-- 圖片描述（螢幕報讀軟體使用）--><span class="show-for-sr">圖片描述</span></a>
+                      </div>
+                      <!-- ↓裝飾圖（區塊背景）：data-deco-->
+                      <div class="index-key-circle__item swiper-slide no-selection" data-deco="images/index/banner-bg-img@3x--uc.png" data-title="4呼叫寶藏獵人，盡情尋尋寶寶吧！" data-desc="4你可以在這裡販賣你的商品並買到其他玩家的寶貝！"><a class="index-key-circle__link" href="https://www.beanfun.com/" target="_blank" rel="noopener noreferrer"><span class="index-key-circle__circle-wave"></span><span class="index-key-circle__circle-fill-3"></span><span class="index-key-circle__circle-fill-2"></span><span class="index-key-circle__circle-fill-1"></span><span class="index-key-circle__hl-blur"></span><span class="index-key-circle__light-border"></span><span class="index-key-circle__hl-border"></span>
+                          <!-- ↓背景圖（圓圈內）--><span class="index-key-circle__img-box--back swiper-lazy" data-background="https://via.placeholder.com/381x381/ccc"></span>
+                          <!-- 圖片描述（螢幕報讀軟體使用）--><span class="show-for-sr">圖片描述</span></a>
+                      </div>
+                      <!-- ↓裝飾圖（區塊背景）：data-deco-->
+                      <div class="index-key-circle__item swiper-slide no-selection" data-deco="images/index/banner-bg-img@3x--uc.png" data-title="5呼叫寶藏獵人，盡情尋尋寶寶吧！" data-desc="5你可以在這裡販賣你的商品並買到其他玩家的寶貝！"><a class="index-key-circle__link" href="https://www.beanfun.com/" target="_blank" rel="noopener noreferrer"><span class="index-key-circle__circle-wave"></span><span class="index-key-circle__circle-fill-3"></span><span class="index-key-circle__circle-fill-2"></span><span class="index-key-circle__circle-fill-1"></span><span class="index-key-circle__hl-blur"></span><span class="index-key-circle__light-border"></span><span class="index-key-circle__hl-border"></span>
+                          <!-- ↓背景圖（圓圈內）--><span class="index-key-circle__img-box--back swiper-lazy" data-background="https://via.placeholder.com/381x381/ccc"></span>
+                          <!-- ↓前景圖（破圖設計）：沒有建議不要生成--><span class="index-key-circle__img-box--front object-fit-contain" style="opacity:0.8;"><img class="index-key-circle__img swiper-lazy" src="images/1x1.gif" data-src="https://via.placeholder.com/570x570/ccc" alt=""/></span>
+                          <!-- 圖片描述（螢幕報讀軟體使用）--><span class="show-for-sr">圖片描述</span></a>
+                      </div>
+                      <!-- ↓裝飾圖（區塊背景）：data-deco-->
+                      <div class="index-key-circle__item swiper-slide no-selection" data-deco="images/index/banner-bg-img@3x--uc.png" data-title="6呼叫寶藏獵人，盡情尋尋寶寶吧！" data-desc="6你可以在這裡販賣你的商品並買到其他玩家的寶貝！"><a class="index-key-circle__link" href="https://www.beanfun.com/" target="_blank" rel="noopener noreferrer"><span class="index-key-circle__circle-wave"></span><span class="index-key-circle__circle-fill-3"></span><span class="index-key-circle__circle-fill-2"></span><span class="index-key-circle__circle-fill-1"></span><span class="index-key-circle__hl-blur"></span><span class="index-key-circle__light-border"></span><span class="index-key-circle__hl-border"></span>
+                          <!-- ↓背景圖（圓圈內）--><span class="index-key-circle__img-box--back swiper-lazy" data-background="images/index/banner-img_03_back@3x.jpg"></span>
+                          <!-- ↓前景圖（破圖設計）：沒有建議不要生成--><span class="index-key-circle__img-box--front object-fit-contain"><img class="index-key-circle__img swiper-lazy" src="images/1x1.gif" data-src="images/index/banner-img_03_front@3x.png" alt=""/></span>
+                          <!-- 圖片描述（螢幕報讀軟體使用）--><span class="show-for-sr">圖片描述</span></a>
+                      </div>
+                      <!-- ↓裝飾圖（區塊背景）：data-deco-->
+                      <div class="index-key-circle__item swiper-slide no-selection" data-deco="images/index/banner-bg-img@3x--uc.png" data-title="7呼叫寶藏獵人，盡情尋尋寶寶吧！" data-desc="7你可以在這裡販賣你的商品並買到其他玩家的寶貝！"><a class="index-key-circle__link" href="https://www.beanfun.com/" target="_blank" rel="noopener noreferrer"><span class="index-key-circle__circle-wave"></span><span class="index-key-circle__circle-fill-3"></span><span class="index-key-circle__circle-fill-2"></span><span class="index-key-circle__circle-fill-1"></span><span class="index-key-circle__hl-blur"></span><span class="index-key-circle__light-border"></span><span class="index-key-circle__hl-border"></span>
+                          <!-- ↓背景圖（圓圈內）--><span class="index-key-circle__img-box--back swiper-lazy" data-background="images/index/banner-img_02_back@3x.jpg"></span>
+                          <!-- ↓前景圖（破圖設計）：沒有建議不要生成--><span class="index-key-circle__img-box--front object-fit-contain"><img class="index-key-circle__img swiper-lazy" src="images/1x1.gif" data-src="images/index/banner-img_02_front@3x.png" alt=""/></span>
+                          <!-- 圖片描述（螢幕報讀軟體使用）--><span class="show-for-sr">圖片描述</span></a>
+                      </div>
+                      <!-- [END] ↑可刪除重複區塊-->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- 廣播（跑馬燈）-->
+            <section class="index-alert">
+              <div class="grid-container">
+                <div class="index-alert__cont">
+                  <div class="index-alert__marquee marquee">
+                    <ul class="index-alert__list no-bullet">
+                      <!-- <em>中的文字，會呈現橘色-->
+                      <!-- [START] Item-->
+                      <li class="index-alert__item">煞氣a豆子獲得寶物 獲得寶物 <em>天堂M藍鑽禮包+鋼鐵套</em>
+                      </li>
+                      <!-- [END] Item-->
+                      <!-- [START] ↓可刪除重複區塊-->
+                      <li class="index-alert__item">o0糖之戀0o 楓糖★戀果/ 獲得寶物 <em>新楓之谷</em>
+                      </li>
+                      <li class="index-alert__item">使用者名稱 獲得寶物 <em>物品</em>
+                      </li>
+                      <li class="index-alert__item">一二三四五六七八九壹 獲得寶物 <em>一二三四五六七八九壹一二三四五六七八九貳</em>
+                      </li>
+                      <li class="index-alert__item">一般的文字一般的文字一般的文字一般的文字
+                      </li>
+                      <!-- [END] ↑可刪除重複區塊-->
+                    </ul>
+                  </div>
+                  <div class="index-alert__img-box lazy lazy-css"></div>
+                </div>
+              </div>
+            </section>
+          </div>
+          <!-- 活動 Banner-->
+          <section class="sec index-banner">
+            <div class="grid-container">
+              <div class="swiper-box-global">
+                <div class="index-banner__list-wrapper swiper-container" id="index-banner-carousel">
+                  <ul class="index-banner__list swiper-wrapper">
+                    <li class="index-banner__item swiper-slide"><a class="index-banner__link" href="javascript:;" target="_blank" rel="noopener noreferrer">
+                        <div class="index-banner__img-box object-fit">
+                          <div class="swiper-lazy-preloader"></div><img class="index-banner__img swiper-lazy" src="images/1x1.gif" data-src="images/index/activity_banner_1.jpg" alt="圖片敘述"/>
+                        </div></a></li>
+                    <li class="index-banner__item swiper-slide"><a class="index-banner__link" href="javascript:;" target="_blank" rel="noopener noreferrer">
+                        <div class="index-banner__img-box object-fit">
+                          <div class="swiper-lazy-preloader"></div><img class="index-banner__img swiper-lazy" src="images/1x1.gif" data-src="https://via.placeholder.com/600x210/ccc" alt="圖片敘述"/>
+                        </div></a></li>
+                    <li class="index-banner__item swiper-slide"><a class="index-banner__link" href="javascript:;" target="_blank" rel="noopener noreferrer">
+                        <div class="index-banner__img-box object-fit">
+                          <div class="swiper-lazy-preloader"></div><img class="index-banner__img swiper-lazy" src="images/1x1.gif" data-src="images/index/activity_banner_2.jpg" alt="圖片敘述"/>
+                        </div></a></li>
+                    <li class="index-banner__item swiper-slide"><a class="index-banner__link" href="javascript:;" target="_blank" rel="noopener noreferrer">
+                        <div class="index-banner__img-box object-fit">
+                          <div class="swiper-lazy-preloader"></div><img class="index-banner__img swiper-lazy" src="images/1x1.gif" data-src="images/index/activity_banner_3.jpg" alt="圖片敘述"/>
+                        </div></a></li>
+                  </ul>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              </div>
+            </div>
+          </section>
+          <!-- 官方旗艦店-->
+          <section class="sec index-store">
+            <div class="grid-container">
+              <div class="sec-title-box">
+                <h2 class="sec-title-box__title bean">官方旗艦店</h2>
+              </div>
+              <div class="swiper-box-global">
+                <div class="index-store__list-wrapper swiper-container" id="index-store-carousel">
+                  <ul class="index-store__list swiper-wrapper" data-lazy-scroll="">
+                    <!-- [START] Item-->
+                    <li class="index-store__item swiper-slide"><a class="index-store__link" href="store.html">
+                        <div class="index-store__img-box object-fit">
+                          <div class="swiper-lazy-preloader"></div><img class="index-store__img swiper-lazy lazy" src="images/1x1.gif" data-src="images/store/store_01@3x.jpg" alt=""/>
+                        </div>
+                        <h3 class="h4 index-store__text-box clamp-2">小丸子</h3></a></li>
+                    <!-- [END] Item-->
+                    <!-- [START] ↓可刪除重複區塊-->
+                    <li class="index-store__item swiper-slide"><a class="index-store__link" href="store.html">
+                        <div class="index-store__img-box object-fit">
+                          <div class="swiper-lazy-preloader"></div><img class="index-store__img swiper-lazy lazy" src="images/1x1.gif" data-src="https://via.placeholder.com/270x270/ccc" alt=""/>
+                        </div>
+                        <h3 class="h4 index-store__text-box clamp-2">一二三四五六七八九壹</h3></a></li>
+                    <li class="index-store__item swiper-slide"><a class="index-store__link" href="store.html">
+                        <div class="index-store__img-box object-fit">
+                          <div class="swiper-lazy-preloader"></div><img class="index-store__img swiper-lazy lazy" src="images/1x1.gif" data-src="images/store/store_02@3x.jpg" alt=""/>
+                        </div>
+                        <h3 class="h4 index-store__text-box clamp-2">便利商店</h3></a></li>
+                    <li class="index-store__item swiper-slide"><a class="index-store__link" href="store.html">
+                        <div class="index-store__img-box object-fit">
+                          <div class="swiper-lazy-preloader"></div><img class="index-store__img swiper-lazy lazy" src="images/1x1.gif" data-src="images/store/store_03@3x.jpg" alt=""/>
+                        </div>
+                        <h3 class="h4 index-store__text-box clamp-2">月光雕刻師</h3></a></li>
+                    <li class="index-store__item swiper-slide"><a class="index-store__link" href="store.html">
+                        <div class="index-store__img-box object-fit">
+                          <div class="swiper-lazy-preloader"></div><img class="index-store__img swiper-lazy lazy" src="images/1x1.gif" data-src="images/store/store_04@3x.jpg" alt=""/>
+                        </div>
+                        <h3 class="h4 index-store__text-box clamp-2">彈射世界五六</h3></a></li>
+                    <li class="index-store__item swiper-slide"><a class="index-store__link" href="store.html">
+                        <div class="index-store__img-box object-fit">
+                          <div class="swiper-lazy-preloader"></div><img class="index-store__img swiper-lazy lazy" src="images/1x1.gif" data-src="images/store/store_05@3x.jpg" alt=""/>
+                        </div>
+                        <h3 class="h4 index-store__text-box clamp-2">天堂M</h3></a></li>
+                    <li class="index-store__item swiper-slide"><a class="index-store__link" href="store.html">
+                        <div class="index-store__img-box object-fit">
+                          <div class="swiper-lazy-preloader"></div><img class="index-store__img swiper-lazy lazy" src="images/1x1.gif" data-src="images/store/store_06@3x.jpg" alt=""/>
+                        </div>
+                        <h3 class="h4 index-store__text-box clamp-2">艾爾之光</h3></a></li>
+                    <li class="index-store__item swiper-slide"><a class="index-store__link" href="store.html">
+                        <div class="index-store__img-box object-fit">
+                          <div class="swiper-lazy-preloader"></div><img class="index-store__img swiper-lazy lazy" src="images/1x1.gif" data-src="images/store/store_07@3x.jpg" alt=""/>
+                        </div>
+                        <h3 class="h4 index-store__text-box clamp-2">新楓之谷</h3></a></li>
+                    <li class="index-store__item swiper-slide"><a class="index-store__link" href="store.html">
+                        <div class="index-store__img-box object-fit">
+                          <div class="swiper-lazy-preloader"></div><img class="index-store__img swiper-lazy lazy" src="images/1x1.gif" data-src="images/store/store_02@3x.jpg" alt=""/>
+                        </div>
+                        <h3 class="h4 index-store__text-box clamp-2">2便利商店</h3></a></li>
+                    <li class="index-store__item swiper-slide"><a class="index-store__link" href="store.html">
+                        <div class="index-store__img-box object-fit">
+                          <div class="swiper-lazy-preloader"></div><img class="index-store__img swiper-lazy lazy" src="images/1x1.gif" data-src="images/store/store_03@3x.jpg" alt=""/>
+                        </div>
+                        <h3 class="h4 index-store__text-box clamp-2">2月光雕刻師</h3></a></li>
+                    <li class="index-store__item swiper-slide"><a class="index-store__link" href="store.html">
+                        <div class="index-store__img-box object-fit">
+                          <div class="swiper-lazy-preloader"></div><img class="index-store__img swiper-lazy lazy" src="images/1x1.gif" data-src="images/store/store_04@3x.jpg" alt=""/>
+                        </div>
+                        <h3 class="h4 index-store__text-box clamp-2">2彈射世界五六</h3></a></li>
+                    <li class="index-store__item swiper-slide"><a class="index-store__link" href="store.html">
+                        <div class="index-store__img-box object-fit">
+                          <div class="swiper-lazy-preloader"></div><img class="index-store__img swiper-lazy lazy" src="images/1x1.gif" data-src="images/store/store_05@3x.jpg" alt=""/>
+                        </div>
+                        <h3 class="h4 index-store__text-box clamp-2">2天堂M</h3></a></li>
+                    <li class="index-store__item swiper-slide"><a class="index-store__link" href="store.html">
+                        <div class="index-store__img-box object-fit">
+                          <div class="swiper-lazy-preloader"></div><img class="index-store__img swiper-lazy lazy" src="images/1x1.gif" data-src="images/store/store_06@3x.jpg" alt=""/>
+                        </div>
+                        <h3 class="h4 index-store__text-box clamp-2">2艾爾之光</h3></a></li>
+                    <li class="index-store__item swiper-slide"><a class="index-store__link" href="store.html">
+                        <div class="index-store__img-box object-fit">
+                          <div class="swiper-lazy-preloader"></div><img class="index-store__img swiper-lazy lazy" src="images/1x1.gif" data-src="images/store/store_07@3x.jpg" alt=""/>
+                        </div>
+                        <h3 class="h4 index-store__text-box clamp-2">2新楓之谷</h3></a></li>
+                    <!-- [END] ↑可刪除重複區塊-->
+                  </ul>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              </div>
+            </div>
+          </section>
+          <!-- 商品列表：圖片大小建議：一般480*480，Full 840*480
+          -->
+          <section class="sec index-pd-list">
+            <div class="grid-container">
+              <div class="sec-title-box">
+                <h2 class="sec-title-box__title bean">熱門推薦</h2>
+                <div class="sec-title-box__r">
+                  <!-- 【Web版本】更多--><a class="index-pd-list__btn-text text-arrow" href="product-list.html">更多<i class="be-icon be-icon-arrow-right" aria-hidden="true"></i></a>
+                  <!-- 【APP版本】篩選按鈕（data-open 指定到區塊篩選相對應id）-->
+                  <button class="index-pd-list__btn-filter btn-icon" type="button" aria-label="篩選" data-open="filter-panel-1"><i class="be-icon be-icon-filter" aria-hidden="true"></i></button>
+                </div>
+              </div>
+              <ul class="pd-card grid-x grid-margin-x small-up-2 large-up-4">
+                <!-- [START] 【APP版本】Item: FullWeb 版本沒有該樣式，直接使用不影響
+                -->
+                <li class="pd-card__item cell full">
+                  <!-- ↓加入書籤<button>：
+                  class 「js-fav」 ，啟動 JS 點擊事件，不要就移除
+                  增減 class 「 is-active 」 更改加入書籤樣式
+                  -->
+                  <button class="pd-card__img-tag top-right pd-card__btn-fav btn-icon js-fav is-active" aria-label="加入書籤"></button><a class="pd-card__link" href="product-cont-pd.html">
+                    <div class="pd-card__img-box object-fit"><img class="pd-card__img lazy" src="images/1x1.gif" data-src="images/pd/pd_full.png" alt=""/>
+                    </div>
+                    <!-- 綠色 Tag 列表-->
+                    <ul class="pd-card__tag-list">
+                      <li class="pd-card__tag label">票卷</li>
+                      <li class="pd-card__tag label">天堂Ｍ優惠活動</li>
+                    </ul>
+                    <h3 class="pd-card__title h5 clamp-2">天堂Ｍ藍鑽禮包+鋼鐵套裝 火熱搶購中</h3>
+                    <div class="pd-card__price h5">$150,000,000</div></a>
+                </li>
+                <!-- [END] 【APP版本】Item: Full-->
+                <!-- [START] Item: Normal-->
+                <li class="pd-card__item cell">
+                  <!-- ↓加入書籤<button>：
+                  class 「js-fav」 ，啟動 JS 點擊事件，不要就移除
+                  增減 class 「 is-active 」 更改加入書籤樣式
+                  -->
+                  <button class="pd-card__img-tag top-right pd-card__btn-fav btn-icon js-fav" aria-label="加入書籤"></button><a class="pd-card__link" href="product-cont-3d.html">
+                    <div class="pd-card__img-box object-fit"><img class="pd-card__img lazy" src="images/1x1.gif" data-src="images/pd/pd_01.png" alt=""/>
+                      <!-- 左上紅色六角形徽章-->
+                      <div class="pd-card__img-tag top-left tag-hex-lazy"><span class="text">平台限定</span></div>
+                      <!-- ↓五字以上（沒有<span>）--><!--
+                      <div class="pd-card__img-tag top-left tag-hex">平台限定限定</div>-->
+                      <!-- 左下灰色標籤: 3D-->
+                      <div class="pd-card__img-tag bottom-left tag-3d">3D</div>
+                      <!-- 右下藍色標籤-->
+                      <div class="pd-card__img-tag bottom-right tag-blue-lazy"><span class="text">等級Max</span></div>
+                    </div>
+                    <!-- 綠色 Tag 列表-->
+                    <ul class="pd-card__tag-list">
+                      <li class="pd-card__tag label">道具</li>
+                      <li class="pd-card__tag label">新龍之谷</li>
+                    </ul>
+                    <h3 class="pd-card__title h5 clamp-2">傳奇史詩寵物 潔白雪花豹</h3>
+                    <div class="pd-card__price h5">$660</div></a>
+                </li>
+                <!-- [END] Item: Normal-->
+                <!-- [START] ↓可刪除重複區塊-->
+                <li class="pd-card__item cell">
+                  <!-- ↓加入書籤<button>：
+                  class 「js-fav」 ，啟動 JS 點擊事件，不要就移除
+                  增減 class 「 is-active 」 更改加入書籤樣式
+                  -->
+                  <button class="pd-card__img-tag top-right pd-card__btn-fav btn-icon js-fav" aria-label="加入書籤"></button><a class="pd-card__link" href="product-cont-small.html">
+                    <div class="pd-card__img-box object-fit"><img class="pd-card__img lazy" src="images/1x1.gif" data-src="https://via.placeholder.com/480x480/ccc" alt=""/>
+                      <!-- 右下藍色標籤-->
+                      <div class="pd-card__img-tag bottom-right tag-blue-lazy"><span class="text">等級Max</span></div>
+                    </div>
+                    <!-- 綠色 Tag 列表-->
+                    <ul class="pd-card__tag-list">
+                      <li class="pd-card__tag label">道具</li>
+                      <li class="pd-card__tag label">龍之谷</li>
+                    </ul>
+                    <h3 class="pd-card__title h5 clamp-2">一二三四五六七八九壹一二三四五六七八九貳一二三四五六七八九參一二三四五六七八九肆一二三四五六七八九伍</h3>
+                    <div class="pd-card__price h5">$999,999,999</div></a>
+                </li>
+                <li class="pd-card__item cell">
+                  <!-- ↓加入書籤<button>：
+                  class 「js-fav」 ，啟動 JS 點擊事件，不要就移除
+                  增減 class 「 is-active 」 更改加入書籤樣式
+                  -->
+                  <button class="pd-card__img-tag top-right pd-card__btn-fav btn-icon js-fav is-active" aria-label="加入書籤"></button><a class="pd-card__link" href="product-cont-pd.html">
+                    <div class="pd-card__img-box object-fit"><img class="pd-card__img lazy" src="images/1x1.gif" data-src="images/pd/pd_03.png" alt=""/>
+                      <!-- 左上紅色六角形徽章-->
+                      <div class="pd-card__img-tag top-left tag-hex-lazy"><span class="text">獨家</span></div>
+                      <!-- ↓五字以上（沒有<span>）--><!--
+                      <div class="pd-card__img-tag top-left tag-hex">平台限定限定</div>-->
+                      <!-- 左下灰色標籤: 3D-->
+                      <div class="pd-card__img-tag bottom-left tag-3d">3D</div>
+                      <!-- 右下藍色標籤-->
+                      <div class="pd-card__img-tag bottom-right tag-blue-lazy"><span class="text">等級Max</span></div>
+                    </div>
+                    <!-- 綠色 Tag 列表-->
+                    <ul class="pd-card__tag-list">
+                      <li class="pd-card__tag label">道具</li>
+                      <li class="pd-card__tag label">新瑪奇</li>
+                    </ul>
+                    <h3 class="pd-card__title h5 clamp-2">掌控靈氣的武術宗師 璃朔 儲值享超值回饋</h3>
+                    <div class="pd-card__price h5">$750</div></a>
+                </li>
+                <li class="pd-card__item cell">
+                  <!-- ↓加入書籤<button>：
+                  class 「js-fav」 ，啟動 JS 點擊事件，不要就移除
+                  增減 class 「 is-active 」 更改加入書籤樣式
+                  -->
+                  <button class="pd-card__img-tag top-right pd-card__btn-fav btn-icon js-fav" aria-label="加入書籤"></button><a class="pd-card__link" href="product-cont-pd.html">
+                    <div class="pd-card__img-box object-fit"><img class="pd-card__img lazy" src="images/1x1.gif" data-src="images/pd/pd_04.png" alt=""/>
+                    </div>
+                    <!-- 綠色 Tag 列表-->
+                    <ul class="pd-card__tag-list">
+                      <li class="pd-card__tag label">收藏品</li>
+                      <li class="pd-card__tag label">收藏卡</li>
+                    </ul>
+                    <h3 class="pd-card__title h5 clamp-2">傳奇史詩怪物 北極熊野狼座騎</h3>
+                    <div class="pd-card__price h5">$350,000</div></a>
+                </li>
+                <!-- [END] ↑可刪除重複區塊-->
+                <!-- [START] 【APP版本】列表中間的廣告：我有寶物想賣！-->
+                <!-- class 「treasure」：左邊會有寶箱圖
+                - 移除 class 「treasure」 會形成左圖右文的排版
+                - 不想要圖就不要生成 img-box
+                -->
+                <li class="pd-list-banner cell treasure"><a class="pd-list-banner__link" href="javascript:;">
+                    <div class="pd-list-banner__cont">
+                      <div class="pd-list-banner__img-box"></div>
+                      <div class="pd-list-banner__text-box">
+                        <h3 class="pd-list-banner__title">我有寶物想賣！</h3>
+                        <p class="pd-list-banner__desc">快拿出你背包中不需要的寶物來beanfun!交易平台擺攤吧！</p>
+                        <div class="pd-list-banner__more text-right">
+                          <div class="text-arrow right">立即出售</div>
+                        </div>
+                      </div>
+                    </div></a></li>
+                <!-- [END] 【APP版本】列表中間的廣告：我有寶物想賣！-->
+                <!-- [START] ↓可刪除重複區塊-->
+                <li class="pd-card__item cell">
+                  <!-- ↓加入書籤<button>：
+                  class 「js-fav」 ，啟動 JS 點擊事件，不要就移除
+                  增減 class 「 is-active 」 更改加入書籤樣式
+                  -->
+                  <button class="pd-card__img-tag top-right pd-card__btn-fav btn-icon js-fav" aria-label="加入書籤"></button><a class="pd-card__link" href="product-cont-pd.html">
+                    <div class="pd-card__img-box object-fit"><img class="pd-card__img lazy" src="images/1x1.gif" data-src="images/pd/pd_05.png" alt=""/>
+                    </div>
+                    <!-- 綠色 Tag 列表-->
+                    <ul class="pd-card__tag-list">
+                      <li class="pd-card__tag label">道具</li>
+                      <li class="pd-card__tag label">跑跑卡丁車</li>
+                    </ul>
+                    <h3 class="pd-card__title h5 clamp-2">S2新增季末車王 排位 代練</h3>
+                    <div class="pd-card__price h5">$650</div></a>
+                </li>
+                <li class="pd-card__item cell">
+                  <!-- ↓加入書籤<button>：
+                  class 「js-fav」 ，啟動 JS 點擊事件，不要就移除
+                  增減 class 「 is-active 」 更改加入書籤樣式
+                  -->
+                  <button class="pd-card__img-tag top-right pd-card__btn-fav btn-icon js-fav" aria-label="加入書籤"></button><a class="pd-card__link" href="product-cont-pd.html">
+                    <div class="pd-card__img-box object-fit"><img class="pd-card__img lazy" src="images/1x1.gif" data-src="images/pd/pd_06.png" alt=""/>
+                      <!-- 右下藍色標籤-->
+                      <div class="pd-card__img-tag bottom-right tag-blue-lazy"><span class="text">+10</span></div>
+                    </div>
+                    <!-- 綠色 Tag 列表-->
+                    <ul class="pd-card__tag-list">
+                      <li class="pd-card__tag label">道具</li>
+                      <li class="pd-card__tag label">彈射世界</li>
+                    </ul>
+                    <h3 class="pd-card__title h5 clamp-2">巴蕾塔、光炮神速 高CP超值</h3>
+                    <div class="pd-card__price h5">$1,350</div></a>
+                </li>
+                <li class="pd-card__item cell">
+                  <!-- ↓加入書籤<button>：
+                  class 「js-fav」 ，啟動 JS 點擊事件，不要就移除
+                  增減 class 「 is-active 」 更改加入書籤樣式
+                  -->
+                  <button class="pd-card__img-tag top-right pd-card__btn-fav btn-icon js-fav" aria-label="加入書籤"></button><a class="pd-card__link" href="product-cont-pd.html">
+                    <div class="pd-card__img-box object-fit"><img class="pd-card__img lazy" src="images/1x1.gif" data-src="images/pd/pd_07.png" alt=""/>
+                    </div>
+                    <!-- 綠色 Tag 列表-->
+                    <ul class="pd-card__tag-list">
+                      <li class="pd-card__tag label">道具</li>
+                      <li class="pd-card__tag label">新楓之谷</li>
+                    </ul>
+                    <h3 class="pd-card__title h5 clamp-2">阿戴爾 戰地8000 ARC 1190</h3>
+                    <div class="pd-card__price h5">$1,600</div></a>
+                </li>
+                <!-- [END] ↑可刪除重複區塊-->
+              </ul>
+              <!-- ↓載入更多<button>：
+              class 「js-load-more」 ，啟動 JS 點擊事件，不要就移除
+              讀取：增加 class 「 is-loading 」 出現Loading點點點樣式
+              隱藏：增加 class 「 hide 」
+              -->
+              <button class="btn-load-more js-load-more" type="button"><span class="btn-load-more__text">加載更多</span><span class="btn-load-more__dots"><span class="btn-load-more__dot dot-1"></span><span class="btn-load-more__dot dot-2"></span><span class="btn-load-more__dot dot-3"></span></span></button>
+            </div>
+            <!-- [START] 【APP版本】Popup - 篩選面板
+            有幾個商品列表，就要重複幾個篩選面板，id不可重複
+            區塊的選項id不可重複
+            -->
+            <div class="filter-panel reveal reveal-bottom-panel" id="filter-panel-1" data-reveal="">
+              <form class="filter-panel__cont" action="/" onsubmit="return false">
+                <div class="filter-panel__choice-area">
+                  <fieldset class="filter-panel__group">
+                    <legend class="h4 filter-panel__title">類別</legend>
+                    <ul class="filter-panel__choice-group">
+                      <li class="filter-panel__choice">
+                        <input class="checkbox-btn" type="radio" id="ft1-0-0" name="cate[]" value="全部" checked="checked"/>
+                        <label for="ft1-0-0">全部</label>
+                      </li>
+                      <li class="filter-panel__choice">
+                        <input class="checkbox-btn" type="radio" id="ft1-0-1" name="cate[]" value="道具"/>
+                        <label for="ft1-0-1">道具</label>
+                      </li>
+                      <li class="filter-panel__choice">
+                        <input class="checkbox-btn" type="radio" id="ft1-0-2" name="cate[]" value="票券"/>
+                        <label for="ft1-0-2">票券</label>
+                      </li>
+                      <li class="filter-panel__choice">
+                        <input class="checkbox-btn" type="radio" id="ft1-0-3" name="cate[]" value="收藏品"/>
+                        <label for="ft1-0-3">收藏品</label>
+                      </li>
+                    </ul>
+                  </fieldset>
+                  <fieldset class="filter-panel__group">
+                    <legend class="h4 filter-panel__title">新舊</legend>
+                    <ul class="filter-panel__choice-group">
+                      <li class="filter-panel__choice">
+                        <input class="checkbox-btn" type="radio" id="ft1-1-0" name="new[]" value="新到舊" checked="checked"/>
+                        <label for="ft1-1-0">新到舊</label>
+                      </li>
+                      <li class="filter-panel__choice">
+                        <input class="checkbox-btn" type="radio" id="ft1-1-1" name="new[]" value="舊到新"/>
+                        <label for="ft1-1-1">舊到新</label>
+                      </li>
+                    </ul>
+                  </fieldset>
+                  <fieldset class="filter-panel__group">
+                    <legend class="h4 filter-panel__title">價格</legend>
+                    <ul class="filter-panel__choice-group">
+                      <li class="filter-panel__choice">
+                        <input class="checkbox-btn" type="radio" id="ft1-2-0" name="price[]" value="低到高"/>
+                        <label for="ft1-2-0">低到高</label>
+                      </li>
+                      <li class="filter-panel__choice">
+                        <input class="checkbox-btn" type="radio" id="ft1-2-1" name="price[]" value="高到低"/>
+                        <label for="ft1-2-1">高到低</label>
+                      </li>
+                    </ul>
+                  </fieldset>
+                </div>
+                <div class="filter-panel__btn-box">
+                  <button class="filter-panel__btn-reset btn secondary hollow no-border" type="reset">重置</button>
+                  <button class="filter-panel__btn-submit btn" type="submit">確定</button>
+                </div>
+              </form>
+            </div>
+            <!-- [END] 【APP版本】Popup - 篩選面板-->
+          </section>
+          <!-- [START] ↓可刪除重複區塊-->
+          <section class="sec index-pd-list">
+            <div class="grid-container">
+              <div class="sec-title-box">
+                <h2 class="sec-title-box__title bean">最新商品</h2>
+                <div class="sec-title-box__r">
+                  <!-- 【Web版本】更多--><a class="index-pd-list__btn-text text-arrow" href="product-list.html">更多<i class="be-icon be-icon-arrow-right" aria-hidden="true"></i></a>
+                  <!-- 【APP版本】篩選按鈕（data-open 指定到區塊篩選相對應id）-->
+                  <button class="index-pd-list__btn-filter btn-icon" type="button" aria-label="篩選" data-open="filter-panel-2"><i class="be-icon be-icon-filter" aria-hidden="true"></i></button>
+                </div>
+              </div>
+              <ul class="pd-card grid-x grid-margin-x small-up-2 large-up-4">
+                <!-- [START] 【APP版本】Item: FullWeb 版本沒有該樣式，直接使用不影響
+                -->
+                <li class="pd-card__item cell full">
+                  <!-- ↓加入書籤<button>：
+                  class 「js-fav」 ，啟動 JS 點擊事件，不要就移除
+                  增減 class 「 is-active 」 更改加入書籤樣式
+                  -->
+                  <button class="pd-card__img-tag top-right pd-card__btn-fav btn-icon js-fav is-active" aria-label="加入書籤"></button><a class="pd-card__link" href="product-cont-pd.html">
+                    <div class="pd-card__img-box object-fit"><img class="pd-card__img lazy" src="images/1x1.gif" data-src="images/pd/pd_full.png" alt=""/>
+                    </div>
+                    <!-- 綠色 Tag 列表-->
+                    <ul class="pd-card__tag-list">
+                      <li class="pd-card__tag label">票卷</li>
+                      <li class="pd-card__tag label">天堂Ｍ優惠活動</li>
+                    </ul>
+                    <h3 class="pd-card__title h5 clamp-2">天堂Ｍ藍鑽禮包+鋼鐵套裝 火熱搶購中</h3>
+                    <div class="pd-card__price h5">$150,000,000</div></a>
+                </li>
+                <!-- [END] 【APP版本】Item: Full-->
+                <!-- [START] Item: Normal-->
+                <li class="pd-card__item cell">
+                  <!-- ↓加入書籤<button>：
+                  class 「js-fav」 ，啟動 JS 點擊事件，不要就移除
+                  增減 class 「 is-active 」 更改加入書籤樣式
+                  -->
+                  <button class="pd-card__img-tag top-right pd-card__btn-fav btn-icon js-fav" aria-label="加入書籤"></button><a class="pd-card__link" href="product-cont-3d.html">
+                    <div class="pd-card__img-box object-fit"><img class="pd-card__img lazy" src="images/1x1.gif" data-src="images/pd/pd_01.png" alt=""/>
+                      <!-- 左上紅色六角形徽章-->
+                      <div class="pd-card__img-tag top-left tag-hex-lazy"><span class="text">平台限定</span></div>
+                      <!-- ↓五字以上（沒有<span>）--><!--
+                      <div class="pd-card__img-tag top-left tag-hex">平台限定限定</div>-->
+                      <!-- 左下灰色標籤: 3D-->
+                      <div class="pd-card__img-tag bottom-left tag-3d">3D</div>
+                      <!-- 右下藍色標籤-->
+                      <div class="pd-card__img-tag bottom-right tag-blue-lazy"><span class="text">等級Max</span></div>
+                    </div>
+                    <!-- 綠色 Tag 列表-->
+                    <ul class="pd-card__tag-list">
+                      <li class="pd-card__tag label">道具</li>
+                      <li class="pd-card__tag label">新龍之谷</li>
+                    </ul>
+                    <h3 class="pd-card__title h5 clamp-2">傳奇史詩寵物 潔白雪花豹</h3>
+                    <div class="pd-card__price h5">$660</div></a>
+                </li>
+                <!-- [END] Item: Normal-->
+                <!-- [START] ↓可刪除重複區塊-->
+                <li class="pd-card__item cell">
+                  <!-- ↓加入書籤<button>：
+                  class 「js-fav」 ，啟動 JS 點擊事件，不要就移除
+                  增減 class 「 is-active 」 更改加入書籤樣式
+                  -->
+                  <button class="pd-card__img-tag top-right pd-card__btn-fav btn-icon js-fav" aria-label="加入書籤"></button><a class="pd-card__link" href="product-cont-small.html">
+                    <div class="pd-card__img-box object-fit"><img class="pd-card__img lazy" src="images/1x1.gif" data-src="https://via.placeholder.com/480x480/ccc" alt=""/>
+                      <!-- 右下藍色標籤-->
+                      <div class="pd-card__img-tag bottom-right tag-blue-lazy"><span class="text">等級Max</span></div>
+                    </div>
+                    <!-- 綠色 Tag 列表-->
+                    <ul class="pd-card__tag-list">
+                      <li class="pd-card__tag label">道具</li>
+                      <li class="pd-card__tag label">龍之谷</li>
+                    </ul>
+                    <h3 class="pd-card__title h5 clamp-2">一二三四五六七八九壹一二三四五六七八九貳一二三四五六七八九參一二三四五六七八九肆一二三四五六七八九伍</h3>
+                    <div class="pd-card__price h5">$999,999,999</div></a>
+                </li>
+                <li class="pd-card__item cell">
+                  <!-- ↓加入書籤<button>：
+                  class 「js-fav」 ，啟動 JS 點擊事件，不要就移除
+                  增減 class 「 is-active 」 更改加入書籤樣式
+                  -->
+                  <button class="pd-card__img-tag top-right pd-card__btn-fav btn-icon js-fav is-active" aria-label="加入書籤"></button><a class="pd-card__link" href="product-cont-pd.html">
+                    <div class="pd-card__img-box object-fit"><img class="pd-card__img lazy" src="images/1x1.gif" data-src="images/pd/pd_03.png" alt=""/>
+                      <!-- 左上紅色六角形徽章-->
+                      <div class="pd-card__img-tag top-left tag-hex-lazy"><span class="text">獨家</span></div>
+                      <!-- ↓五字以上（沒有<span>）--><!--
+                      <div class="pd-card__img-tag top-left tag-hex">平台限定限定</div>-->
+                      <!-- 左下灰色標籤: 3D-->
+                      <div class="pd-card__img-tag bottom-left tag-3d">3D</div>
+                      <!-- 右下藍色標籤-->
+                      <div class="pd-card__img-tag bottom-right tag-blue-lazy"><span class="text">等級Max</span></div>
+                    </div>
+                    <!-- 綠色 Tag 列表-->
+                    <ul class="pd-card__tag-list">
+                      <li class="pd-card__tag label">道具</li>
+                      <li class="pd-card__tag label">新瑪奇</li>
+                    </ul>
+                    <h3 class="pd-card__title h5 clamp-2">掌控靈氣的武術宗師 璃朔 儲值享超值回饋</h3>
+                    <div class="pd-card__price h5">$750</div></a>
+                </li>
+                <li class="pd-card__item cell">
+                  <!-- ↓加入書籤<button>：
+                  class 「js-fav」 ，啟動 JS 點擊事件，不要就移除
+                  增減 class 「 is-active 」 更改加入書籤樣式
+                  -->
+                  <button class="pd-card__img-tag top-right pd-card__btn-fav btn-icon js-fav" aria-label="加入書籤"></button><a class="pd-card__link" href="product-cont-pd.html">
+                    <div class="pd-card__img-box object-fit"><img class="pd-card__img lazy" src="images/1x1.gif" data-src="images/pd/pd_04.png" alt=""/>
+                    </div>
+                    <!-- 綠色 Tag 列表-->
+                    <ul class="pd-card__tag-list">
+                      <li class="pd-card__tag label">收藏品</li>
+                      <li class="pd-card__tag label">收藏卡</li>
+                    </ul>
+                    <h3 class="pd-card__title h5 clamp-2">傳奇史詩怪物 北極熊野狼座騎</h3>
+                    <div class="pd-card__price h5">$350,000</div></a>
+                </li>
+                <!-- [END] ↑可刪除重複區塊-->
+                <!-- [START] 【APP版本】列表中間的廣告：我有寶物想賣！-->
+                <!-- class 「treasure」：左邊會有寶箱圖
+                - 移除 class 「treasure」 會形成左圖右文的排版
+                - 不想要圖就不要生成 img-box
+                -->
+                <li class="pd-list-banner cell treasure"><a class="pd-list-banner__link" href="javascript:;">
+                    <div class="pd-list-banner__cont">
+                      <div class="pd-list-banner__img-box"></div>
+                      <div class="pd-list-banner__text-box">
+                        <h3 class="pd-list-banner__title">我有寶物想賣！</h3>
+                        <p class="pd-list-banner__desc">快拿出你背包中不需要的寶物來beanfun!交易平台擺攤吧！</p>
+                        <div class="pd-list-banner__more text-right">
+                          <div class="text-arrow right">立即出售</div>
+                        </div>
+                      </div>
+                    </div></a></li>
+                <!-- [END] 【APP版本】列表中間的廣告：我有寶物想賣！-->
+                <!-- [START] ↓可刪除重複區塊-->
+                <li class="pd-card__item cell">
+                  <!-- ↓加入書籤<button>：
+                  class 「js-fav」 ，啟動 JS 點擊事件，不要就移除
+                  增減 class 「 is-active 」 更改加入書籤樣式
+                  -->
+                  <button class="pd-card__img-tag top-right pd-card__btn-fav btn-icon js-fav" aria-label="加入書籤"></button><a class="pd-card__link" href="product-cont-pd.html">
+                    <div class="pd-card__img-box object-fit"><img class="pd-card__img lazy" src="images/1x1.gif" data-src="images/pd/pd_05.png" alt=""/>
+                    </div>
+                    <!-- 綠色 Tag 列表-->
+                    <ul class="pd-card__tag-list">
+                      <li class="pd-card__tag label">道具</li>
+                      <li class="pd-card__tag label">跑跑卡丁車</li>
+                    </ul>
+                    <h3 class="pd-card__title h5 clamp-2">S2新增季末車王 排位 代練</h3>
+                    <div class="pd-card__price h5">$650</div></a>
+                </li>
+                <li class="pd-card__item cell">
+                  <!-- ↓加入書籤<button>：
+                  class 「js-fav」 ，啟動 JS 點擊事件，不要就移除
+                  增減 class 「 is-active 」 更改加入書籤樣式
+                  -->
+                  <button class="pd-card__img-tag top-right pd-card__btn-fav btn-icon js-fav" aria-label="加入書籤"></button><a class="pd-card__link" href="product-cont-pd.html">
+                    <div class="pd-card__img-box object-fit"><img class="pd-card__img lazy" src="images/1x1.gif" data-src="images/pd/pd_06.png" alt=""/>
+                      <!-- 右下藍色標籤-->
+                      <div class="pd-card__img-tag bottom-right tag-blue-lazy"><span class="text">+10</span></div>
+                    </div>
+                    <!-- 綠色 Tag 列表-->
+                    <ul class="pd-card__tag-list">
+                      <li class="pd-card__tag label">道具</li>
+                      <li class="pd-card__tag label">彈射世界</li>
+                    </ul>
+                    <h3 class="pd-card__title h5 clamp-2">巴蕾塔、光炮神速 高CP超值</h3>
+                    <div class="pd-card__price h5">$1,350</div></a>
+                </li>
+                <li class="pd-card__item cell">
+                  <!-- ↓加入書籤<button>：
+                  class 「js-fav」 ，啟動 JS 點擊事件，不要就移除
+                  增減 class 「 is-active 」 更改加入書籤樣式
+                  -->
+                  <button class="pd-card__img-tag top-right pd-card__btn-fav btn-icon js-fav" aria-label="加入書籤"></button><a class="pd-card__link" href="product-cont-pd.html">
+                    <div class="pd-card__img-box object-fit"><img class="pd-card__img lazy" src="images/1x1.gif" data-src="images/pd/pd_07.png" alt=""/>
+                    </div>
+                    <!-- 綠色 Tag 列表-->
+                    <ul class="pd-card__tag-list">
+                      <li class="pd-card__tag label">道具</li>
+                      <li class="pd-card__tag label">新楓之谷</li>
+                    </ul>
+                    <h3 class="pd-card__title h5 clamp-2">阿戴爾 戰地8000 ARC 1190</h3>
+                    <div class="pd-card__price h5">$1,600</div></a>
+                </li>
+                <!-- [END] ↑可刪除重複區塊-->
+              </ul>
+              <!-- ↓載入更多<button>：
+              class 「js-load-more」 ，啟動 JS 點擊事件，不要就移除
+              讀取：增加 class 「 is-loading 」 出現Loading點點點樣式
+              隱藏：增加 class 「 hide 」
+              -->
+              <button class="btn-load-more js-load-more" type="button"><span class="btn-load-more__text">加載更多</span><span class="btn-load-more__dots"><span class="btn-load-more__dot dot-1"></span><span class="btn-load-more__dot dot-2"></span><span class="btn-load-more__dot dot-3"></span></span></button>
+            </div>
+            <!-- [START] 【APP版本】Popup - 篩選面板
+            有幾個商品列表，就要重複幾個篩選面板，id不可重複
+            區塊的選項id不可重複
+            -->
+            <div class="filter-panel reveal reveal-bottom-panel" id="filter-panel-2" data-reveal="">
+              <form class="filter-panel__cont" action="/" onsubmit="return false">
+                <div class="filter-panel__choice-area">
+                  <fieldset class="filter-panel__group">
+                    <legend class="h4 filter-panel__title">類別</legend>
+                    <ul class="filter-panel__choice-group">
+                      <li class="filter-panel__choice">
+                        <input class="checkbox-btn" type="radio" id="ft2-0-0" name="cate[]" value="全部" checked="checked"/>
+                        <label for="ft2-0-0">全部</label>
+                      </li>
+                      <li class="filter-panel__choice">
+                        <input class="checkbox-btn" type="radio" id="ft2-0-1" name="cate[]" value="道具"/>
+                        <label for="ft2-0-1">道具</label>
+                      </li>
+                      <li class="filter-panel__choice">
+                        <input class="checkbox-btn" type="radio" id="ft2-0-2" name="cate[]" value="票券"/>
+                        <label for="ft2-0-2">票券</label>
+                      </li>
+                      <li class="filter-panel__choice">
+                        <input class="checkbox-btn" type="radio" id="ft2-0-3" name="cate[]" value="收藏品"/>
+                        <label for="ft2-0-3">收藏品</label>
+                      </li>
+                    </ul>
+                  </fieldset>
+                  <fieldset class="filter-panel__group">
+                    <legend class="h4 filter-panel__title">新舊</legend>
+                    <ul class="filter-panel__choice-group">
+                      <li class="filter-panel__choice">
+                        <input class="checkbox-btn" type="radio" id="ft2-1-0" name="new[]" value="新到舊" checked="checked"/>
+                        <label for="ft2-1-0">新到舊</label>
+                      </li>
+                      <li class="filter-panel__choice">
+                        <input class="checkbox-btn" type="radio" id="ft2-1-1" name="new[]" value="舊到新"/>
+                        <label for="ft2-1-1">舊到新</label>
+                      </li>
+                    </ul>
+                  </fieldset>
+                  <fieldset class="filter-panel__group">
+                    <legend class="h4 filter-panel__title">價格</legend>
+                    <ul class="filter-panel__choice-group">
+                      <li class="filter-panel__choice">
+                        <input class="checkbox-btn" type="radio" id="ft2-2-0" name="price[]" value="低到高"/>
+                        <label for="ft2-2-0">低到高</label>
+                      </li>
+                      <li class="filter-panel__choice">
+                        <input class="checkbox-btn" type="radio" id="ft2-2-1" name="price[]" value="高到低"/>
+                        <label for="ft2-2-1">高到低</label>
+                      </li>
+                    </ul>
+                  </fieldset>
+                </div>
+                <div class="filter-panel__btn-box">
+                  <button class="filter-panel__btn-reset btn secondary hollow no-border" type="reset">重置</button>
+                  <button class="filter-panel__btn-submit btn" type="submit">確定</button>
+                </div>
+              </form>
+            </div>
+            <!-- [END] 【APP版本】Popup - 篩選面板-->
+          </section>
+          <!-- [START] ↑可刪除重複區塊-->
+          <!-- 【Web版本】[START] 沒有找到想要的寶物-->
+          <section class="sec index-pd-more">
+            <div class="grid-container">
+              <div class="sec-title-box text-center">
+                <h2 class="sec-title-box__title lazy lazy-css"><span class="text">沒有找到想要的寶物</span></h2>
+              </div>
+              <div class="index-pd-more__desc h5 text-center">打開 beanfun! APP，裡面的寶物市集有更多來自其他寶物獵人的寶物，您也可以前往盡情擺攤！</div>
+              <ul class="pd-card grid-x grid-margin-x small-up-2 large-up-4">
+                <!-- [START] Item: Normal-->
+                <li class="pd-card__item cell">
+                  <!-- ↓加入書籤<button>：
+                  class 「js-fav」 ，啟動 JS 點擊事件，不要就移除
+                  增減 class 「 is-active 」 更改加入書籤樣式
+                  -->
+                  <button class="pd-card__img-tag top-right pd-card__btn-fav btn-icon js-fav" aria-label="加入書籤"></button><a class="pd-card__link" href="product-cont-3d.html">
+                    <div class="pd-card__img-box object-fit"><img class="pd-card__img lazy" src="images/1x1.gif" data-src="images/pd/pd_01.png" alt=""/>
+                      <!-- 左上紅色六角形徽章-->
+                      <div class="pd-card__img-tag top-left tag-hex-lazy"><span class="text">平台限定</span></div>
+                      <!-- ↓五字以上（沒有<span>）--><!--
+                      <div class="pd-card__img-tag top-left tag-hex">平台限定限定</div>-->
+                      <!-- 左下灰色標籤: 3D-->
+                      <div class="pd-card__img-tag bottom-left tag-3d">3D</div>
+                      <!-- 右下藍色標籤-->
+                      <div class="pd-card__img-tag bottom-right tag-blue-lazy"><span class="text">等級Max</span></div>
+                    </div>
+                    <!-- 綠色 Tag 列表-->
+                    <ul class="pd-card__tag-list">
+                      <li class="pd-card__tag label">道具</li>
+                      <li class="pd-card__tag label">新龍之谷</li>
+                    </ul>
+                    <h3 class="pd-card__title h5 clamp-2">傳奇史詩寵物 潔白雪花豹 61級</h3>
+                    <div class="pd-card__price h5">$660</div></a>
+                </li>
+                <!-- [END] Item: Normal-->
+                <!-- [START] ↓可刪除重複區塊-->
+                <li class="pd-card__item cell">
+                  <!-- ↓加入書籤<button>：
+                  class 「js-fav」 ，啟動 JS 點擊事件，不要就移除
+                  增減 class 「 is-active 」 更改加入書籤樣式
+                  -->
+                  <button class="pd-card__img-tag top-right pd-card__btn-fav btn-icon js-fav is-active" aria-label="加入書籤"></button><a class="pd-card__link" href="product-cont-pd.html">
+                    <div class="pd-card__img-box object-fit"><img class="pd-card__img lazy" src="images/1x1.gif" data-src="images/pd/pd_03.png" alt=""/>
+                      <!-- 左上紅色六角形徽章-->
+                      <div class="pd-card__img-tag top-left tag-hex-lazy"><span class="text">獨家</span></div>
+                      <!-- ↓五字以上（沒有<span>）--><!--
+                      <div class="pd-card__img-tag top-left tag-hex">平台限定限定</div>-->
+                      <!-- 左下灰色標籤: 3D-->
+                      <div class="pd-card__img-tag bottom-left tag-3d">3D</div>
+                      <!-- 右下藍色標籤-->
+                      <div class="pd-card__img-tag bottom-right tag-blue-lazy"><span class="text">等級Max</span></div>
+                    </div>
+                    <!-- 綠色 Tag 列表-->
+                    <ul class="pd-card__tag-list">
+                      <li class="pd-card__tag label">道具</li>
+                      <li class="pd-card__tag label">新瑪奇</li>
+                    </ul>
+                    <h3 class="pd-card__title h5 clamp-2">掌控靈氣的武術宗師 璃朔 儲值享超值回饋</h3>
+                    <div class="pd-card__price h5">$750</div></a>
+                </li>
+                <li class="pd-card__item cell">
+                  <!-- ↓加入書籤<button>：
+                  class 「js-fav」 ，啟動 JS 點擊事件，不要就移除
+                  增減 class 「 is-active 」 更改加入書籤樣式
+                  -->
+                  <button class="pd-card__img-tag top-right pd-card__btn-fav btn-icon js-fav" aria-label="加入書籤"></button><a class="pd-card__link" href="product-cont-pd.html">
+                    <div class="pd-card__img-box object-fit"><img class="pd-card__img lazy" src="images/1x1.gif" data-src="images/pd/pd_04.png" alt=""/>
+                    </div>
+                    <!-- 綠色 Tag 列表-->
+                    <ul class="pd-card__tag-list">
+                      <li class="pd-card__tag label">收藏品</li>
+                      <li class="pd-card__tag label">收藏卡</li>
+                    </ul>
+                    <h3 class="pd-card__title h5 clamp-2">傳奇史詩怪物 北極熊野狼</h3>
+                    <div class="pd-card__price h5">$350,000</div></a>
+                </li>
+                <li class="pd-card__item cell">
+                  <!-- ↓加入書籤<button>：
+                  class 「js-fav」 ，啟動 JS 點擊事件，不要就移除
+                  增減 class 「 is-active 」 更改加入書籤樣式
+                  -->
+                  <button class="pd-card__img-tag top-right pd-card__btn-fav btn-icon js-fav" aria-label="加入書籤"></button><a class="pd-card__link" href="product-cont-pd.html">
+                    <div class="pd-card__img-box object-fit"><img class="pd-card__img lazy" src="images/1x1.gif" data-src="images/pd/pd_05.png" alt=""/>
+                    </div>
+                    <!-- 綠色 Tag 列表-->
+                    <ul class="pd-card__tag-list">
+                      <li class="pd-card__tag label">道具</li>
+                      <li class="pd-card__tag label">跑跑卡丁車</li>
+                    </ul>
+                    <h3 class="pd-card__title h5 clamp-2">S2新增季末車王 排位 代練</h3>
+                    <div class="pd-card__price h5">$650</div></a>
+                </li>
+                <!-- [END] ↑可刪除重複區塊-->
+              </ul>
+              <div class="text-center"><a class="btn" href="https://beanfun.onelink.me/LARd/baf45339" target="_blank" rel="noopener noreferrer">馬上前往</a></div>
+            </div>
+          </section>
+          <!-- 【Web版本】[END] 沒有找到想要的寶物-->
+          <!-- 【APP版本】Footer Deco-->
+          <div class="index-bottom-deco"></div>
+          <!-- [START] Popup ==========-->
+          <!-- [START] Popup - 活動彈窗廣告-->
+          <div class="reveal reveal-activity" id="activity-popup" data-reveal=""><a class="reveal-activity__link" href="javascript:;" target="_blank" rel="noopener noreferrer"> 
+              <div class="reveal-activity__img-box object-fit"><img class="reveal-activity__img" src="images/index/activity.jpg" alt="活動名稱"></div></a>
+            <div class="reveal-activity__form">
+              <div class="reveal-activity__checkbox-box checkbox-box text-center">
+                <input class="reveal-activity__checkbox checkbox" type="checkbox" value="popupActivityDoNotShow" id="popup-activity-checkbox">
+                <label class="reveal-activity__label" for="popup-activity-checkbox">今日不再顯示</label>
+              </div>
+            </div>
+            <button class="close-button" data-close="" aria-label="Close modal" type="button"></button>
+          </div>
+          <!-- [END] Popup - 活動彈窗廣告-->
+          <!-- [END] Popup ==========-->
+        </main>
+        <!-- [END] Content ==================================================-->
+        <!-- 【Web版本】[START] Footer ==================================================-->
+        <footer class="ft" id="footer">
+          <div class="ft__bg-box lazy lazy-css"></div>
+          <div class="ft-top">
+            <div class="grid-container">
+              <nav class="ft-sitemap">
+                <div class="ft-sitemap__block">
+                  <div class="ft-sitemap__cont">
+                    <div class="h5 ft-sitemap__title">關於beanfun!</div>
+                    <ul class="ft-sitemap__list">
+                          <li class="ft-sitemap__item"><a class="ft-sitemap__link" href="javascript:;"><span class="text">beanfun! 介紹</span></a></li>
+                          <li class="ft-sitemap__item"><a class="ft-sitemap__link" href="javascript:;"><span class="text">服務與連結</span></a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="ft-sitemap__block">
+                  <div class="ft-sitemap__cont">
+                    <div class="h5 ft-sitemap__title">客服中心</div>
+                    <ul class="ft-sitemap__list">
+                          <li class="ft-sitemap__item"><a class="ft-sitemap__link" href="javascript:;"><span class="text">幫助中心</span></a></li>
+                          <li class="ft-sitemap__item"><a class="ft-sitemap__link" href="javascript:;"><span class="text">常見QA</span></a></li>
+                          <li class="ft-sitemap__item"><a class="ft-sitemap__link" href="https://pse.is/MLZD4" target="_blank" rel="nopener noreferrer"><span class="text">聯絡客服</span></a></li>
+                          <li class="ft-sitemap__item"><a class="ft-sitemap__link" href="javascript:;"><span class="text">反詐騙宣導</span></a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="ft-sitemap__block">
+                  <div class="ft-sitemap__cont">
+                    <div class="h5 ft-sitemap__title">合約與條款</div>
+                    <ul class="ft-sitemap__list">
+                          <li class="ft-sitemap__item"><a class="ft-sitemap__link" href="https://www.beanfun.com/privacy" target="_blank" rel="nopener noreferrer"><span class="text">隱私權政策</span></a></li>
+                          <li class="ft-sitemap__item"><a class="ft-sitemap__link" href="https://www.beanfun.com/privacy" target="_blank" rel="nopener noreferrer"><span class="text">Cookie 政策</span></a></li>
+                          <li class="ft-sitemap__item"><a class="ft-sitemap__link" href="javascript:;"><span class="text">bf! 寶物市集使用條款</span></a></li>
+                          <li class="ft-sitemap__item"><a class="ft-sitemap__link" href="javascript:;"><span class="text">bf! 寶物市集平台合約</span></a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="ft-sitemap__block">
+                  <div class="ft-sitemap__cont">
+                    <div class="h5 ft-sitemap__title">下載beanfun!</div>
+                    <div class="ft-download">
+                      <div class="ft-download__item type-qr"><a class="ft-download__link" href="https://beanfun.onelink.me/LARd/baf45339" target="_blank"><img class="ft-download__img lazy" src="images/1x1.gif" data-src="images/qr.jpg" alt="beanfun! APP 下載 QR Code" width="140" height="140"></a></div>
+                      <div class="ft-download__item type-apple"><a class="ft-download__link" href="https://beanfun.onelink.me/LARd/baf45339" target="_blank"><img class="ft-download__img lazy" src="images/1x1.gif" data-src="images/app-store@2x.png" data-srcset="images/app-store@2x.png 2x, images/app-store@3x.png 3x" alt="beanfun! APP Store" width="190" height="57"></a></div>
+                      <div class="ft-download__item type-google"><a class="ft-download__link" href="https://beanfun.onelink.me/LARd/baf45339" target="_blank"><img class="ft-download__img lazy" src="images/1x1.gif" data-src="images/google-play@2x.png" data-srcset="images/google-play@2x.png 2x, images/google-play@3x.png 3x" alt="beanfun! Google Play" width="190" height="59"></a></div>
+                    </div>
+                  </div>
+                </div>
+              </nav>
+            </div>
+          </div>
+          <div class="ft-bottom">
+            <div class="ft-bottom__r">
+              <div class="ft-lang">
+                <div class="ft-lang__title">語言設定：</div>
+                <div class="ft-lang__cont">
+                  <select class="ft-lang__select" name="lang">
+                    <option value="zh-tc">繁中</option>
+                    <option value="zh-sc">簡中</option>
+                    <option value="en">English</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="ft-bottom__l"><span class="ft-copyright">Copyright © 2021. beanfun! All rights reserved.</span></div>
+          </div>
+        </footer>
+        <!-- 【Web版本】[END] Footer ==================================================-->
+        <button class="gotop js-gotop"> <i class="be-icon be-icon-arrow-top" aria-hidden="true"></i><span class="gotop_txt bold">top </span></button>
+    
+
+    </div>
+    
+    
+    <!-- [START] JS ==================================================-->
+    <!-- JS - Common-->
+    <script src="js/vendor/jquery-3.6.0.min.js"></script>
+    <script src="js/vendor/foundation.6.6.3.min.js" async></script>
+    <script src="js/vendor/lib.min.js" async></script>
+    <script src="js/all.min.js" defer></script>
+    <!-- 有修改, 捲動頁面時,  header 可以 work -->
+    <!--<script src="js/all.changed.js" defer></script>-->
+    <!-- JS - Page-->
+    <script src="js/vendor/swiper.min.js" async></script>
+    <script src="js/vendor/jquery.marquee.min.js" async></script>
+    <script src="js/index.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js" defer></script>
+    <script>
+      (function() {
+      	//- [前端示範]Popup進頁面時啟動
+      	//- 因為要等Foundation讀取完、all.min.js啟動完，才能開啟
+      	window.addEventListener('load', function() {
+      		setTimeout(function() {
+      			$('#activity-popup').foundation('open');
+      			$('#activity-popup').focusout();
+      		}, 100);
+      	});
+      
+      	//- 假的，Demo用，5秒恢復加載樣式
+      	$('.js-load-more').on('click', function() {
+      		var _this = this;
+      		setTimeout(function() {
+      			_this.classList.remove('is-loading');
+      		}, 5000)
+      	});
+      })();
+      
+    </script>
+    <!-- [END] JS ==================================================-->
+
+
+    <script type="text/javascript" defer>
+
+      var indexVue;
+  
+      $(document).ready(function () {
+  
+          indexVue = new Vue({
+              el: '#indexPage',
+              data: {
+                  inApp: false,
+                  memberInfo: {
+                      Id: -1,
+                      NickName: '測試帳戶'
+                  },
+              },
+              computed: {
+                  islogin() {
+                      return (this.memberInfo?.Id > 0);
+                  }
+              },
+              methods: {
+                  dologin() {
+                      this.memberInfo.Id = 100;
+                  }
+              },
+              mounted() {
+              }
+          });
+  
+      });
+  </script>
+
+
+  </body>
+</html>

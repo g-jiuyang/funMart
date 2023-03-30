@@ -1,0 +1,9 @@
+<svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+    <g transform="translate(3.5 3.5)" fill="#666" fill-rule="evenodd">
+        <rect x="4" y="1.6" width="13" height="1.8" rx=".9"/>
+        <rect y="7.6" width="13" height="1.8" rx=".9"/>
+        <rect y="13.6" width="7" height="1.8" rx=".9"/>
+        <rect x="10" y="13.6" width="7" height="1.8" rx=".9"/>
+        <path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zm0 1.3a1.2 1.2 0 1 0 0 2.4 1.2 1.2 0 0 0 0-2.4zM14.5 6a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zm0 1.3a1.2 1.2 0 1 0 0 2.4 1.2 1.2 0 0 0 0-2.4zM8.5 12a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zm0 1.3a1.2 1.2 0 1 0 0 2.4 1.2 1.2 0 0 0 0-2.4z" fill-rule="nonzero"/>
+    </g>
+</svg>

@@ -1,0 +1,219 @@
+@font-face {
+  font-family: "icon";
+  src: url("icon.eot");
+  src: url("icon.eot?#iefix") format("embedded-opentype"), url("icon.woff2") format("woff2"), url("icon.woff") format("woff"), url("icon.ttf") format("truetype"), url("icon.svg#icon") format("svg");
+  font-display: block;
+  unicode-range: U+EA01-EA2C;
+}
+
+.be-icon {
+  font-family: sans-serif;
+  line-height: 1;
+}
+
+.be-icon:before {
+  font-family: "icon";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  text-decoration: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  line-height: 1em;
+  margin-left: .2em;
+}
+
+/* Glyphs list */
+.be-icon-3d:before {
+  content: '\ea01';
+}
+
+.be-icon-add:before {
+  content: '\ea02';
+}
+
+.be-icon-arrow-bottom:before {
+  content: '\ea03';
+}
+
+.be-icon-arrow-left:before {
+  content: '\ea04';
+}
+
+.be-icon-arrow-right:before {
+  content: '\ea05';
+}
+
+.be-icon-arrow-top:before {
+  content: '\ea06';
+}
+
+.be-icon-back:before {
+  content: '\ea07';
+}
+
+.be-icon-bag:before {
+  content: '\ea08';
+}
+
+.be-icon-bag2:before {
+  content: '\ea09';
+}
+
+.be-icon-bean:before {
+  content: '\ea0a';
+}
+
+.be-icon-check-circle:before {
+  content: '\ea0b';
+}
+
+.be-icon-close-circle:before {
+  content: '\ea0c';
+}
+
+.be-icon-close:before {
+  content: '\ea0d';
+}
+
+.be-icon-collect-fill:before {
+  content: '\ea0e';
+}
+
+.be-icon-collect-thick:before {
+  content: '\ea0f';
+}
+
+.be-icon-collect:before {
+  content: '\ea10';
+}
+
+.be-icon-credit-card:before {
+  content: '\ea11';
+}
+
+.be-icon-delete:before {
+  content: '\ea12';
+}
+
+.be-icon-dot:before {
+  content: '\ea13';
+}
+
+.be-icon-edit:before {
+  content: '\ea14';
+}
+
+.be-icon-external-link:before {
+  content: '\ea15';
+}
+
+.be-icon-faq:before {
+  content: '\ea16';
+}
+
+.be-icon-filter:before {
+  content: '\ea17';
+}
+
+.be-icon-full-screen:before {
+  content: '\ea18';
+}
+
+.be-icon-home:before {
+  content: '\ea19';
+}
+
+.be-icon-income:before {
+  content: '\ea1a';
+}
+
+.be-icon-info-circle:before {
+  content: '\ea1b';
+}
+
+.be-icon-list-empty:before {
+  content: '\ea1c';
+}
+
+.be-icon-list:before {
+  content: '\ea1d';
+}
+
+.be-icon-logout:before {
+  content: '\ea1e';
+}
+
+.be-icon-member-circle:before {
+  content: '\ea1f';
+}
+
+.be-icon-member:before {
+  content: '\ea20';
+}
+
+.be-icon-mobile:before {
+  content: '\ea21';
+}
+
+.be-icon-obj:before {
+  content: '\ea22';
+}
+
+.be-icon-realname:before {
+  content: '\ea23';
+}
+
+.be-icon-record:before {
+  content: '\ea24';
+}
+
+.be-icon-search:before {
+  content: '\ea25';
+}
+
+.be-icon-seller:before {
+  content: '\ea26';
+}
+
+.be-icon-send:before {
+  content: '\ea27';
+}
+
+.be-icon-share:before {
+  content: '\ea28';
+}
+
+.be-icon-star-fill:before {
+  content: '\ea29';
+}
+
+.be-icon-star:before {
+  content: '\ea2a';
+}
+
+.be-icon-store:before {
+  content: '\ea2b';
+}
+
+.be-icon-bull:before {
+  content: '\2022';
+}
+
+.be-icon-starkey:before {
+  content: '\2217';
+}
+
+.be-icon-wallet:before {
+  content: '\ea2c';
+}
