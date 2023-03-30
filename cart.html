@@ -307,15 +307,14 @@
                         <!-- 價格+數量-->
                         <div class="grid-x">
                           <ul class="small-12 large-6 order-detail__info no-bullet">
-                            <!-- <li class="order-detail__info__item">
-                              <div class="order-detail__info__title">單價：</div>
-                              <div class="order-detail__info__cont">
-                                <div class="pd-card__price">$350,000</div>
-                              </div>
-                            </li> -->
                             <li class="order-detail__info__item">
                               <div class="order-detail__info__title">單價：</div>
                               <div class="order-detail__info__cont">
+                                <!-- ↓現金顯示"$" -->
+                                <!-- <div class="pd-card__price">
+                                  <div class="pd-card__price">$350,000</div>
+                                </div> -->
+                                <!-- ↓bf!coin 顯示圖示 -->
                                 <div class="pd-card__price">
                                   <span class="bf-coin" aria-label="beanfun coin"></span>
                                   <span class="price">350,000</span>
@@ -331,6 +330,7 @@
                           <div class="small-12 large-6 order-detail__info__subtotal">
                             <p class="order-detail__info__title">訂單金額</p>
                             <p class="order-detail__info__price">
+                              <!-- ↓現金顯示"$"，bf!coin 顯示圖示 -->
                               <span class="bf-coin" aria-label="beanfun coin"></span>
                               <span class="price">700,000</span>
                             </p>
@@ -375,14 +375,15 @@
                       <label for="payment4">beanfun! Coin <img src="images/bf!coin.png"></label>
                     </fieldset> -->
                   </div>
-                  <!-- ↓ C2C選到「全家門市」時，才出現的訊息 B2C不顯示-->
-                  <!-- <p class="is-error show-msg text-orange fammart-info">*使用全家門市支付，將於超商結帳時額外酌收30元手續費。</p> -->
                 </div>
+                <!-- ↓ C2C選到「全家門市」時，才出現的訊息 B2C不顯示-->
+                <!-- <p class="is-error show-msg text-orange fammart-info">*使用全家門市支付，將於超商結帳時額外酌收30元手續費。</p> -->
+
                 <!-- ↓選擇信用卡結帳時才顯示 -->
-                <div class="cart-form--craditcard">
+                <!-- <div class="cart-form--craditcard">
                   <div class="cart-form__item cart-form__subitem grid-x cart-form--receive align-top">
                     <p class="cart-form__title h6">信用卡號*</p>
-                    <!-- // ↓當欄位錯誤時 在外層.input__wrap增加.show-msg -->
+                    // ↓當欄位錯誤時 在外層.input__wrap增加.show-msg
                     <div class="input__wrap show-msg">
                       <input type="text" class="input" placeholder="1234 5678 9012 3456" required>
                       <span class="msg__info is-error">*格式不正確</span>
@@ -402,7 +403,7 @@
                       <span class="msg__info is-error">*此為必填</span>
                     </div>
                   </div>
-                </div>
+                </div> -->
                 <!-- [END] 付款方式 -->
                 <hr>
                 <!-- [START] 新增發票填寫區(from GASH 商城) -->
@@ -416,14 +417,16 @@
                     </button>
                   </p>
                   <div class="input__wrap grid-x">
-                    <select class="select" id="InvoiceType" name="invoiceType" onclick="invoiceChange()">
+                    <select class="select" id="InvoiceType" name="invoiceType" onclick="invoiceChange()"
+                      v-model="invoiceType">
                       <option value="donate">捐贈發票</option>
                       <option value="personal">電子發票</option>
                       <option value="phone">手機條碼</option>
                       <option value="natural">自然人憑證條碼</option>
                       <option value="company">三聯式發票</option>
                     </select>
-                    <select class="select" id="DonateType" name="donateType" onchange="donateChange();">
+                    <select class="select" id="DonateType" name="donateType" onchange="donateChange();"
+                      v-if="invoiceType === 'donate'">
                       <option value="defaultCharity">社團法人台灣一起夢想公益協會</option>
                       <option value="NPOBANPanel">其他機關團體</option>
                     </select>
@@ -491,7 +494,7 @@
                     </div> -->
                     <!-- 發票寄送電子信箱 -->
                     <div class="cart-form__item cart-form__subitem grid-x cart-form--invoice align-top">
-                      <p class="cart-form__title h6" style="padding-top: .5rem; padding-right: 1rem;">發票寄送電子信箱*</p>
+                      <p class="cart-form__title h6">發票寄送電子信箱*</p>
                       <div class="input__wrap">
                         <input id="BillingEmail" class="input" maxlength="225" name="BillingEmail" placeholder="請輸入電子信箱"
                           type="text" />
@@ -511,7 +514,6 @@
                       </div>
                       <div class="cart-form__item cart-form__subitem grid-x cart-form--invoice align-top"
                         style="margin-bottom: 1rem;">
-                        <p class="cart-form__title h4"></p>
                         <div class="input__wrap">
                           <select class="select" id="area" name="area" onchange="setZipArea();">
                             <option value="1">內湖區</option>
@@ -520,7 +522,6 @@
                         </div>
                       </div>
                       <div class="cart-form__item grid-x cart-form--invoice align-center">
-                        <p class="cart-form__title h4"></p>
                         <div class="input__wrap">
                           <input class="input" id="InvoiceAddr" type="text" name="InvoiceAddr" placeholder="請輸入寄送地址"
                             maxlength="40" />
@@ -577,7 +578,7 @@
                     <div class="cart-form__item cart-form__subitem grid-x cart-form--invoice align-top"
                       style="margin-bottom: 1rem;">
                       <p class="cart-form__title h6">發票寄送地址*</p>
-                      <div class="input__wrap grid-x">
+                      <!-- <div class="input__wrap grid-x">
                         <select class="select" id="city" name="city" onchange="showArea();">
                           <option value="1">台北市</option>
                         </select>
@@ -586,12 +587,22 @@
                           <option value="1">內湖區</option>
                           <input id="getZipArea" type="hidden" name="getZipArea" value=" " />
                         </select>
-                      </div>
-                    </div>
-                    <div class="cart-form__item grid-x cart-form--invoice align-center">
-                      <div class="input__wrap">
-                        <input class="input" id="InvoiceAddr" type="text" name="InvoiceAddr" placeholder="請輸入寄送地址"
-                          maxlength="40" style="width: 100%;" />
+                      </div> -->
+                      <div class="add_check">
+                        <div class="input__wrap grid-x">
+                          <select class="select" id="city" name="city" onchange="showArea();">
+                            <option value="1">台北市</option>
+                          </select>
+                          <input id="getCity" type="hidden" name="getCity" value=" " />
+                          <select class="select" id="area" name="area" onchange="setZipArea();">
+                            <option value="1">114內湖區</option>
+                            <input id="getZipArea" type="hidden" name="getZipArea" value=" " />
+                          </select>
+                        </div>
+                        <div class="input__wrap">
+                          <input type="text" class="input" id="InvoiceAddr" name="InvoiceAddr" placeholder="請輸入寄送地址"
+                            maxlength="40">
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -624,29 +635,23 @@
                   </div>
                 </div>
                 <!-- 地址 (實體商品/發票寄送位置使用)-->
-                <div class="cart-form__item cart-form__subitem grid-x cart-form--invoice align-top"
-                  style="margin-bottom: 1rem;">
+                <div class="cart-form__item cart-form__subitem grid-x cart-form--invoice align-top">
                   <p class="cart-form__title h6">收件地址*</p>
-                  <div class="input__wrap grid-x">
-                    <fieldset class="checkbox-box">
-                      <input id="check3" name="check3" type="checkbox" value="check3" class="checkbox">
-                      <label for="check3">同發票寄送地址</label>
-                    </fieldset>
-                  </div>
-                </div>
-                <div class="cart-form__item cart-form__subitem grid-x cart-form--invoice align-top"
-                  style="margin-bottom: 1rem;">
-                  <p class="cart-form__title h6"></p>
-                  <div class="input__wrap grid-x">
-                    <select id="county" class="select">請選擇縣市</select>
-                    <select id="town" class="select">請選擇鄉鎮市區</select>
-                  </div>
-                </div>
-                <div class="cart-form__item cart-form__subitem grid-x cart-form--receive align-top">
-                  <p class="cart-form__title h4"></p>
-                  <div class="input__wrap">
-                    <input type="text" class="input" id="InvoiceAddr" name="InvoiceAddr" placeholder="請輸入收件地址，送出後無法更改"
-                      maxlength="40">
+                  <div class="add_check">
+                    <div class="input__wrap grid-x">
+                      <fieldset class="checkbox-box">
+                        <input id="check3" name="check3" type="checkbox" value="check3" class="checkbox">
+                        <label for="check3">同發票寄送地址</label>
+                      </fieldset>
+                    </div>
+                    <div class="input__wrap grid-x">
+                      <select id="county" class="select">請選擇縣市</select>
+                      <select id="town" class="select">請選擇鄉鎮市區</select>
+                    </div>
+                    <div class="input__wrap">
+                      <input type="text" class="input" id="InvoiceAddr" name="InvoiceAddr" placeholder="請輸入收件地址，送出後無法更改"
+                        maxlength="40">
+                    </div>
                   </div>
                 </div>
                 <!-- [END] 實體商品收件資訊 -->
@@ -715,8 +720,7 @@
                     </div>
                     <!-- 確認訂單1(共2項)：pc & mobile-->
                     <!-- disabled: <button class="btn cart-comfirm__button" type="submit" disabled>確認訂單</button>-->
-                    <button class="btn cart-comfirm__button" type="button" disabled
-                      data-open="coin-use-confirm">確認訂單</button>
+                    <button class="btn cart-comfirm__button" type="button" data-open="coin-use-confirm">確認訂單</button>
                   </div>
                 </section>
               </div>
@@ -731,9 +735,13 @@
       </div>
       <!-- [END] 內容-->
       <div class="pd-fixed-info">
-        <!-- 確認訂單2(共2項)：app-->
-        <!-- disabled: <button class="btn cart-detail__button" type="submit" form="cartForm" disabled>確認訂單</button>-->
-        <button class="btn cart-detail__button w-full" type="submit" form="cartForm" disabled>確認訂單</button>
+        <!-- 確認訂單：小網 & app -->
+        <p class="order-detail__info__title">訂單金額</p>
+        <p class="order-detail__info__price">
+          <span class="bf-coin" aria-label="beanfun coin"></span>
+          <span class="price">700,000</span>
+        </p>
+        <button class="btn cart-detail__button w-full" type="submit" form="cartForm">確認訂單</button>
       </div>
     </div>
     <div class="pd-fixed-info-space"></div>
@@ -1046,13 +1054,13 @@
       var checkLength = checkEl.length;
       var checkElLength = $('.cart-comfirm .checkbox:checked').length;
 
-      if (checkLength == checkElLength) {
-        $('.cart-comfirm__button').prop('disabled', null);
-        $('.pd-fixed-info .cart-detail__button').prop('disabled', null);
-      } else {
-        $('.cart-comfirm__button').prop('disabled', true);
-        $('.pd-fixed-info .cart-detail__button').prop('disabled', true);
-      }
+      // if (checkLength == checkElLength) {
+      //   $('.cart-comfirm__button').prop('disabled', null);
+      //   $('.pd-fixed-info .cart-detail__button').prop('disabled', null);
+      // } else {
+      //   $('.cart-comfirm__button').prop('disabled', true);
+      //   $('.pd-fixed-info .cart-detail__button').prop('disabled', true);
+      // }
     });
 
   </script>
@@ -1064,6 +1072,12 @@
         var vmHeader = new Vue({ el: '#header' });
         var vmCont = new Vue({
           el: '#main-container',
+
+          data() {
+            return {
+              invoiceType: 'donate',
+            }
+          },
 
           methods: {
             //判斷商品圖是否橫式
