@@ -311,14 +311,14 @@
                               <div class="order-detail__info__title">單價：</div>
                               <div class="order-detail__info__cont">
                                 <!-- ↓現金顯示"$" -->
-                                <!-- <div class="pd-card__price">
-                                  <div class="pd-card__price">$350,000</div>
-                                </div> -->
-                                <!-- ↓bf!coin 顯示圖示 -->
                                 <div class="pd-card__price">
+                                  <div class="pd-card__price">$350,000</div>
+                                </div>
+                                <!-- ↓bf!coin 顯示圖示 -->
+                                <!-- <div class="pd-card__price">
                                   <span class="bf-coin" aria-label="beanfun coin"></span>
                                   <span class="price">350,000</span>
-                                </div>
+                                </div> -->
                               </div>
                             </li>
                             <li class="order-detail__info__item">
@@ -331,8 +331,8 @@
                             <p class="order-detail__info__title">訂單金額</p>
                             <p class="order-detail__info__price">
                               <!-- ↓現金顯示"$"，bf!coin 顯示圖示 -->
-                              <span class="bf-coin" aria-label="beanfun coin"></span>
-                              <span class="price">700,000</span>
+                              <!-- <span class="bf-coin" aria-label="beanfun coin"></span> -->
+                              <span class="price">$700,000</span>
                             </p>
                           </div>
                         </div>
@@ -348,11 +348,19 @@
                     會員取得您的數位商品，一起組隊開SHOW、拚排位拿獎勵！
                   </span>
                 </div>
+                <!-- <div class="pd-card__notice">
+                  <img src="images/icons/realname.svg">
+                  <span>
+                    貼心提醒，您目前是以手機號碼登入結帳，購買完成後請使用同一支手機號碼
+                    <a href="">登入 beanfun!</a>
+                    會員取得您的數位商品，一起組隊開SHOW、拚排位拿獎勵！
+                  </span>
+                </div> -->
               </div>
               <!-- [END] 商品資訊-->
               <div class="cart-form">
                 <!-- [START] 付款方式 -->
-                <p class="cart-form__title h4"><span>1</span> 付款方式</p>
+                <p class="cart-form__title h4"><span>1</span>付款方式</p>
                 <div class="grid-x cart-form--payment align-start">
                   <div class="radio-group grid-x">
                     <fieldset class="radio-box">
@@ -408,7 +416,7 @@
                 <hr>
                 <!-- [START] 新增發票填寫區(from GASH 商城) -->
                 <!-- 發票資訊 -->
-                <p class="cart-form__title h4"><span>2</span> 發票資訊</p>
+                <p class="cart-form__title h4"><span>2</span>發票資訊</p>
                 <div class="cart-form__item cart-form__subitem grid-x cart-form--invoice align-top">
                   <p class="cart-form__title h6">統一發票種類
                     <button class="be-icon popup-tirgger" type="button" data-open="invoice-description">
@@ -611,7 +619,7 @@
                 <!-- [END] 新增發票填寫區(from GASH 商城) -->
                 <!-- [START] 實體商品收件資訊 -->
                 <!-- 購買人姓名 -->
-                <p class="cart-form__title h4"><span>3</span> 實體商品收件資訊</p>
+                <p class="cart-form__title h4"><span>3</span>實體商品收件資訊</p>
                 <div class="cart-form__item cart-form__subitem grid-x cart-form--receive align-top">
                   <p class="cart-form__title h6">收件人姓名*</p>
                   <div class="input__wrap show-msg">
@@ -675,11 +683,12 @@
                         <div class="cart-detail__list__item__title">訂單金額</div>
                         <div class="cart-detail__list__item__txt total-price">$350,000</div>
                       </li>-->
-                      <!-- Beanfun Coin-->
+                      <!-- ↓現金顯示"$"，bf!coin 顯示圖示 -->
                       <li class="cart-detail__list__item">
                         <div class="cart-detail__list__item__title">單價</div>
                         <div class="cart-detail__list__item__txt origin-price">
-                          <span class="bf-coin" aria-label="beanfun coin"></span>350,000
+                          <!-- <span class="bf-coin" aria-label="beanfun coin"></span> -->
+                          $350,000
                         </div>
                       </li>
                       <li class="cart-detail__list__item">
@@ -689,8 +698,8 @@
                       <li class="cart-detail__list__item cart-detail--total">
                         <div class="cart-detail__list__item__title">訂單金額</div>
                         <div class="cart-detail__list__item__txt total-price">
-                          <span class="bf-coin" aria-label="beanfun coin"></span>
-                          <span class="price">700,000</span>
+                          <!-- <span class="bf-coin" aria-label="beanfun coin"></span> -->
+                          <span class="price">$700,000</span>
                           <!-- <small class="coin-balance text-orange">剩餘beanfun! Coin: 1,500</small> -->
                         </div>
                         <!-- <div class="cart-detail__list__item__note">
@@ -738,8 +747,8 @@
         <!-- 確認訂單：小網 & app -->
         <p class="order-detail__info__title">訂單金額</p>
         <p class="order-detail__info__price">
-          <span class="bf-coin" aria-label="beanfun coin"></span>
-          <span class="price">700,000</span>
+          <!-- <span class="bf-coin" aria-label="beanfun coin"></span> -->
+          <span class="price">$700,000</span>
         </p>
         <button class="btn cart-detail__button w-full" type="submit" form="cartForm">確認訂單</button>
       </div>
@@ -902,7 +911,7 @@
   </main>
   <!-- [END] Content ==================================================-->
   <!-- 【Web版本】[START] Footer ==================================================-->
-  <footer class="ft" id="footer">
+  <!-- <footer class="ft" id="footer">
     <div class="ft__bg-box lazy lazy-css"></div>
     <div class="ft-top">
       <div class="grid-container">
@@ -985,9 +994,10 @@
           </div>
         </div>
       </div>
-      <div class="ft-bottom__l"><span class="ft-copyright">Copyright © 2021. beanfun! All rights reserved.</span></div>
+      <div class="ft-bottom__l"><span class="ft-copyright">Copyright © 2023. beanfun! All rights reserved.</span></div>
     </div>
-  </footer>
+  </footer> -->
+  <footer class="ft-line" id="footer">Copyright © 2023. beanfun! All rights reserved.</footer>
   <!-- 【Web版本】[END] Footer ==================================================-->
   <button class="gotop js-gotop"> <i class="be-icon be-icon-arrow-top" aria-hidden="true"></i><span
       class="gotop_txt bold">top </span></button>
