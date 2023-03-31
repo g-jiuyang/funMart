@@ -767,7 +767,7 @@ screen and (max-width: 39.99875em) {
 @media print,
 screen and (max-width: 63.99875em) {
   .cart-form {
-    margin-bottom: 2.5rem;
+    margin-bottom: 0;
   }
 }
 
@@ -788,7 +788,6 @@ screen and (min-width: 40em) {
 }
 
 .cart-form__item.cart-form__subitem .add_check {
-  margin-top: -0.5rem;
   line-height: 46px;
   width: 100%;
 }
@@ -811,7 +810,7 @@ screen and (min-width: 64em) {
 .cart-form__title.h4 {
   margin-bottom: 1.5rem;
   font-weight: 700;
-  font-size: 1.5rem;
+  font-size: 1.125rem;
 }
 
 .cart-form__title.h4 span {
@@ -825,7 +824,7 @@ screen and (min-width: 64em) {
   background-color: #2B3843;
   margin-right: 0.5rem;
   text-align: center;
-  transform: translateY(-3px);
+  transform: translateY(-1px);
 }
 
 @media print,
@@ -843,6 +842,7 @@ screen and (min-width: 40em) {
 
   .cart-form__title.h4 {
     margin-bottom: 2.53125rem;
+    font-size: 1.5rem;
   }
 
   .cart-form__title.h4 span {
@@ -1160,7 +1160,7 @@ screen and (min-width: 40em) {
 }
 
 .checkbox-group {
-  margin-bottom: 2.6875rem;
+  margin-bottom: 0;
 }
 
 @media print,
@@ -1211,13 +1211,6 @@ screen and (min-width: 40em) {
 
 .pd-fixed-info .btn:not(:last-child) {
   margin-bottom: 0.625rem;
-}
-
-@media print,
-screen and (max-width: 39.99875em) {
-  .cart-cont-container {
-    padding-bottom: 3.125rem;
-  }
 }
 
 @media print,
