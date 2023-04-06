@@ -320,7 +320,10 @@
             </nav>
             <div class="pd-ctrls hide-for-medium">
               <button class="pd-card__btn-share btn-icon" id="hd-share-btn" type="button" aria-label="分享"><i class="be-icon be-icon-share" aria-hidden="true"></i></button>
-              <button class="pd-card__img-tag pd-card__btn-fav btn-icon js-fav is-active" aria-label="加入書籤"></button>
+              <!-- 收藏功能：bf!會員 -->
+              <!-- <button class="pd-card__img-tag pd-card__btn-fav btn-icon js-fav is-active" aria-label="加入書籤"></button> -->
+              <!-- 收藏功能：非 bf!會員 -->
+              <button class="hd-app__btn-fav pd-card__btn-fav btn-icon" type="button" aria-label="加入書籤" data-open="collect-popup"></button>
             </div>
           </div>
         </div>
@@ -344,7 +347,7 @@
                           <button class="pd-banner__3d-box__btn-full hide js-fullscreen" type="button" aria-label="全螢幕"></button>
                         </div>-->
                         <!-- 一般圖片-->
-                        <div class="pd-banner__img-box object-fit-contain"><img class="lazy" src="images/1x1.gif" data-src="images/product/pd_photo_full@3x.jpg" alt="">
+                        <div class="pd-banner__img-box object-fit-contain"><img class="lazy" src="images/1x1.gif" data-src="images/product/376x468(324KB).png" alt="">
                         </div>
                       </div>
                       <div class="pd-banner__wave-box wave-box hide-for-medium"></div>
@@ -656,9 +659,19 @@
                   <p class="pd-side-price__note text-right coin"><em>剩餘beanfun! Coin: 6,688</em></p>-->
                   <!-- 提醒-->
                   <p class="pd-side-price__note">*此為玩家們自由定價刊登出售之商品，請至beanfun! App內的 fun巿集 購買</p>
-                  <div class="pd-side-price__button-box"> 
-                    <button class="pd-card__img-tag pd-card__btn-fav btn-icon js-fav is-active" aria-label="加入書籤"></button>
-                    <a class="btn pd-side-price__button" type="button" data-open="bf-download-popup">前往 beanfun!</a>
+                  <div class="pd-side-price__button-box">
+                    <!-- 收藏功能：bf!會員 -->
+                    <!-- <button class="pd-card__img-tag pd-card__btn-fav btn-icon js-fav is-active" aria-label="加入書籤" ></button> -->
+                    <!-- 收藏功能：非 bf!會員 -->
+                    <button class="pd-card__img-tag pd-card__btn-fav btn-icon" aria-label="加入書籤" data-open="collect-popup"></button>
+                    <!-- 未登入:購買btn -->
+                    <button class="btn pd-side-price__button" type="submit" data-open="login-popup"><i class="be-icon be-icon-bag" aria-hidden="true"></i>立即購買</button>
+                    <!-- 已登入:B2C 購買btn -->
+                    <!-- <form class="form" action="cart.html">
+                      <button class="btn pd-side-price__button" type="submit"><i class="be-icon be-icon-bag" aria-hidden="true"></i>立即購買</button>
+                    </form> -->
+                    <!-- C2C 購買btn -->
+                    <!-- <a class="btn pd-side-price__button" type="button" data-open="bf-download-popup">前往 beanfun!</a> -->
                   </div>
                 </div>
               </section>
@@ -1016,8 +1029,19 @@
                   <div class="pd-fixed-info__price"><span class="bf-coin" aria-label="beanfun coin"></span>350,000</div>
                   <div class="pd-fixed-info__note"><em>剩餘beanfun! Coin: 6,688</em></div>
                 </div>-->
-                <div class="pd-fixed-info__button-box"><a class="pd-fixed-info__button btn" href="#">前往 beanfun!</a>
-                  <button class="show-for-large pd-card__img-tag pd-card__btn-fav btn-icon js-fav is-active" aria-label="加入書籤"></button>
+                <div class="pd-fixed-info__button-box">
+                  <!-- 未登入:購買btn -->
+                  <button class="btn pd-side-price__button" type="submit" data-open="login-popup">立即購買</button>
+                  <!-- 已登入:B2C 購買btn -->
+                  <!-- <form class="form" action="cart.html">
+                    <button class="pd-fixed-info__button btn" type="submit">立即購買</button>
+                  </form> -->
+                  <!-- C2C 購買btn -->
+                  <!-- <a class="pd-fixed-info__button btn" href="#">前往 beanfun!</a> -->
+                  <!-- 收藏功能：bf!會員 -->
+                  <!-- <button class="show-for-large pd-card__img-tag pd-card__btn-fav btn-icon js-fav is-active" aria-label="加入書籤"></button> -->
+                  <!-- 收藏功能：非 bf!會員 -->
+                  <button class="show-for-large pd-card__img-tag pd-card__btn-fav btn-icon" aria-label="加入書籤" data-open="collect-popup"></button>
                 </div>
               </div>
             </div>
@@ -1140,6 +1164,75 @@
         <button class="close-button" data-close="" aria-label="Close modal" type="button"></button>
       </div>
       <!-- [END] Popup - APP下載-->
+      <!-- Popup - 收藏品 -->
+      <div class="collect-spec pd-spec reveal reveal-msg" id="collect-popup" data-reveal="">
+        <h3 class="reveal-msg__title text-center">beanfun! 會員限定</h3>
+        <p class="pd-spec__desc">使用 beanfun! 會員登入即可享有收藏功能。</p>
+        <button class="btn" type="submit" data-close="">確定</button>
+
+        <button class="close-button" data-close="" aria-label="Close modal" type="button"><span
+          aria-hidden="true">×</span></button>
+      </div>
+      <!-- Popup - 登入 -->
+      <div class="login-spec pd-spec reveal cell-block-container" id="login-popup" data-reveal="">
+        <ul id="loginBF">
+          <h3>beanfun! 會員登入</h3>
+          <p class="pd-spec__caption">使用 beanfun! 會員登入即可享有最安全的數位商品交易、訂單記錄等服務與更快的結帳</p>
+          <div class="loginbf-item">
+            <ul>
+              <li><img src="images/icons/car.svg" alt="">快速結帳</li>
+              <li><img src="images/icons/trade.svg" alt="">數位商品交易、上鏈服務</li>
+              <li><img src="images/icons/sales.svg" alt="">追蹤訂單狀態</li>
+            </ul>
+          </div>
+          <form class="form" action="#">
+            <button class="btn" type="submit">beanfun! 登入</button>
+          </form>
+          <div class="loginbf-mobile">
+            <p class="dec-or"><i></i><span>or</span><i></i></p>
+            <button class="btn hollow" type="submit" @click="loginEL">手機號碼登入</button>
+          </div>
+        </ul>
+        <ul id="loginEL">
+          <h3>手機號碼登入</h3>
+          <p class="pd-spec__caption">您以手機號碼登入完成，購買成功後需登入/註冊 beanfun! 會員才可於 beanfun! APP 內取得數位商品及享有服務</p>
+          <p class="fammart-info text-tip">*請使用同一支手機號碼登入/註冊 beanfun! 會員</p>
+          <div class="input-spec">
+            <div class="el-input no-country">
+              <span>台灣 +886</span>
+              <!-- <select class="select" id="country" name="country" onchange="showArea();">
+                <option value="+886">+886</option>
+              </select> -->
+              <div class="send-input">
+                <input class="input" id="phone" type="text" placeholder="0987654321" v-model="phone" onkeyup = "value=value.replace(/[^\d]/g,'')" autocomplete="off">
+                <button class="send" type="submit" v-if="phone === '0987654321'" @click="sendVC">發送驗證碼</button>
+                <button class="send" type="submit" v-else disabled>發送驗證碼</button>
+                <!-- 發送驗證碼已達上限 btn -->
+                <!-- <button class="send" type="submit" disabled>已達發送上限</button> -->
+              </div>
+            </div>
+            <!-- 發送驗證碼已達上限訊息 -->
+            <!-- <p class="fammart-info is-error">*已超過發送次數，請於24小時後重新操作</p> -->
+            <!-- 已是 bf! 會員訊息 -->
+            <!-- <p class="fammart-info is-error">*貼心提醒，此組手機號碼已為 beanfun! 會員。</p> -->
+          </div>
+          <div class="input-spec" style="display: none;">
+            <div class="check-input">
+              <input class="input" id="verifyCode" type="text" placeholder="請輸入驗證碼" onkeyup = "value=value.replace(/[^\d]/g,'')" autocomplete="off">
+              <button class="btn" type="submit" @click="checkVC">驗證</button>
+            </div>
+            <p class="fammart-info text-tip" id="verifyTip">*此驗證碼將於5分鐘後過期</p>
+            <!-- 驗證碼錯誤訊息 -->
+            <p class="fammart-info is-error" id="verifyFail" style="display: none;">*驗證碼錯誤，請重新輸入</p>
+             <!-- 驗證碼過期訊息 -->
+             <!-- <p class="fammart-info is-error" id="verifyFail" style="display: none;">*驗證碼已過期，請重新發送驗證碼</p> -->
+             <!-- 發送驗證碼已達上限&驗證碼過期訊息 -->
+             <!-- <p class="fammart-info is-error" id="verifyFail" style="display: none;">*驗證碼已過期，請於24小時後重新操作</p> -->
+          </div>
+        </ul>
+        <button class="close-button" data-close="" aria-label="Close modal" type="button"><span
+          aria-hidden="true">×</span></button>
+      </div>
       <!-- [END] Popup ==========-->
     </main>
     <!-- [END] Content ==================================================-->
@@ -1308,6 +1401,10 @@
       		var vmHeader = new Vue({ el: '#header' });
       		var vmCont = new Vue({
             el: '#main-container',
+            data() {
+              return {
+                phone: '',
+            }},
 
             methods:{
               //判斷商品圖是否橫式
@@ -1321,7 +1418,37 @@
                     $img.addClass('vertical');
                   } else {}
                 });
-              }
+              },
+              //發送驗證碼
+              sendVC: function(){
+                $('.input-spec').show()
+                $('.send').text('60s');
+                $('.send').prop('disabled', true);
+                var count = 60;
+                var interval = setInterval(function () {
+                    count--;
+                    $('.send').text(count + 's');
+                    if (count == 0) {
+                        clearInterval(interval);
+                        $('.send').prop('disabled', false).text('重新發送驗證碼');
+                    }
+                }, 1000);
+              },
+              //檢查驗證碼
+              checkVC: function() {
+                var verifyCode = $('#verifyCode').val();
+                if(verifyCode === '123456'){
+                  window.location.href="cart.html"
+                }else{
+                  $('#verifyFail').show();
+                  $('#verifyTip').hide();
+                }
+              },
+              //手機裝置手機號碼登入切換
+              loginEL: function(){
+                $('#loginBF').hide();
+                $('#loginEL').show();
+              },
             }
           });
       		var vmFooter = new Vue({ el: '#footer' });
@@ -1336,5 +1463,17 @@
       // [END] 啟動Vue + 移除Loading
     </script>
     <!-- [END] JS ==================================================-->
+    <script>
+      window.addEventListener('resize', function(){
+        console.log(window.innerWidth);
+        if(window.innerWidth > 1024){
+          $('#loginBF').show()
+          $('#loginEL').show()
+          
+        }else{
+          $('#loginEL').hide()
+        }
+      });
+    </script>
   </body>
 </html>

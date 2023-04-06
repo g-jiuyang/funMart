@@ -223,11 +223,11 @@
           </div>
           <!-- 購物車-->
           <div class="hd-main__r__item hd-cart"><a class="hd-main__r__btn" href="cart.html"> <i class="be-icon be-icon-bag" aria-hidden="true"></i><span class="text">購物車</span></a></div>
-          <!-- 【Web版本】[PC版] 未登入（會員專區）--><!--
-          <div class="hd-main__r__item hd-member"><a class="hd-main__r__btn" href="login.html"><span class="text hd-member__name">登入/註冊</span><i class="be-icon be-icon-member-circle" aria-hidden="true"></i></a></div>-->
+          <!-- 【Web版本】[PC版] 未登入（會員專區）-->
+          <div class="hd-main__r__item hd-member"><a class="hd-main__r__btn" data-open="login-popup"><span class="text hd-member__name">登入/註冊</span><i class="be-icon be-icon-member-circle" aria-hidden="true"></i></a></div>
           <!-- 【Web版本】[PC版] 已登入（會員專區）-->
           <!-- 預設圖: images/product/profile_photo_default.jpg-->
-          <div class="hd-main__r__item hd-member"><a class="hd-main__r__btn" href="member.html"><span class="text hd-member__name">kilet12244869</span><img class="user-info__photo-box lazy" src="images/1x1.gif" data-src="images/profile_photo_default.jpg" width="24" height="24" alt="使用者名稱"></a></div>
+          <!-- <div class="hd-main__r__item hd-member"><a class="hd-main__r__btn" href="member.html"><span class="text hd-member__name">kilet12244869</span><img class="user-info__photo-box lazy" src="images/1x1.gif" data-src="images/profile_photo_default.jpg" width="24" height="24" alt="使用者名稱"></a></div> -->
         </div>
       </div>
       <!-- 【Web版本】[END] Header-->
@@ -261,9 +261,12 @@
                 <p class="h4 index-key-circle__desc">你可以在這裡販賣你的商品並買到其他玩家的寶貝！</p>
               </div>
               <div class="index-key-circle__btn-box">
-                <!-- 【Web版本】未登入--><!--<a class="btn btn-right-yellow" href="member.html">登入/註冊</a>-->
-                <!-- 【Web版本】已登入--><a class="btn btn-right-yellow" href="member.html">買家中心</a>
-                <!-- 【APP版本】--><!--<a class="btn btn-right-yellow" href="member.html">買賣家中心</a>-->
+                <!-- 【Web版本】未登入-->
+                <a class="btn btn-right-yellow" data-open="login-popup">登入/註冊</a>
+                <!-- 【Web版本】已登入-->
+                <!-- <a class="btn btn-right-yellow" href="member.html">買家中心</a> -->
+                <!-- 【APP版本】-->
+                <!--<a class="btn btn-right-yellow" href="member.html">買賣家中心</a>-->
               </div>
             </div>
             <div class="swiper-box">
@@ -276,17 +279,17 @@
                   <!-- ↓裝飾圖（區塊背景）：data-deco-->
                   <div class="index-key-circle__item swiper-slide no-selection" data-deco="images/index/banner-bg-img@3x--uc.png" data-title="呼叫寶藏獵人，盡情尋尋寶寶吧！" data-desc="你可以在這裡販賣你的商品並買到其他玩家的寶貝！">
                     <button class="index-key-circle__link" type="button" data-open="activity-popup"><span class="index-key-circle__circle-wave"></span><span class="index-key-circle__circle-fill-3"></span><span class="index-key-circle__circle-fill-2"></span><span class="index-key-circle__circle-fill-1"></span><span class="index-key-circle__hl-blur"></span><span class="index-key-circle__light-border"></span><span class="index-key-circle__hl-border"></span>
-                      <!-- ↓背景圖（圓圈內）--><span class="index-key-circle__img-box--back swiper-lazy" data-background="images/index/banner-img_01_back@3x.jpg"></span>
-                      <!-- ↓前景圖（破圖設計）：沒有建議不要生成--><span class="index-key-circle__img-box--front object-fit-contain"><img class="index-key-circle__img swiper-lazy" src="images/1x1.gif" data-src="images/index/banner-img_01_front@3x.png" alt=""/></span>
+                      <!-- ↓背景圖（圓圈內）--><span class="index-key-circle__img-box--back swiper-lazy" data-background="images/index/banner-bg_test.png"></span>
+                      <!-- ↓前景圖（破圖設計）：沒有建議不要生成--><span class="index-key-circle__img-box--front object-fit-contain"><img class="index-key-circle__img swiper-lazy" src="images/1x1.gif" data-src="images/index/banner-img_test0.png" alt=""/></span>
                       <!-- 圖片描述（螢幕報讀軟體使用）--><span class="show-for-sr">圖片描述</span>
                     </button>
                   </div>
                   <!-- [END] Item: 開啟Popup-->
                   <!-- [START] Item: Normal-->
                   <!-- ↓裝飾圖（區塊背景）：data-deco-->
-                  <div class="index-key-circle__item swiper-slide no-selection" data-deco="images/index/banner-bg-img@3x--uc.png" data-title="2呼叫寶藏獵人，盡情尋尋寶寶吧！" data-desc="2你可以在這裡販賣你的商品並買到其他玩家的寶貝！"><a class="index-key-circle__link" href="https://www.beanfun.com/" target="_blank" rel="noopener noreferrer"><span class="index-key-circle__circle-wave"></span><span class="index-key-circle__circle-fill-3"></span><span class="index-key-circle__circle-fill-2"></span><span class="index-key-circle__circle-fill-1"></span><span class="index-key-circle__hl-blur"></span><span class="index-key-circle__light-border"></span><span class="index-key-circle__hl-border"></span>
-                      <!-- ↓背景圖（圓圈內）--><span class="index-key-circle__img-box--back swiper-lazy" data-background="images/index/banner-img_06_back@3x.png"></span>
-                      <!-- ↓前景圖（破圖設計）：沒有建議不要生成--><span class="index-key-circle__img-box--front object-fit-contain"><img class="index-key-circle__img swiper-lazy" src="images/1x1.gif" data-src="images/index/banner-img_06_front@3x.png" alt=""/></span>
+                  <div class="index-key-circle__item swiper-slide no-selection" data-deco="images/index/banner-bg-img@3x--uc.png" data-title="2" data-desc="2"><a class="index-key-circle__link" href="https://www.beanfun.com/" target="_blank" rel="noopener noreferrer"><span class="index-key-circle__circle-wave"></span><span class="index-key-circle__circle-fill-3"></span><span class="index-key-circle__circle-fill-2"></span><span class="index-key-circle__circle-fill-1"></span><span class="index-key-circle__hl-blur"></span><span class="index-key-circle__light-border"></span><span class="index-key-circle__hl-border"></span>
+                      <!-- ↓背景圖（圓圈內）--><span class="index-key-circle__img-box--back swiper-lazy" data-background="images/index/banner-bg_test.png"></span>
+                      <!-- ↓前景圖（破圖設計）：沒有建議不要生成--><span class="index-key-circle__img-box--front object-fit-contain"><img class="index-key-circle__img swiper-lazy" src="images/1x1.gif" data-src="images/index/banner-img_test100.png" alt=""/></span>
                       <!-- 圖片描述（螢幕報讀軟體使用）--><span class="show-for-sr">圖片描述</span></a>
                   </div>
                   <!-- [END] Item: Normal-->
@@ -494,7 +497,8 @@
               class 「js-fav」 ，啟動 JS 點擊事件，不要就移除
               增減 class 「 is-active 」 更改加入書籤樣式
               -->
-              <button class="pd-card__img-tag top-right pd-card__btn-fav btn-icon js-fav is-active" aria-label="加入書籤"></button><a class="pd-card__link" href="product-cont-pd.html">
+              <!-- 收藏功能：非 bf!會員樣式 -->
+              <button class="pd-card__img-tag top-right pd-card__btn-fav btn-icon" aria-label="加入書籤" data-open="collect-popup"></button><a class="pd-card__link" href="product-cont-pd.html">
                 <div class="pd-card__img-box object-fit"><img class="pd-card__img lazy" src="images/1x1.gif" data-src="images/pd/pd_photo_rectangle.png" alt="" @load="isLoad"/><span class="show-for-sr">tag3D: </span><span class="show-for-sr">tagHex: </span><span class="show-for-sr">tabBlue: </span>
                   <div class="pd-card__img-tag-group bottom-left">
                   </div>
@@ -1364,7 +1368,76 @@
         </div>
         <button class="close-button" data-close="" aria-label="Close modal" type="button"></button>
       </div>
-    <!-- [END] Popup - APP下載  [PC版] 請都改為開啟 popup-->
+      <!-- [END] Popup - APP下載  [PC版] 請都改為開啟 popup-->
+
+      <!-- Popup - 登入 -->
+      <div class="login-spec pd-spec reveal cell-block-container" id="login-popup" data-reveal="">
+        <ul id="loginBF">
+          <h3>beanfun! 會員登入</h3>
+          <p class="pd-spec__caption">使用 beanfun! 會員登入即可享有最安全的數位商品交易、訂單記錄等服務與更快的結帳</p>
+          <div class="loginbf-item">
+            <ul>
+              <li><img src="images/icons/car.svg" alt="">快速結帳</li>
+              <li><img src="images/icons/trade.svg" alt="">數位商品交易、上鏈服務</li>
+              <li><img src="images/icons/sales.svg" alt="">追蹤訂單狀態</li>
+            </ul>
+          </div>
+          <form class="form" action="#">
+            <button class="btn" type="submit">beanfun! 登入</button>
+          </form>
+          <div class="loginbf-mobile">
+            <p class="dec-or"><i></i><span>or</span><i></i></p>
+            <button class="btn hollow" type="submit" @click="loginEL">手機號碼登入</button>
+          </div>
+        </ul>
+        <ul id="loginEL">
+          <h3>手機號碼登入</h3>
+          <p class="pd-spec__caption">您以手機號碼登入完成，購買成功後需登入/註冊 beanfun! 會員才可於 beanfun! APP 內取得數位商品及享有服務</p>
+          <p class="fammart-info text-tip">*請使用同一支手機號碼登入/註冊 beanfun! 會員</p>
+          <div class="input-spec">
+            <div class="el-input no-country">
+              <span>台灣 +886</span>
+              <!-- <select class="select" id="country" name="country" onchange="showArea();">
+                <option value="+886">+886</option>
+              </select> -->
+              <div class="send-input">
+                <input class="input" id="phone" type="text" placeholder="0987654321" v-model="phone" onkeyup = "value=value.replace(/[^\d]/g,'')" autocomplete="off">
+                <button class="send" type="submit" v-if="phone === '0987654321'" @click="sendVC">發送驗證碼</button>
+                <button class="send" type="submit" v-else disabled>發送驗證碼</button>
+                <!-- 發送驗證碼已達上限 btn -->
+                <!-- <button class="send" type="submit" disabled>已達發送上限</button> -->
+              </div>
+            </div>
+            <!-- 發送驗證碼已達上限訊息 -->
+            <!-- <p class="fammart-info is-error">*已超過發送次數，請於24小時後重新操作</p> -->
+            <!-- 已是 bf! 會員訊息 -->
+            <!-- <p class="fammart-info is-error">*貼心提醒，此組手機號碼已為 beanfun! 會員。</p> -->
+          </div>
+          <div class="input-spec" style="display: none;">
+            <div class="check-input">
+              <input class="input" id="verifyCode" type="text" placeholder="請輸入驗證碼" onkeyup = "value=value.replace(/[^\d]/g,'')" autocomplete="off">
+              <button class="btn" type="submit" @click="checkVC">驗證</button>
+            </div>
+            <p class="fammart-info text-tip" id="verifyTip">*此驗證碼將於5分鐘後過期</p>
+            <!-- 驗證碼錯誤訊息 -->
+            <p class="fammart-info is-error" id="verifyFail" style="display: none;">*驗證碼錯誤，請重新輸入</p>
+             <!-- 驗證碼過期訊息 -->
+             <!-- <p class="fammart-info is-error" id="verifyFail" style="display: none;">*驗證碼已過期，請重新發送驗證碼</p> -->
+             <!-- 發送驗證碼已達上限&驗證碼過期訊息 -->
+             <!-- <p class="fammart-info is-error" id="verifyFail" style="display: none;">*驗證碼已過期，請於24小時後重新操作</p> -->
+          </div>
+        </ul>
+        <button class="close-button" data-close="" aria-label="Close modal" type="button"><span
+          aria-hidden="true">×</span></button>
+      </div>
+      <!-- Popup - 收藏品 -->
+      <div class="collect-spec pd-spec reveal reveal-msg" id="collect-popup" data-reveal="">
+        <h3 class="reveal-msg__title text-center">beanfun! 會員限定</h3>
+        <p class="pd-spec__desc">使用 beanfun! 會員登入即可享有收藏功能。</p>
+        <button class="btn" type="submit" data-close="">確定</button>
+        <button class="close-button" data-close="" aria-label="Close modal" type="button"><span
+          aria-hidden="true">×</span></button>
+      </div>
       <!-- [END] Popup ==========-->
       <!-- [START] Popup（範例） ==========-->
       <!-- [START] Popup - 一般確認按鈕-->
@@ -1475,7 +1548,7 @@
               <div class="ft-sitemap__cont">
                 <div class="h5 ft-sitemap__title">合約與條款</div>
                 <ul class="ft-sitemap__list">
-                  <li class="ft-sitemap__item"><a class="ft-sitemap__link" href="https://beanfun.com/terms" target="_blank" rel="nopener noreferrer"><span class="text">bf! fun市集使用條款及隱私權政策</span></a></li>
+                  <li class="ft-sitemap__item"><a class="ft-sitemap__link" href="https://beanfun.com/terms" target="_blank" rel="nopener noreferrer"><span class="text">beanfun! fun市集使用條款及隱私權政策</span></a></li>
                 </ul>
               </div>
             </div>
@@ -1505,7 +1578,7 @@
             </div>
           </div>
         </div>
-        <div class="ft-bottom__l"><span class="ft-copyright">Copyright © 2021. beanfun! All rights reserved.</span></div>
+        <div class="ft-bottom__l"><span class="ft-copyright">Copyright © 2023. beanfun! All rights reserved.</span></div>
       </div>
     </footer>
     <!-- 【Web版本】[END] Footer ==================================================-->
@@ -1569,6 +1642,10 @@
       		var vmHeader = new Vue({ el: '#header' });
       		var vmCont = new Vue({
             el: '#main-container',
+            data() {
+              return {
+                phone: '',
+              }},
 
             methods:{
               //判斷商品圖是否橫式
@@ -1582,7 +1659,37 @@
                     $img.addClass('vertical');
                   } else {}
                 });
-              }
+              },
+              //發送驗證碼
+              sendVC: function(){
+                $('.input-spec').show()
+                $('.send').text('60s');
+                $('.send').prop('disabled', true);
+                var count = 60;
+                var interval = setInterval(function () {
+                    count--;
+                    $('.send').text(count + 's');
+                    if (count == 0) {
+                        clearInterval(interval);
+                        $('.send').prop('disabled', false).text('重新發送驗證碼');
+                    }
+                }, 1000);
+              },
+              //檢查驗證碼
+              checkVC: function() {
+                var verifyCode = $('#verifyCode').val();
+                if(verifyCode === '123456'){
+                  window.location.href="index.html"
+                }else{
+                  $('#verifyFail').show();
+                  $('#verifyTip').hide();
+                }
+              },
+              //手機裝置手機號碼登入切換
+              loginEL: function(){
+                $('#loginBF').hide();
+                $('#loginEL').show();
+              },
             }
           });
           Vue.prototype.successLoadImg = function (event){
@@ -1607,6 +1714,17 @@
       function hideCookie() {
         document.getElementById("cookie").style.display = 'none';
       };
+
+      window.addEventListener('resize', function(){
+        console.log(window.innerWidth);
+        if(window.innerWidth > 1024){
+          $('#loginBF').show()
+          $('#loginEL').show()
+          
+        }else{
+          $('#loginEL').hide()
+        }
+      });
     </script>
   </body>
 </html>

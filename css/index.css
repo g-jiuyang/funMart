@@ -918,6 +918,7 @@ button.swiper-pagination-bullet {
 }
 
 .index-key-circle__text-box {
+ height: 100px;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -926,7 +927,6 @@ button.swiper-pagination-bullet {
 .index-key-circle__title {
   font-weight: 700;
 }
-
 @media print, screen and (min-width: 64em) {
   .index-key-circle__title {
     margin-bottom: 0.8125rem;

@@ -222,7 +222,7 @@
           <div class="hd-main__r__item hd-member"><a class="hd-main__r__btn" href="login.html"><span class="text hd-member__name">登入/註冊</span><i class="be-icon be-icon-member-circle" aria-hidden="true"></i></a></div>-->
           <!-- 【Web版本】[PC版] 已登入（會員專區）-->
           <!-- 預設圖: images/product/profile_photo_default.jpg-->
-          <div class="hd-main__r__item hd-member"><a class="hd-main__r__btn" href="member.html"><span class="text hd-member__name">kilet12244869</span><img class="user-info__photo-box lazy" src="images/1x1.gif" data-src="images/profile_photo_default.jpg" width="24" height="24" alt="使用者名稱"></a></div>
+          <div class="hd-main__r__item hd-member"><a class="hd-main__r__btn" href="member.html"><span class="text hd-member__name">0987654321</span><img class="user-info__photo-box lazy" src="images/1x1.gif" data-src="images/profile_photo_default.jpg" width="24" height="24" alt="使用者名稱"></a></div>
         </div>
       </div>
       <!-- 【Web版本】[END] Header-->
@@ -247,12 +247,22 @@
         <div class="grid-container grid-container-m">
           <div class="cart-statue grid-x">
             <div class="cell flex-container align-center">
-              <div class="cart-statue__cover text-center"><img class="cart-statue__cover-img" src="images/cart/success.svg" alt="購買成功！">
+              <div class="cart-statue__cover text-center">
+                <img class="cart-statue__cover-img" src="images/cart/success.svg" alt="購買成功！">
                 <h1 class="h3 cart-statue__cover-title">購買成功！</h1>
               </div>
             </div>
-            <div class="cell text-center">
-              <p class="cart-statue__txt h5">您可至「<a class="link" href="member-record.html">購買紀錄</a>」查詢</p>
+            <div class="cell text-center cart-info">
+              <!-- bf!會員登入 -->
+              <!-- <p class="cart-statue__txt h5">您可至「<a class="link" href="member-record.html">購買紀錄</a>」查詢</p> -->
+              <!-- 手機登入：非 bf!會員 -->
+              <!-- <p class="cart-statue__txt h5">您以手機號碼完成購買需註冊 beanfun! 會員才可於 beanfun! APP 內取得數位商品及享有服務</p>
+              <p class="tip">*註冊 beanfun! 會員需與使用的手機號碼相同</p>
+              <a href="#" class="btn pd-side-price__button" type="button">註冊 beanfun! 會員</a> -->
+              <!-- 手機登入：bf!會員 -->
+              <p class="cart-statue__txt h5">您以手機號碼完成購買需登入 beanfun! 會員才可於 beanfun! APP 內取得數位商品及享有服務</p>
+              <p class="tip">*登入 beanfun! 會員需與使用的手機號碼相同</p>
+              <a href="#" class="btn pd-side-price__button" type="button">登入 beanfun! 會員</a>
             </div>
           </div>
           <!-- [START] 商品資訊-->
@@ -275,17 +285,22 @@
                           <li class="pd-card__tag label">道具</li>
                           <li class="pd-card__tag label">小丸子</li>
                         </ul>
-                        <p class="pd-card__title h5">限定3D - 小丸子夢裡偶爾出現的夢幻狐狸
-                        </p>
-                        <p class="pd-card__qua">購買數量：2</p>
+                        <p class="pd-card__title h5">限定3D - 小丸子夢裡偶爾出現的夢幻狐狸</p>
+                        <p class="pd-card__desc">內容：張雨生數位收藏卡一張＋張雨生特展門票一張</p>
                       </div>
                       <div class="pd-card__price-box hori">
-                        <!-- 一般金額--><!--
-                        <div class="pd-card__century" data-after="NTD">訂單金額</div>
-                        <div class="pd-card__price h3">$3,376</div>-->
-                        <!-- Beanfun Coin-->
-                        <div class="pd-card__century">訂單金額</div>
-                        <div class="pd-card__price h3"><span class="bf-coin" aria-label="beanfun coin"></span>3,376</div>
+                        <div class="pd-card__qu">
+                          <p><span class="d">單價：</span>$300,000</p>
+                          <p class="qu-color"><span class="d">數量：</span><span class='m'>×</span>2</p>
+                        </div>
+                        <div class="pd-card__price-info">
+                          <!-- 一般金額-->
+                          <div class="pd-card__century" data-after="NTD">訂單金額</div>
+                          <div class="pd-card__price h3">$600,000</div>
+                          <!-- Beanfun Coin-->
+                          <!-- <div class="pd-card__century">訂單金額</div>
+                          <div class="pd-card__price h3"><span class="bf-coin" aria-label="beanfun coin"></span>3,376</div> -->
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -307,8 +322,18 @@
           </div>
           <!-- [END] 商品資訊-->
           <div class="button-box grid-x align-center align-middle w-full-for-medium">
-            <!-- Mobile Button--><a class="btn hide-for-medium" href="javascript:;">打開beanfun!</a><a class="btn hollow hide-for-medium" href="/">繼續選購</a>
-            <!-- PC Button--><a class="btn hollow show-for-medium" href="javascript:;">查看訂單記錄</a><a class="btn show-for-medium" href="/">繼續選購</a>
+            <!-- bf!會員登入購買 / Mobile Button-->
+                <!-- <a class="btn hide-for-medium" href="javascript:;">打開beanfun!</a>
+                <a class="btn hollow hide-for-medium" href="index.html">繼續選購</a> -->
+            <!-- bf!會員登入購買 / PC Button -->
+            <!-- <a class="btn hollow show-for-medium" href="member-record-cont.html">查看訂單記錄</a>
+            <a class="btn show-for-medium" href="index.html">繼續選購</a> -->
+            <!-- 非 bf!會員登入購買 / Mobile Button-->
+            <a class="btn hollow hide-for-medium" href="member-record-cont.html">查看訂單記錄</a>
+            <a class="btn hollow hide-for-medium" href="index.html">繼續選購</a>
+            <!-- 非 bf!會員登入購買 / PC Button -->
+            <a class="btn hollow show-for-medium" href="member-record-cont.html">查看訂單記錄</a>
+            <a class="btn hollow show-for-medium" href="index.html">繼續選購</a>
           </div>
         </div>
         <!-- [END] 內容-->

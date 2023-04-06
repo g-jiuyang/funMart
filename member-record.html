@@ -222,7 +222,7 @@
           <div class="hd-main__r__item hd-member"><a class="hd-main__r__btn" href="login.html"><span class="text hd-member__name">登入/註冊</span><i class="be-icon be-icon-member-circle" aria-hidden="true"></i></a></div>-->
           <!-- 【Web版本】[PC版] 已登入（會員專區）-->
           <!-- 預設圖: images/product/profile_photo_default.jpg-->
-          <div class="hd-main__r__item hd-member"><a class="hd-main__r__btn" href="member.html"><span class="text hd-member__name">kilet12244869</span><img class="user-info__photo-box lazy" src="images/1x1.gif" data-src="images/profile_photo_default.jpg" width="24" height="24" alt="使用者名稱"></a></div>
+          <div class="hd-main__r__item hd-member"><a class="hd-main__r__btn" href="member.html"><span class="text hd-member__name">0987654321</span><img class="user-info__photo-box lazy" src="images/1x1.gif" data-src="images/profile_photo_default.jpg" width="24" height="24" alt="使用者名稱"></a></div>
         </div>
       </div>
       <!-- 【Web版本】[END] Header-->
@@ -264,11 +264,23 @@
             <aside class="mem__l mem-aside">
               <div class="mem-menu-main">
                 <!-- 使用者資訊-->
-                <div class="mem-info"><a class="mem-info__link" href="member.html">
-                    <div class="user-info">
-                      <!-- 預設圖: images/product/profile_photo_default.jpg--><img class="user-info__photo-box lazy" src="images/1x1.gif" data-src="images/profile_photo_default.jpg" title="使用者暱稱廢豆說你好使用者暱稱廢豆說你好"/>
-                      <div class="user-info__name">使用者暱稱廢豆說你好使用者暱稱廢豆說你好</div>
-                    </div></a></div>
+                <div class="mem-info">
+                  <div class="user-info">
+                    <!-- 預設圖: images/product/profile_photo_default.jpg-->
+                    <img class="user-info__photo-box lazy" src="images/1x1.gif" data-src="images/profile_photo_default.jpg" title="0987654321"/>
+                    <div class="user-info__name">0987654321</div>
+                  </div>
+                  <!-- 手機登入：非 bf!會員 -->
+                  <!-- <div class="el-info">
+                    <a href="#" class="btn pd-side-price__button" type="button">註冊 beanfun! 會員</a>
+                    <p>* 請注意：若您使用手機號碼登入購買，請使用同一支手機號碼註冊 beanfun! 會員</p>
+                  </div> -->
+                  <!-- 手機登入：bf!會員 -->
+                  <div class="el-info">
+                    <a href="#" class="btn pd-side-price__button" type="button">登入 beanfun! 會員</a>
+                    <p>* 請注意：若您使用手機號碼登入購買，請使用同一支手機號碼登入 beanfun! 會員</p>
+                  </div>
+                </div>
                 <!-- 已購買 + 已收藏-->
                 <div class="mem-count">
                   <div class="mem-count__cell" id="mem-count-bought"><span class="mem-count__num">3</span><span class="mem-count__text">已購買</span></div>
@@ -283,7 +295,11 @@
                     <ul class="mem-menu__list">
                       <li class="mem-menu__item is-active"><a class="mem-menu__link" href="member-record.html"><i class="be-icon be-icon-bag2" aria-hidden="true"></i><span class="mem-menu__text">購買紀錄</span><span class="mem-menu__num">999+</span></a>
                       </li>
-                      <li class="mem-menu__item"><a class="mem-menu__link" href="member-fav.html"><i class="be-icon be-icon-collect-thick" aria-hidden="true"></i><span class="mem-menu__text">收藏清單</span></a>
+                      <li class="mem-menu__item">
+                        <!-- 收藏功能：bf!會員 -->
+                        <!-- <a class="mem-menu__link" href="member-fav.html"><i class="be-icon be-icon-collect-thick" aria-hidden="true"></i><span class="mem-menu__text">收藏清單</span></a> -->
+                        <!-- 收藏功能：非 bf!會員 -->
+                        <a class="mem-menu__link" data-open="collect-popup"><i class="be-icon be-icon-collect-thick" aria-hidden="true"></i><span class="mem-menu__text">收藏清單</span></a>
                       </li>
                       <li class="mem-menu__item"><a class="mem-menu__link" href="member-history.html"><i class="be-icon be-icon-record" aria-hidden="true"></i><span class="mem-menu__text">瀏覽紀錄</span></a>
                       </li>
@@ -328,7 +344,7 @@
                   <ul class="pd-card pd-card--hori-with-price shadow-card-round pd-card--member">
                     <li class="pd-card__record"><a class="pd-card__record__item" href="member-record-cont.html">
                         <div class="pd-card__record-info">
-                          <p class="pd-card__record__id">訂單編號：KJHEO7823029357</p><span class="pd-card__record__stamp">2021/10/31 22:30</span>
+                          <p class="pd-card__record__id">訂單編號：FM20230330900000148</p><span class="pd-card__record__stamp">2021/10/31 22:30</span>
                         </div>
                         <div class="pd-card__item cell">
                           <div class="pd-card__link">
@@ -349,17 +365,19 @@
                                   <p class="pd-card__title h5 clamp-1">商品的名稱最長二十字商品的名稱最長二十字商品的名稱最長二十字商品的名稱最長二十字
                                   </p>
                                   <div class="pd-card__ctrl">
-                                      <div class="pd-card__detial-arrow"><i class="be-icon be-icon-arrow-right" aria-hidden="true"></i></div>
+                                    <div class="pd-card__detial-arrow"><i class="be-icon be-icon-arrow-right" aria-hidden="true"></i></div>
                                   </div>
                                 </div>
-                                <div class="pd-card__qua">數量：2</div>
+                                <div class="pd-card__desc clamp-1">內容：一個虛擬商品的名字、一個實體商品名字或虛擬商品名字、第三第三第三第三第三第三</div>
+                                <!-- <div class="pd-card__qua">數量：2</div> -->
                               </div>
                               <div class="pd-card__price h3">
-                                <!-- Beanfun Coin--><span class="bf-coin" aria-label="beanfun coin"></span>350,000
+                                <!-- 一般金額-->$600,000
                               </div>
-                              <div class="pd-card__record-info">
+                              <div class="pd-card__record__stamp state">待出貨</div>
+                              <!-- <div class="pd-card__record-info">
                                 <p class="pd-card__record__id">實體商品的名稱最長二十字商品的名稱最長二十字商品</p><span class="pd-card__record__stamp">待出貨</span>
-                              </div>
+                              </div> -->
                             </div>
                           </div>
                       </div>
@@ -393,15 +411,16 @@
                                   <div class="pd-card__detial-arrow"><i class="be-icon be-icon-arrow-right" aria-hidden="true"></i></div>
                                 </div>
                               </div>
-                              <div class="pd-card__qua">數量：2</div>
+                              <div class="pd-card__desc clamp-1">內容：一個虛擬商品的名字</div>
+                              <!-- <div class="pd-card__qua">數量：2</div> -->
                             </div>
                             <div class="pd-card__price h3">
-                              <!-- 一般金額-->$350,000
+                              <!-- 一般金額-->$600,000
                             </div>
-                            <div class="pd-card__record-info">
-                              <!-- 當全家付款訂單產生後，產生付款barcode，當用戶關閉後，訂單還有時效性可從訂單紀錄中繼續付款-->
+                            <!-- <div class="pd-card__record-info">
+                              // 當全家付款訂單產生後，產生付款barcode，當用戶關閉後，訂單還有時效性可從訂單紀錄中繼續付款
                               <p class="pd-card__record__id">付款截止時間：2022/3/31 17:30</p><span class="pd-card__record__stamp">待付款</span>
-                            </div>
+                            </div> -->
                           </div>
                         </div>
                       </div>
@@ -432,14 +451,16 @@
                                   <div class="pd-card__detial-arrow"><i class="be-icon be-icon-arrow-right" aria-hidden="true"></i></div>
                                 </div>
                               </div>
-                              <div class="pd-card__qua">數量：2</div>
+                              <div class="pd-card__desc clamp-1">內容：一個虛擬商品的名字、一個實體商品名字或虛擬商品名字、第三第三第三第三第三第三</div>
+                              <!-- <div class="pd-card__qua">數量：2</div> -->
                             </div>
                             <div class="pd-card__price h3">
-                              <!-- Beanfun Coin--><span class="bf-coin" aria-label="beanfun coin"></span>350,000
+                              <!-- Beanfun Coin--><span class="bf-coin" aria-label="beanfun coin"></span>600,000
                             </div>
-                            <div class="pd-card__record-info"> 
+                            <div class="pd-card__record__stamp state">待出貨</div>
+                            <!-- <div class="pd-card__record-info"> 
                               <p class="pd-card__record__id">實體商品的名稱最長二十字</p><span class="pd-card__record__stamp">已出貨</span>
-                            </div>
+                            </div> -->
                           </div>
                         </div>
                       </div>
@@ -470,14 +491,16 @@
                                       <div class="pd-card__detial-arrow"><i class="be-icon be-icon-arrow-right" aria-hidden="true"></i></div>
                                   </div>
                                 </div>
-                                <div class="pd-card__qua">數量：2</div>
+                                <div class="pd-card__desc clamp-1">內容：一個虛擬商品的名字、一個實體商品名字或虛擬商品名字、第三第三第三第三第三第三</div>
+                                <!-- <div class="pd-card__qua">數量：2</div> -->
                               </div>
                               <div class="pd-card__price h3">
-                                <!-- Beanfun Coin--><span class="bf-coin" aria-label="beanfun coin"></span>350,000
+                                <!-- Beanfun Coin--><span class="bf-coin" aria-label="beanfun coin"></span>600,000
                               </div>
-                              <div class="pd-card__record-info">
+                              <div class="pd-card__record__stamp state">待出貨</div>
+                              <!-- <div class="pd-card__record-info">
                                 <p class="pd-card__record__id">實體商品的名稱最長二十字商品的名稱最長二十字商品</p><span class="pd-card__record__stamp">待出貨</span>
-                              </div>
+                              </div> -->
                             </div>
                           </div>
                       </div>
@@ -511,15 +534,17 @@
                                   <div class="pd-card__detial-arrow"><i class="be-icon be-icon-arrow-right" aria-hidden="true"></i></div>
                                 </div>
                               </div>
-                              <div class="pd-card__qua">數量：2</div>
+                              <div class="pd-card__desc clamp-1">內容：一個虛擬商品的名字、一個實體商品名字或虛擬商品名字</div>
+                              <!-- <div class="pd-card__qua">數量：2</div> -->
                             </div>
                             <div class="pd-card__price h3">
-                              <!-- 一般金額-->$350,000
+                              <!-- 一般金額-->$600,000
                             </div>
-                            <div class="pd-card__record-info">
-                              <!-- 當全家付款訂單產生後，產生付款barcode，當用戶關閉後，訂單還有時效性可從訂單紀錄中繼續付款-->
+                            <div class="pd-card__record__stamp state">已出貨</div>
+                            <!-- <div class="pd-card__record-info">
+                              //當全家付款訂單產生後，產生付款barcode，當用戶關閉後，訂單還有時效性可從訂單紀錄中繼續付款
                               <p class="pd-card__record__id">付款截止時間：2022/3/31 17:30</p><span class="pd-card__record__stamp">待付款</span>
-                            </div>
+                            </div> -->
                           </div>
                         </div>
                       </div>
@@ -550,14 +575,15 @@
                                   <div class="pd-card__detial-arrow"><i class="be-icon be-icon-arrow-right" aria-hidden="true"></i></div>
                                 </div>
                               </div>
-                              <div class="pd-card__qua">數量：2</div>
+                              <div class="pd-card__desc clamp-1">內容：一個虛擬商品的名字、一個實體商品名字或虛擬商品名字</div>
+                              <!-- <div class="pd-card__qua">數量：2</div> -->
                             </div>
                             <div class="pd-card__price h3">
-                              <!-- Beanfun Coin--><span class="bf-coin" aria-label="beanfun coin"></span>350,000
+                              <!-- Beanfun Coin--><span class="bf-coin" aria-label="beanfun coin"></span>600,000
                             </div>
-                            <div class="pd-card__record-info"> 
+                            <!-- <div class="pd-card__record-info"> 
                               <p class="pd-card__record__id">實體商品的名稱最長二十字</p><span class="pd-card__record__stamp">已出貨</span>
-                            </div>
+                            </div> -->
                           </div>
                         </div>
                       </div>
@@ -588,14 +614,15 @@
                                       <div class="pd-card__detial-arrow"><i class="be-icon be-icon-arrow-right" aria-hidden="true"></i></div>
                                   </div>
                                 </div>
-                                <div class="pd-card__qua">數量：2</div>
+                                <div class="pd-card__desc clamp-1">內容：一個虛擬商品的名字、一個實體商品名字或虛擬商品名字</div>
+                                <!-- <div class="pd-card__qua">數量：2</div> -->
                               </div>
                               <div class="pd-card__price h3">
-                                <!-- Beanfun Coin--><span class="bf-coin" aria-label="beanfun coin"></span>350,000
+                                <!-- Beanfun Coin--><span class="bf-coin" aria-label="beanfun coin"></span>600,000
                               </div>
-                              <div class="pd-card__record-info">
+                              <!-- <div class="pd-card__record-info">
                                 <p class="pd-card__record__id">實體商品的名稱最長二十字商品的名稱最長二十字商品</p><span class="pd-card__record__stamp">待出貨</span>
-                              </div>
+                              </div> -->
                             </div>
                           </div>
                       </div>
@@ -629,15 +656,16 @@
                                   <div class="pd-card__detial-arrow"><i class="be-icon be-icon-arrow-right" aria-hidden="true"></i></div>
                                 </div>
                               </div>
-                              <div class="pd-card__qua">數量：2</div>
+                              <div class="pd-card__desc clamp-1">內容：一個虛擬商品的名字、一個實體商品名字或虛擬商品名字</div>
+                              <!-- <div class="pd-card__qua">數量：2</div> -->
                             </div>
                             <div class="pd-card__price h3">
-                              <!-- 一般金額-->$350,000
+                              <!-- 一般金額-->$600,000
                             </div>
-                            <div class="pd-card__record-info">
-                              <!-- 當全家付款訂單產生後，產生付款barcode，當用戶關閉後，訂單還有時效性可從訂單紀錄中繼續付款-->
+                            <!-- <div class="pd-card__record-info">
+                              //當全家付款訂單產生後，產生付款barcode，當用戶關閉後，訂單還有時效性可從訂單紀錄中繼續付款
                               <p class="pd-card__record__id">付款截止時間：2022/3/31 17:30</p><span class="pd-card__record__stamp">待付款</span>
-                            </div>
+                            </div> -->
                           </div>
                         </div>
                       </div>
@@ -668,21 +696,22 @@
                                   <div class="pd-card__detial-arrow"><i class="be-icon be-icon-arrow-right" aria-hidden="true"></i></div>
                                 </div>
                               </div>
-                              <div class="pd-card__qua">數量：2</div>
+                              <div class="pd-card__desc clamp-1">內容：一個虛擬商品的名字、一個實體商品名字或虛擬商品名字</div>
+                              <!-- <div class="pd-card__qua">數量：2</div> -->
                             </div>
                             <div class="pd-card__price h3">
-                              <!-- Beanfun Coin--><span class="bf-coin" aria-label="beanfun coin"></span>350,000
+                              <!-- Beanfun Coin--><span class="bf-coin" aria-label="beanfun coin"></span>600,000
                             </div>
-                            <div class="pd-card__record-info"> 
+                            <!-- <div class="pd-card__record-info"> 
                               <p class="pd-card__record__id">實體商品的名稱最長二十字</p><span class="pd-card__record__stamp">已出貨</span>
-                            </div>
+                            </div> -->
                           </div>
                         </div>
                       </div>
                     </a></li>
                     <li class="pd-card__record"><a class="pd-card__record__item" href="member-record-cont.html">
                       <div class="pd-card__record-info">
-                        <p class="pd-card__record__id">訂單編號：KJHEO7823029357</p><span class="pd-card__record__stamp">2021/10/31 22:30</span>
+                        <p class="pd-card__record__id">訂單編號：FM20230330900000148</p><span class="pd-card__record__stamp">2021/10/31 22:30</span>
                       </div>
                       <div class="pd-card__item cell">
                         <div class="pd-card__link">
@@ -706,14 +735,15 @@
                                     <div class="pd-card__detial-arrow"><i class="be-icon be-icon-arrow-right" aria-hidden="true"></i></div>
                                 </div>
                               </div>
-                              <div class="pd-card__qua">數量：2</div>
+                              <div class="pd-card__desc clamp-1">內容：一個虛擬商品的名字、一個實體商品名字或虛擬商品名字、第三第三第三第三第三第三</div>
+                              <!-- <div class="pd-card__qua">數量：2</div> -->
                             </div>
                             <div class="pd-card__price h3">
-                              <!-- Beanfun Coin--><span class="bf-coin" aria-label="beanfun coin"></span>350,000
+                              <!-- Beanfun Coin--><span class="bf-coin" aria-label="beanfun coin"></span>600,000
                             </div>
-                            <div class="pd-card__record-info">
+                            <!-- <div class="pd-card__record-info">
                               <p class="pd-card__record__id">實體商品的名稱最長二十字商品的名稱最長二十字商品</p><span class="pd-card__record__stamp">待出貨</span>
-                            </div>
+                            </div> -->
                           </div>
                         </div>
                       </div>
@@ -732,6 +762,17 @@
         </div>
       </section>
       <!-- [END] 會員中心內容-->
+      <!-- [START] Popup ==========-->
+      <!-- Popup - 收藏品 -->
+      <div class="collect-spec pd-spec reveal reveal-msg" id="collect-popup" data-reveal="">
+        <h3 class="reveal-msg__title text-center">beanfun! 會員限定</h3>
+        <p class="pd-spec__desc">使用 beanfun! 會員登入即可享有收藏功能。</p>
+        <button class="btn" type="submit" data-close="">確定</button>
+
+        <button class="close-button" data-close="" aria-label="Close modal" type="button"><span
+          aria-hidden="true">×</span></button>
+      </div>
+      <!-- [END] Popup ==========-->
     </main>
     <!-- [END] Content ==================================================-->
     <!-- 【Web版本】[START] Footer ==================================================-->
@@ -802,13 +843,13 @@
     </footer>
 
 <!-- img popup -->
-    <div class="img-popup">
+    <!-- <div class="img-popup">
       <img src="" alt="Popup Image" class="img-pic">
       <div class="close-btn" onclick="hidePOPUP()">
         <div class="bar"></div>
         <div class="bar"></div>
       </div>
-    </div>
+    </div> -->
 
 
     <!-- 【Web版本】[END] Footer ==================================================-->
