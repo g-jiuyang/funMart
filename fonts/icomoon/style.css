@@ -1,0 +1,138 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?a9q8vg');
+  src:  url('fonts/icomoon.eot?a9q8vg#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?a9q8vg') format('truetype'),
+    url('fonts/icomoon.woff?a9q8vg') format('woff'),
+    url('fonts/icomoon.svg?a9q8vg#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+i {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-lock:before {
+  content: "\e915";
+}
+.icon-unlock:before {
+  content: "\e922";
+}
+.icon-icon_flag:before {
+  content: "\e921";
+}
+.icon-convert:before {
+  content: "\e920";
+}
+.icon-icon_delete:before {
+  content: "\e91f";
+}
+.icon-icon_check:before {
+  content: "\e91d";
+}
+.icon-icon_edit:before {
+  content: "\e91e";
+}
+.icon-icon_visibility:before {
+  content: "\e91b";
+  color: #999;
+}
+.icon-icon_visibility-off:before {
+  content: "\e91c";
+  color: #999;
+}
+.icon-icon_setting:before {
+  content: "\e91a";
+}
+.icon-icon_stamp:before {
+  content: "\e919";
+}
+.icon-icon_scan:before {
+  content: "\e918";
+  color: #999;
+}
+.icon-icon_info:before {
+  content: "\e916";
+}
+.icon-icon_copy:before {
+  content: "\e917";
+}
+.icon-star:before {
+  content: "\e914";
+}
+.icon-close:before {
+  content: "\e913";
+}
+.icon-blindBox:before {
+  content: "\e904";
+}
+.icon-ic-trade:before {
+  content: "\e912";
+}
+.icon-sort-new:before {
+  content: "\e910";
+}
+.icon-sort-old:before {
+  content: "\e911";
+}
+.icon-fullscreen_off:before {
+  content: "\e90e";
+  color: #ccc;
+}
+.icon-fullscreen_on:before {
+  content: "\e90f";
+  color: #ccc;
+}
+.icon-ic-ai:before {
+  content: "\e90a";
+}
+.icon-ic-exchange:before {
+  content: "\e90b";
+}
+.icon-ic-give:before {
+  content: "\e90c";
+}
+.icon-ic-sale:before {
+  content: "\e90d";
+}
+.icon-long_arrow:before {
+  content: "\e909";
+  color: #999;
+}
+.icon-tick:before {
+  content: "\e907";
+}
+.icon-delete:before {
+  content: "\e908";
+}
+.icon-time:before {
+  content: "\e906";
+}
+.icon-nft:before {
+  content: "\e902";
+}
+.icon-game:before {
+  content: "\e903";
+}
+.icon-fire:before {
+  content: "\e905";
+}
+.icon-history:before {
+  content: "\e901";
+}
+.icon-assets:before {
+  content: "\e900";
+}

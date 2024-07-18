@@ -10,7 +10,8 @@
   font-size: 0.9375rem;
 }
 
-@media print, screen and (min-width: 40em) {
+@media print,
+screen and (min-width: 40em) {
   .pd-list .pd-card:not(.pd-card--hori-with-price) .pd-card__title {
     font-size: 0.9375rem;
   }
@@ -20,17 +21,30 @@
   font-size: 1rem;
 }
 
-@media print, screen and (min-width: 40em) {
+.pd-list .pd-card:not(.pd-card--hori-with-price) .pd-card__price.soon {
+  font-size: .75rem;
+  font-weight: 500;
+  line-height: 1.68;
+}
+
+
+
+@media print,
+screen and (min-width: 40em) {
   .pd-list .pd-card:not(.pd-card--hori-with-price) .pd-card__price {
     font-size: 1.125rem;
+  }
+
+  .pd-list .pd-card:not(.pd-card--hori-with-price) .pd-card__price.soon {
+    font-size: .9375rem;
   }
 }
 
 /* Container */
 .pd-list-global .sec-title-box {
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
 }
 
 .pd-list-null {
@@ -39,7 +53,8 @@
   text-align: center;
 }
 
-@media print, screen and (min-width: 40em) {
+@media print,
+screen and (min-width: 40em) {
   .pd-list-null {
     margin-top: 7.1875rem;
     margin-bottom: 4.375rem;
@@ -52,7 +67,8 @@
   width: 5rem;
 }
 
-@media print, screen and (min-width: 40em) {
+@media print,
+screen and (min-width: 40em) {
   .pd-list-null__img-box {
     margin-bottom: 2.625rem;
     width: 7.0625rem;
@@ -69,7 +85,8 @@
   color: #333;
 }
 
-@media print, screen and (min-width: 40em) {
+@media print,
+screen and (min-width: 40em) {
   .pd-list-null__desc {
     font-size: 1.25rem;
   }
@@ -79,7 +96,8 @@
   margin-bottom: 2.5rem;
 }
 
-@media print, screen and (min-width: 40em) and (max-width: 63.99875em) {
+@media print,
+screen and (min-width: 40em) and (max-width: 63.99875em) {
   .seller-info {
     margin-bottom: 5rem;
   }
@@ -93,8 +111,8 @@
 
 .seller-info__img-box {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 5rem;
-          flex: 0 0 5rem;
+  -ms-flex: 0 0 5rem;
+  flex: 0 0 5rem;
   margin-right: 0.75rem;
   width: 5rem;
   border-radius: 20px;
@@ -106,11 +124,11 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .seller-info__name {
@@ -134,7 +152,8 @@
   padding-top: 47.05882%;
 }
 
-@media print, screen and (min-width: 40em) {
+@media print,
+screen and (min-width: 40em) {
   .seller-info__banner-box {
     margin-top: 1rem;
     margin-bottom: 1.5rem;
@@ -146,30 +165,35 @@
   font-size: 0.9375rem;
 }
 
-@media print, screen and (min-width: 64em) {
+@media print,
+screen and (min-width: 64em) {
   .seller-info__desc {
     font-size: 1.125rem;
   }
 }
 
-@media print, screen and (min-width: 64em) {
+@media print,
+screen and (min-width: 64em) {
   .pd-list-flagship__l {
     position: relative;
     padding-right: 1.25rem;
   }
 }
 
-@media print, screen and (min-width: 40em) {
+@media print,
+screen and (min-width: 40em) {
   .pd-list-flagship .seller-info__name {
     font-size: 1.5rem;
   }
 }
 
-@media print, screen and (min-width: 64em) {
+@media print,
+screen and (min-width: 64em) {
   .pd-list-flagship .seller-info.is-fixed {
     position: fixed;
     top: 98px;
   }
+
   .pd-list-flagship .seller-info.is-fixed-bottom {
     position: absolute;
     top: auto;
@@ -177,4 +201,34 @@
     left: 0;
     margin-bottom: 0;
   }
+}
+
+.pd-list__cont .sec-title-box__title.h3 {
+  margin-bottom: 0.875rem;
+}
+
+@media print,
+screen and (min-width: 40em) {
+  .pd-list__cont .sec-title-box__title.h3 {
+    margin-bottom: 2rem;
+  }
+}
+
+
+/* 官方旗艦店 B2C 商品 inapp */
+.pd-card__item.pd-inapp .pd-card__img-box {
+  margin-bottom: .5rem;
+}
+
+.pd-card__item.pd-inapp .pd-card__price.view {
+  font-size: .8125rem;
+  font-weight: 400;
+}
+
+.pd-card__item.pd-inapp .pd-card__title {
+  margin: .5rem 0;
+}
+
+.pd-card__item.pd-inapp .channel {
+  margin: 0;
 }

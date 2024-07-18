@@ -1,0 +1,35 @@
+.loading-dot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  height: 24px;
+  line-height: 1;
+  // overflow: hidden;
+
+  li {
+    position: relative;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: white;
+    animation: loading-dot 1.5s ease-in-out infinite;
+
+    &:nth-child(2) {
+      animation-delay: 0.3s;
+    }
+
+    &:last-child {
+      animation-delay: 0.6s;
+    }
+  }
+}
+
+@keyframes loading-dot {
+  15% {
+    transform: scale(0);
+  }
+  30% {
+    transform: scale(1);
+  }
+}

@@ -1,0 +1,203 @@
+.floatingBtn {
+    width: 40rem;
+    display: table;
+    margin: 0 auto;
+    position: fixed;
+    bottom: 3.25rem;
+    left: 0;
+    right: 0;
+    padding: 1rem 1.5rem;
+    border-radius: 0.75rem;
+    background-color: #fff;
+    box-shadow: 0px 0px 20px 0px rgba(221, 233, 242, 0.7);
+    opacity: 0;
+    visibility: hidden;
+
+    animation: showBtn 0.5s linear forwards;
+    animation-delay: 0.5s;
+
+    z-index: 99;
+
+    @media print, screen and (max-width: 40em) {
+        width: 100%;
+        bottom: 0;
+        padding: 1rem;
+        border-radius: 0;
+    }
+
+    @keyframes showBtn {
+      0% {
+        opacity: 0;
+        visibility: hidden;
+      }
+
+      100% {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+
+    > ul {
+      display: flex;
+      flex-direction: row;
+      align-items: stretch;
+      gap: 0.75rem;
+
+      li {
+        position: relative;
+        flex: 1;
+
+        &.ic-trade-parent {
+          flex: 0;
+        }
+      }
+    }
+
+    button {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      font-size: 1rem;
+
+      &.btn.button-primary-subtle {
+        background-color: #d4f5e1;
+        color: #26d07c;
+
+        @include hover {
+          background-color: #c4ffdb;
+        }
+      }
+
+      &::before {
+        font-family: "icomoon";
+        font-size: 1.25rem;
+      }
+
+      &.blindBox::before {
+        content: unicode("e904");
+      }
+
+      &.game::before {
+        content: unicode("e903");
+      }
+
+      &.nft::before {
+        content: unicode("e902");
+      }
+
+      &.activity::before {
+        content: unicode("e905");
+      }
+
+      &.sale::before {
+        content: unicode("e90d");
+      }
+
+      &.give::before {
+        content: unicode("e90c");
+      }
+
+      &.exchange::before {
+        content: unicode("e90b");
+      }
+
+      &.ai::before {
+        content: unicode("e90a");
+      }
+
+      &.ic-trade {
+        width: auto;
+        min-width: auto;
+        padding: 0.1rem 1rem;
+        color: #2b3843;
+        background-color: transparent;
+        flex-direction: column;
+        gap: 0;
+        font-size: 0.6875rem;
+
+        &::before {
+          content: unicode("e912");
+          font-size: 1.5rem;
+        }
+
+        @include hover {
+          background-color: #f7f7f7;
+        }
+      }
+
+      &.serial {
+        .serial-count {
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          background-color: white;
+          color: #26d07c;
+          padding: 0 0.25rem;
+          border-radius: 1rem;
+          font-size: 0.75rem;
+          // line-height: 1rem;
+          height: 1rem;
+          // width: 1rem;
+        }
+
+        &::before {
+          content: "";
+          width: 0;
+          height: 1.5rem;
+        }
+      }
+    }
+
+    .assemble {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      z-index: 1;
+
+      ul {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      li {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+        font-size: 1rem;
+        font-weight: 500;
+        color: #fff;
+        white-space: nowrap;
+      }
+
+      button {
+        min-width: 3.375rem;
+        width: 3.375rem;
+        height: 3.375rem;
+        padding: 0;
+        border-radius: 99px;
+        background-color: #fff;
+        transition: all 0.3s;
+
+        &::before {
+          color: #2b3843;
+          font-size: 1.5rem;
+        }
+
+        &.close::before {
+          content: unicode("e913");
+        }
+
+        @include hover {
+          transition: all 0.3s;
+          box-shadow: 0px 0px 20px 0px rgba(221, 233, 242, 0.5);
+          background-color: #f7f7f7;
+        }
+      }
+    }
+  }

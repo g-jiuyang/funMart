@@ -1,0 +1,76 @@
+// 點擊(滑鼠)指標裝置
+@mixin hover {
+    @media (pointer: fine) {
+        &:hover {
+            @content;
+        }
+    }
+}
+
+//解決 sass 轉譯壓縮 unicode 亂碼
+@function unicode($str) {
+    @return unquote("\"")+unquote(str-insert($str, "\\", 1))+unquote("\"")
+}
+
+@mixin icon-fonts($name, $code) {
+    font-family: "#{$name}";
+    content: unquote("\"\\#{$code}\"");
+}
+
+//文字溢出
+@mixin text-overflow($line) {
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: $line;
+}
+
+//scrollbar-y
+@mixin scrollbar-y($color: #c5c4c5, $hover: #aaa) {
+
+    /* width */
+    &::-webkit-scrollbar {
+        width: 5px;
+    }
+
+    /* Track */
+    &::-webkit-scrollbar-track {
+        // background: #f1f1f1; 
+    }
+
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+        background: $color;
+        border-radius: 99rem;
+    }
+
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+        background: $hover;
+    }
+}
+
+@mixin scrollbar-x($color: #c5c4c5, $hover: #aaa) {
+
+    /* width */
+    &::-webkit-scrollbar {
+        height: 5px;
+    }
+
+    /* Track */
+    &::-webkit-scrollbar-track {
+        // background: #f1f1f1; 
+    }
+
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+        background: $color;
+        border-radius: 99rem;
+    }
+
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+        background: $hover;
+    }
+}
